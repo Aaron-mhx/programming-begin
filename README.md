@@ -97,10 +97,10 @@ if(n-4 /*是质数*/){
 		return 0;//这里任务已完成，可以退出程序
 	}
 ```
-那如何判断一个数是不是质数呢，用for循环一个一个试？还是用其他质数筛法吧，今天我们尝试使用埃氏筛，埃氏筛的详解请Ctrl+单击访问 http://localhost:4001/post/ai-shi-shai/ ，在这儿，我们先加上函数版的埃氏筛：
+那如何判断一个数是不是质数呢，用for循环一个一个试？还是用其他质数筛法吧，今天我们尝试使用埃氏筛，埃氏筛的详解请Ctrl+单击访问 https://aaron-mhx.github.io/post/ai-shi-shai/，在这儿，我们先加上函数版的埃氏筛：
 ```c
     bool zs[20100];//指示数组：是否为质数
-void ass(){//埃氏筛:埃氏筛详解：http://localhost:4001/post/ai-shi-shai/ 
+void ass(){//埃氏筛:埃氏筛详解：https://aaron-mhx.github.io/post/ai-shi-shai/
 	memset(zs,1,sizeof(zs));//赋值为“是质数”（真为质数，假为合数） 
 	zs[0] = zs[1] = 0;
 	for(int i = 2; i <= n; i++){
@@ -142,7 +142,7 @@ void ass(){//埃氏筛:埃氏筛详解：http://localhost:4001/post/ai-shi-shai/
 #include<bits/stdc++.h>//万能头文件 
 using namespace std;
 bool zs[20100];//指示数组：是否为质数
-int ass(int n){//埃氏筛:埃氏筛详解：http://localhost:4001/post/ai-shi-shai/ 
+int ass(int n){//埃氏筛:埃氏筛详解：https://aaron-mhx.github.io/post/ai-shi-shai/
 	int sum = 0;//质数数量 
 	memset(zs,1,sizeof(zs));//赋值为“是质数”（真为质数，假为合数） 
 	zs[0] = zs[1] = 0;
