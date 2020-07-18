@@ -1,0 +1,2733 @@
+<html class="no-js" lang="zh"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>云剪贴板 - 洛谷 | 计算机科学教育新生态</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+        <meta name="csrf-token" content="1595120037:tReEy/Cy3oe1/I77tFh4lPSkEwQgvibe8tBSOSYPFqc=">
+    <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}</style><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" media="screen">
+    <link rel="stylesheet" href="https://cdn.luogu.com.cn/fe/loader.css?ver=20200706">
+    <script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=5476811&amp;t=z"></script><script>window._feInjection = JSON.parse(decodeURIComponent("%7B%22code%22%3A200%2C%22currentTemplate%22%3A%22PasteShow%22%2C%22currentData%22%3A%7B%22paste%22%3A%7B%22data%22%3A%22%5Cn%5Cn%23%20%5Cu65b0%5Cu624b%5Cu6751%5Cn%5Cn%5Cu4efb%5Cu4f55%5Cu4e00%5Cu4e2a%5Cu4f1f%5Cu5927%5Cu7684%5Cu76ee%5Cu6807%5Cuff0c%5Cu90fd%5Cu6709%5Cu4e00%5Cu4e2a%5Cu5fae%5Cu4e0d%5Cu8db3%5Cu9053%5Cu7684%5Cu5f00%5Cu59cb%5Cu3002%5Cn%5Cn%23%23%20%5Cu6d1b%5Cu8c37%5Cu7684%5Cu7b2c%5Cu4e00%5Cu4e2a%5Cu4efb%5Cu52a1%5Cn%5Cn%5Cu52c7%5Cu6562%5Cu7684%5Cu8fc8%5Cu51fa%5Cu7b2c%5Cu4e00%5Cu6b65%5Cuff0c%5Cu4e86%5Cu89e3%5Cu4e0b%5Cu8bed%5Cu8a00%5Cu548c%5Cu6d1b%5Cu8c37%5Cu3002%5Cu8ddf%5Cu7740%5Cu4e66%5Cu672c%5Cu548c%5Cu8001%5Cu5e08%5Cu8d70%5Cuff0c%5Cu4e0d%5Cu4f1a%5Cu96be%5Cu7684%5Cu3002%5Cn%5Cn%2A%20%5BP1000%5D%28%5C%2Fproblem%5C%2FP1000%29%5Cn%2A%20%5BP1001%5D%28%5C%2Fproblem%5C%2FP1001%29%5Cn%2A%20%5BP1421%5D%28%5C%2Fproblem%5C%2FP1421%29%5Cn%2A%20%5BP1425%5D%28%5C%2Fproblem%5C%2FP1425%29%5Cn%5Cn%23%23%20%5Cu987a%5Cu5e8f%5Cu4e0e%5Cu5206%5Cu652f%5Cn%5Cn%5Cu8ba1%5Cu7b97%5Cu673a%5Cu7684%5Cu667a%5Cu80fd%5Cu6027%5Cu5f00%5Cu59cb%5Cu5f97%5Cu4ee5%5Cu4f53%5Cu73b0%5Cuff0c%5Cu56e0%5Cu4e3a%5Cu8ba1%5Cu7b97%5Cu673a%5Cu80fd%5Cu591f%5Cu6839%5Cu636e%5Cu4e0d%5Cu540c%5Cu7684%5Cu6761%5Cu4ef6%5Cu9009%5Cu62e9%5Cu4e86%5Cu3002%5Cn%5Cn%2A%20%5BP1422%5D%28%5C%2Fproblem%5C%2FP1422%29%5Cn%2A%20%5BP1085%5D%28%5C%2Fproblem%5C%2FP1085%29%5Cn%2A%20%5BP1089%5D%28%5C%2Fproblem%5C%2FP1089%29%5Cn%2A%20%5BP1909%5D%28%5C%2Fproblem%5C%2FP1909%29%5Cn%5Cn%23%23%20%5Cu5faa%5Cu73af%5Cuff01%5Cu5faa%5Cu73af%5Cuff01%5Cu5faa%5Cu73af%5Cuff01%5Cn%5Cn%5Cu8ba1%5Cu7b97%5Cu673a%5Cu6700%5Cu4e0d%5Cu6015%5Cu7684%5Cu5c31%5Cu662f%5Cu91cd%5Cu590d%5Cu3002%5Cu4f60%5Cu8ba9%5Cu5b83%5Cu505a10000%5Cu6b21%5Cu540c%5Cu6837%5Cu7684%5Cu4e8b%5Cu5b83%5Cu4e5f%5Cu4e0d%5Cu6015%5Cu5566%5Cuff0c%5Cu4f46%5Cu662f%5Cu8ba9%5Cu4ed6%5Cu505a1%5Cu4ebf%5Cu4ebf%5Cu6b21%5Cu7684%5Cu8bdd%5Cu2026%5Cu2026%5Cn%5Cn%2A%20%5BP1008%5D%28%5C%2Fproblem%5C%2FP1008%29%5Cn%2A%20%5BP1035%5D%28%5C%2Fproblem%5C%2FP1035%29%5Cn%2A%20%5BP1423%5D%28%5C%2Fproblem%5C%2FP1423%29%5Cn%2A%20%5BP1424%5D%28%5C%2Fproblem%5C%2FP1424%29%5Cn%2A%20%5BP1980%5D%28%5C%2Fproblem%5C%2FP1980%29%5Cn%5Cn%23%23%20%5Cu6570%5Cu7ec4%5Cn%5Cn%5Cu8ddf%5Cu6570%5Cu7ec4%5Cu6709%5Cu5173%5Cu7684%5Cu9898%5Cu76ee%5Cu57fa%5Cu672c%5Cu4e0a%5Cu90fd%5Cu8981%5Cu7528%5Cu5230%5Cu5faa%5Cu73af%5Cuff0c%5Cu6240%5Cu4ee5%5Cu8bf7%5Cu5148%5Cu5b8c%5Cu62101-3%5Cu3002%5Cn%5Cn%2A%20%5BP1046%5D%28%5C%2Fproblem%5C%2FP1046%29%5Cn%2A%20%5BP1047%5D%28%5C%2Fproblem%5C%2FP1047%29%5Cn%2A%20%5BP1427%5D%28%5C%2Fproblem%5C%2FP1427%29%5Cn%2A%20%5BP1428%5D%28%5C%2Fproblem%5C%2FP1428%29%5Cn%2A%20%5BP2141%5D%28%5C%2Fproblem%5C%2FP2141%29%5Cn%2A%20%5BP1567%5D%28%5C%2Fproblem%5C%2FP1567%29%5Cn%5Cn%23%23%20%5Cu7b80%5Cu5355%5Cu5b57%5Cu7b26%5Cu4e32%5Cn%5Cn%5Cu8ba1%5Cu7b97%5Cu673a%5Cu4e0d%5Cu4ec5%5Cu53ef%5Cu4ee5%5Cu5904%5Cu7406%5Cu6570%5Cu5b57%5Cuff0c%5Cu8fd8%5Cu80fd%5Cu5904%5Cu7406%5Cu6587%5Cu5b57%5Cuff01%5Cu5c31%5Cu662f%5Cu5176%5Cu5b9e%5Cu8ddf%5Cu6570%5Cu5b57%5Cu4e5f%5Cu6ca1%5Cu4ec0%5Cu4e48%5Cu5dee%5Cu3002%5Cn%5Cn%2A%20%5BP1055%5D%28%5C%2Fproblem%5C%2FP1055%29%5Cn%2A%20%5BP1200%5D%28%5C%2Fproblem%5C%2FP1200%29%5Cn%2A%20%5BP1308%5D%28%5C%2Fproblem%5C%2FP1308%29%5Cn%2A%20%5BP1553%5D%28%5C%2Fproblem%5C%2FP1553%29%5Cn%2A%20%5BP1598%5D%28%5C%2Fproblem%5C%2FP1598%29%5Cn%2A%20%5BP1914%5D%28%5C%2Fproblem%5C%2FP1914%29%5Cn%5Cn%23%23%20%5Cu8fc7%5Cu7a0b%5Cu51fd%5Cu6570%5Cu4e0e%5Cu9012%5Cu5f52%5Cn%5Cn%5Cu5c06%5Cu4ee3%5Cu7801%5Cu4e32%5Cu8fdb%5Cu884c%5Cu6253%5Cu5305%5Cuff0c%5Cu5c31%5Cu662f%5Cu8fc7%5Cu7a0b%5Cu4e0e%5Cu51fd%5Cu6570%5Cu3002%5Cu8fc7%5Cu7a0b%5Cu4e0e%5Cu51fd%5Cu6570%5Cu8c03%5Cu7528%5Cu81ea%5Cu5df1%5Cu5219%5Cu4e3a%5Cu9012%5Cu5f52%5Cu3002%5Cu6709%5Cu4e00%5Cu70b9%5Cu5c0f%5Cu96be%5Cu4f46%5Cu4e0d%5Cu8981%5Cu6015%5Cu54e6%5Cu3002%5Cn%5Cn%2A%20%5BP1028%5D%28%5C%2Fproblem%5C%2FP1028%29%5Cn%2A%20%5BP1036%5D%28%5C%2Fproblem%5C%2FP1036%29%5Cn%2A%20%5BP1149%5D%28%5C%2Fproblem%5C%2FP1149%29%5Cn%2A%20%5BP1217%5D%28%5C%2Fproblem%5C%2FP1217%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu5165%5Cu95e8%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e601%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu5c06%5Cu524d%5Cu9762%5Cu7684%5Cu5185%5Cu5bb9%5Cu7efc%5Cu5408%5Cu8d77%5Cu6765%5Cu4e86%5Cuff0c%5Cu4f1a%5Cu6709%5Cu70b9%5Cu96be%5Cuff0c%5Cu4e0d%5Cu8fc7%5Cu4f60%5Cu53ef%5Cu4ee5%5Cu95ee%5Cu8001%5Cu5e08%5Cu540c%5Cu5b66%5Cuff0c%5Cu4e5f%5Cu80fd%5Cu4e0a%5Cu7f51%5Cu67e5%5Cu8d44%5Cu6599%5Cu3002%5Cn%5Cn%2A%20%5BP1478%5D%28%5C%2Fproblem%5C%2FP1478%29%5Cn%2A%20%5BP1618%5D%28%5C%2Fproblem%5C%2FP1618%29%5Cn%2A%20%5BP1579%5D%28%5C%2Fproblem%5C%2FP1579%29%5Cn%2A%20%5BP2089%5D%28%5C%2Fproblem%5C%2FP2089%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu5165%5Cu95e8%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e602%5Cn%5Cn%5Cu52c7%5Cu58eb%5Cuff0c%5Cu7adf%5Cu7136%5Cu6765%5Cu5230%5Cu4e86BOSS%5Cu7684%5Cu8001%5Cu5de2%5Cuff01%5Cu6765%5Cu4e00%5Cu573a%5Cu6076%5Cu6597%5Cuff0c%5Cu8bc1%5Cu660e%5Cu81ea%5Cu5df1%5Cu7684%5Cu5b9e%5Cu529b%5Cuff0c%5Cu89e3%5Cu9501%5Cu4e0b%5Cu4e00%5Cu4e2a%5Cu7ea7%5Cu522b%5Cuff01%5Cn%5Cn%2A%20%5BP1426%5D%28%5C%2Fproblem%5C%2FP1426%29%5Cn%2A%20%5BP1464%5D%28%5C%2Fproblem%5C%2FP1464%29%5Cn%2A%20%5BP1014%5D%28%5C%2Fproblem%5C%2FP1014%29%5Cn%2A%20%5BP1022%5D%28%5C%2Fproblem%5C%2FP1022%29%5Cn%2A%20%5BP1307%5D%28%5C%2Fproblem%5C%2FP1307%29%5Cn%5Cn%23%20%5Cu666e%5Cu53ca%5Cu7ec3%5Cu4e60%5Cu573a%5Cn%5Cn%5Cu666e%5Cu53ca%5Cu7ec4%5Cu9009%5Cu624b%5Cu53ef%5Cu51b2%5Cu523a%5Cu8bad%5Cu7ec3%5Cuff0c%5Cu63d0%5Cu9ad8%5Cu7ec4%5Cu9009%5Cu624b%5Cu4ea6%5Cu53ef%5Cu5728%5Cu6b64%5Cu5de9%5Cu56fa%5Cu57fa%5Cu7840%5Cu3002%5Cn%5Cn%23%23%20%5Cu7b80%5Cu5355%5Cu7684%5Cu6a21%5Cu62df%5Cn%5Cn%5Cu5f00%5Cu59cb%5Cu666e%5Cu53ca%5Cu7ec4%5Cu7684%5Cu8bad%5Cu7ec3%5Cuff01%5Cu6240%5Cu8c13%5Cu6a21%5Cu62df%5Cuff0c%5Cu5c31%5Cu662f%5Cu76f4%5Cu63a5%5Cu6839%5Cu636e%5Cu9898%5Cu610f%5Cu7f16%5Cu5199%5Cuff0c%5Cu601d%5Cu7ef4%5Cu96be%5Cu5ea6%5Cu7b80%5Cu5355%5Cu3002%5Cn%5Cn%2A%20%5BP1003%5D%28%5C%2Fproblem%5C%2FP1003%29%5Cn%2A%20%5BP1067%5D%28%5C%2Fproblem%5C%2FP1067%29%5Cn%2A%20%5BP1540%5D%28%5C%2Fproblem%5C%2FP1540%29%5Cn%2A%20%5BP1056%5D%28%5C%2Fproblem%5C%2FP1056%29%5Cn%2A%20%5BP1328%5D%28%5C%2Fproblem%5C%2FP1328%29%5Cn%2A%20%5BP1563%5D%28%5C%2Fproblem%5C%2FP1563%29%5Cn%5Cn%23%23%20%5Cu4ea4%5Cu53c9%5Cu6a21%5Cu62df%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu4e5f%5Cu662f%5Cu6a21%5Cu62df%5Cuff0c%5Cu4f46%5Cu662f%5Cu4f1a%5Cu6df7%5Cu6709%5Cu4e9b%5Cu522b%5Cu7684%5Cu90e8%5Cu5206%5Cu3002%5Cu601d%5Cu7ef4%5Cu96be%5Cu5ea6%5Cu4e0d%5Cu5927%5Cuff0c%5Cu4f46%5Cu662f%5Cu7f16%5Cu5199%5Cu8d77%5Cu6765%5Cu4f1a%5Cu6709%5Cu4e9b%5Cu96be%5Cu5ea6%5Cu3002%5Cn%5Cn%2A%20%5BP1023%5D%28%5C%2Fproblem%5C%2FP1023%29%5Cn%2A%20%5BP1031%5D%28%5C%2Fproblem%5C%2FP1031%29%5Cn%2A%20%5BP1042%5D%28%5C%2Fproblem%5C%2FP1042%29%5Cn%2A%20%5BP1086%5D%28%5C%2Fproblem%5C%2FP1086%29%5Cn%2A%20%5BP1098%5D%28%5C%2Fproblem%5C%2FP1098%29%5Cn%2A%20%5BP3952%5D%28%5C%2Fproblem%5C%2FP3952%29%5Cn%5Cn%23%23%20%5Cu6392%5Cu5e8f%5Cn%5Cn%5Cu5c06%5Cu6742%5Cu4e71%5Cu65e0%5Cu7ae0%5Cu7684%5Cu6570%5Cu636e%5Cu53d8%5Cu5f97%5Cu6709%5Cu89c4%5Cu5f8b%5Cu3002%5Cu6709%5Cu5404%5Cu79cd%5Cu5404%5Cu6837%5Cu7684%5Cu6392%5Cu5e8f%5Cu7b97%5Cu6cd5%5Cuff0c%5Cu770b%5Cu60c5%5Cu51b5%5Cu4f7f%5Cu7528%5Cu3002%5Cn%5Cn%2A%20%5BP1177%5D%28%5C%2Fproblem%5C%2FP1177%29%5Cn%2A%20%5BP1059%5D%28%5C%2Fproblem%5C%2FP1059%29%5Cn%2A%20%5BP1068%5D%28%5C%2Fproblem%5C%2FP1068%29%5Cn%2A%20%5BP1781%5D%28%5C%2Fproblem%5C%2FP1781%29%5Cn%5Cn%23%23%20%5Cu6392%5Cu5e8fEx%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu7684%5Cu6392%5Cu5e8f%5Cu5c31%5Cu66f4%5Cu4e0a%5Cu4e00%5Cu5c42%5Cu4e86%5Cu3002%5Cu4e0d%5Cu4ec5%5Cu878d%5Cu5408%5Cu4e86%5Cu522b%5Cu7684%5Cu7b97%5Cu6cd5%5Cu4e0e%5Cu6280%5Cu5de7%5Cuff0c%5Cu6392%5Cu5e8f%5Cu672c%5Cu8eab%5Cu4e5f%5Cu6709%5Cu5404%5Cu79cd%5Cu82b1%5Cu62db%5Cu3002%5Cn%5Cn%2A%20%5BP1583%5D%28%5C%2Fproblem%5C%2FP1583%29%5Cn%2A%20%5BP1051%5D%28%5C%2Fproblem%5C%2FP1051%29%5Cn%2A%20%5BP1093%5D%28%5C%2Fproblem%5C%2FP1093%29%5Cn%2A%20%5BP1309%5D%28%5C%2Fproblem%5C%2FP1309%29%5Cn%5Cn%23%23%20%5Cu5b57%5Cu7b26%5Cu4e32%5Cu5904%5Cu7406%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu7684%5Cu5b57%5Cu7b26%5Cu4e32%5Cu5904%5Cu7406%5Cu8fd8%5Cu4f1a%5Cu53d8%5Cu5f97%5Cu66f4%5Cu52a0%5Cu7684%5Cu6709%5Cu610f%5Cu601d%5Cuff0c%5Cu96be%5Cu5ea6%5Cu4e5f%5Cu66f4%5Cu5927%5Cu3002%5Cu9700%5Cu8981%5Cu597d%5Cu597d%5Cu5730%5Cu601d%5Cu8003%5Cu4e00%5Cu4e0b%5Cu3002%5Cn%5Cn%2A%20%5BP1603%5D%28%5C%2Fproblem%5C%2FP1603%29%5Cn%2A%20%5BP1071%5D%28%5C%2Fproblem%5C%2FP1071%29%5Cn%2A%20%5BP1012%5D%28%5C%2Fproblem%5C%2FP1012%29%5Cn%2A%20%5BP1538%5D%28%5C%2Fproblem%5C%2FP1538%29%5Cn%5Cn%23%23%20%5Cu8d2a%5Cu5fc3%5Cn%5Cn%5Cu8d2a%5Cu5fc3%5Cu5c31%5Cu662f%5Cu53ea%5Cu8003%5Cu8651%5Cu773c%5Cu524d%5Cu7684%5Cu5229%5Cu76ca%5Cu3002%5Cu5bf9%5Cu4e8e%5Cu6211%5Cu4eec%5Cu4eba%5Cu751f%5Cu6765%5Cu8bf4%5Cu592a%5Cu8d2a%5Cu662f%5Cu4e0d%5Cu597d%5Cu7684%5Cuff0c%5Cu4e0d%5Cu8fc7oi%5Cu4e2d%5Cuff0c%5Cu6709%5Cu65f6%5Cu662f%5Cu5bf9%5Cu7684%5Cu3002%5Cn%5Cn%2A%20%5BP1090%5D%28%5C%2Fproblem%5C%2FP1090%29%5Cn%2A%20%5BP1181%5D%28%5C%2Fproblem%5C%2FP1181%29%5Cn%2A%20%5BP1208%5D%28%5C%2Fproblem%5C%2FP1208%29%5Cn%2A%20%5BP1223%5D%28%5C%2Fproblem%5C%2FP1223%29%5Cn%2A%20%5BP1094%5D%28%5C%2Fproblem%5C%2FP1094%29%5Cn%2A%20%5BP1803%5D%28%5C%2Fproblem%5C%2FP1803%29%5Cn%2A%20%5BP1031%5D%28%5C%2Fproblem%5C%2FP1031%29%5Cn%2A%20%5BP1080%5D%28%5C%2Fproblem%5C%2FP1080%29%5Cn%5Cn%23%23%20%5Cu6df1%5Cu5ea6%5Cu4f18%5Cu5148%5Cu641c%5Cu7d22%5Cn%5Cn%5Cu641c%5Cu7d22%5Cu53ef%5Cu4ee5%5Cu7a77%5Cu4e3e%5Cu5404%5Cu79cd%5Cu60c5%5Cu51b5%5Cu3002%5Cu5f88%5Cu591a%5Cu9898%5Cu76ee%5Cu90fd%5Cu53ef%5Cu4ee5%5Cu7528%5Cu641c%5Cu7d22%5Cu5b8c%5Cu6210%5Cu3002%5Cu5c31%5Cu7b97%5Cu4e0d%5Cu80fd%5Cuff0c%5Cu641c%5Cu7d22%5Cu4e5f%5Cu662f%5Cu9a97%5Cu5206%5Cu795e%5Cu5668%5Cu3002%5Cn%5Cn%2A%20%5BP1219%5D%28%5C%2Fproblem%5C%2FP1219%29%5Cn%2A%20%5BP1019%5D%28%5C%2Fproblem%5C%2FP1019%29%5Cn%2A%20%5BP1101%5D%28%5C%2Fproblem%5C%2FP1101%29%5Cn%2A%20%5BP1605%5D%28%5C%2Fproblem%5C%2FP1605%29%5Cn%2A%20%5BP1040%5D%28%5C%2Fproblem%5C%2FP1040%29%5Cn%2A%20%5BP1092%5D%28%5C%2Fproblem%5C%2FP1092%29%5Cn%5Cn%23%23%20%5Cu5e7f%5Cu5ea6%5Cu4f18%5Cu5148%5Cu641c%5Cu7d22%5Cn%5Cn%5Cu5e7f%5Cu5ea6%5Cu4f18%5Cu5148%5Cu641c%5Cu7d22%5Cu53ef%5Cu4ee5%5Cu7528%5Cu6765%5Cu627e%5Cu6709%5Cu5173%5Cu201c%5Cu6700%5Cu77ed%5Cu6b65%5Cu6570%5Cu201d%5Cu7684%5Cu95ee%5Cu9898%5Cu3002%5Cu6069%5Cuff0c%5Cu4e5f%5Cu53ef%5Cu4ee5%5Cu7528%5Cu6765%5Cu201c%5Cu5730%5Cu6bef%5Cu5f0f%5Cu641c%5Cu7d22%5Cu201d%5Cu3002%5Cn%5Cn%2A%20%5BP1162%5D%28%5C%2Fproblem%5C%2FP1162%29%5Cn%2A%20%5BP1032%5D%28%5C%2Fproblem%5C%2FP1032%29%5Cn%2A%20%5BP1141%5D%28%5C%2Fproblem%5C%2FP1141%29%5Cn%2A%20%5BP1126%5D%28%5C%2Fproblem%5C%2FP1126%29%5Cn%2A%20%5BP1443%5D%28%5C%2Fproblem%5C%2FP1443%29%5Cn%5Cn%23%23%20%5Cu5e26%5Cu6709%5Cu6280%5Cu5de7%5Cu7684%5Cu641c%5Cu7d22%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu7684%5Cu641c%5Cu7d22%5Cu4e0d%5Cu4ec5%5Cu5305%5Cu542b%5Cu4e86dfs%5Cu548cbfs%5Cuff0c%5Cu8fd8%5Cu5305%5Cu62ec%5Cu526a%5Cu679d%5Cu3001%5Cu8bb0%5Cu5f55%5Cu7b49%5Cu6280%5Cu5de7%5Cu4ee5%5Cu52a0%5Cu5feb%5Cu901f%5Cu5ea6%5Cu3002%5Cn%5Cn%2A%20%5BP1118%5D%28%5C%2Fproblem%5C%2FP1118%29%5Cn%2A%20%5BP1434%5D%28%5C%2Fproblem%5C%2FP1434%29%5Cn%2A%20%5BP1433%5D%28%5C%2Fproblem%5C%2FP1433%29%5Cn%2A%20%5BP1074%5D%28%5C%2Fproblem%5C%2FP1074%29%5Cn%5Cn%23%23%20%5Cu5206%5Cu6cbb%5Cu7b97%5Cu6cd5%5Cn%5Cn%5Cu5c06%5Cu5927%5Cu95ee%5Cu9898%5Cu62c6%5Cu5206%5Cu4e3a%5Cu5c0f%5Cu95ee%5Cu9898%5Cuff0c%5Cu5206%5Cu800c%5Cu6cbb%5Cu4e4b%5Cuff0c%5Cu5404%5Cu4e2a%5Cu51fb%5Cu7834%5Cuff0c%5Cu7136%5Cu540e%5Cu5728%5Cu5408%5Cu5e76%5Cu56de%5Cu6765%5Cu3002%5Cn%5Cn%2A%20%5BP1226%5D%28%5C%2Fproblem%5C%2FP1226%29%5Cn%2A%20%5BP1010%5D%28%5C%2Fproblem%5C%2FP1010%29%5Cn%2A%20%5BP1908%5D%28%5C%2Fproblem%5C%2FP1908%29%5Cn%2A%20%5BP1498%5D%28%5C%2Fproblem%5C%2FP1498%29%5Cn%5Cn%23%23%20%5Cu7b80%5Cu5355%5Cu6570%5Cu5b66%5Cu95ee%5Cu9898%5Cn%5Cn%5Cu7528%5Cu8ba1%5Cu7b97%5Cu673a%5Cu89e3%5Cu51b3%5Cu67d0%5Cu4e9b%5Cu9ebb%5Cu70e6%5Cu6570%5Cu5b66%5Cu95ee%5Cu9898%5Cuff0c%5Cu518d%5Cu5408%5Cu9002%5Cu4e0d%5Cu8fc7%5Cu4e86%5Cu3002%5Cu8fd9%5Cu771f%5Cu662f%5Cu7edd%5Cu5999%5Cu7684%5Cu642d%5Cu914d%5Cu554a%5Cuff01%5Cn%5Cn%2A%20%5BP1088%5D%28%5C%2Fproblem%5C%2FP1088%29%5Cn%2A%20%5BP1045%5D%28%5C%2Fproblem%5C%2FP1045%29%5Cn%2A%20%5BP1403%5D%28%5C%2Fproblem%5C%2FP1403%29%5Cn%2A%20%5BP1017%5D%28%5C%2Fproblem%5C%2FP1017%29%5Cn%2A%20%5BP1147%5D%28%5C%2Fproblem%5C%2FP1147%29%5Cn%2A%20%5BP1029%5D%28%5C%2Fproblem%5C%2FP1029%29%5Cn%5Cn%23%23%20%5Cu9012%5Cu63a8%5Cu4e0e%5Cu9012%5Cu5f52%5Cu4e8c%5Cu5206%5Cn%5Cn%5Cu9012%5Cu63a8%5Cuff0c%5Cu5c42%5Cu5c42%5Cu9012%5Cu8fdb%5Cuff0c%5Cu7531%5Cu57fa%5Cu7840%5Cu63a8%5Cu5411%5Cu9876%5Cu5c42%5Cu3002%5Cu4e8c%5Cu5206%5Cu4e0d%5Cu4ec5%5Cu53ef%5Cu4ee5%5Cu7528%5Cu6765%5Cu67e5%5Cu627e%5Cu6570%5Cu636e%5Cuff0c%5Cu8fd8%5Cu53ef%5Cu4ee5%5Cu786e%5Cu5b9a%5Cu6700%5Cu5408%5Cu9002%5Cu7684%5Cu503c%5Cu3002%5Cn%5Cn%2A%20%5BP1192%5D%28%5C%2Fproblem%5C%2FP1192%29%5Cn%2A%20%5BP1025%5D%28%5C%2Fproblem%5C%2FP1025%29%5Cn%2A%20%5BP1057%5D%28%5C%2Fproblem%5C%2FP1057%29%5Cn%2A%20%5BP1135%5D%28%5C%2Fproblem%5C%2FP1135%29%5Cn%2A%20%5BP1216%5D%28%5C%2Fproblem%5C%2FP1216%29%5Cn%2A%20%5BP1182%5D%28%5C%2Fproblem%5C%2FP1182%29%5Cn%2A%20%5BP1316%5D%28%5C%2Fproblem%5C%2FP1316%29%5Cn%5Cn%23%23%20%5Cu7ebf%5Cu6027%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cn%5Cn%5Cu6570%5Cu7ec4%5Cuff0c%5Cu94fe%5Cu8868%5Cuff0c%5Cu961f%5Cu5217%5Cuff0c%5Cu6808%5Cuff0c%5Cu90fd%5Cu662f%5Cu7ebf%5Cu6027%5Cu7ed3%5Cu6784%5Cu3002%5Cu5de7%5Cu7528%5Cu8fd9%5Cu4e9b%5Cu7ed3%5Cu6784%5Cu53ef%5Cu4ee5%5Cu505a%5Cu51fa%5Cu4e0d%5Cu5c11%5Cu65b9%5Cu4fbf%5Cu7684%5Cu4e8b%5Cu60c5%5Cu3002%5Cn%5Cn%2A%20%5BP1996%5D%28%5C%2Fproblem%5C%2FP1996%29%5Cn%2A%20%5BP1115%5D%28%5C%2Fproblem%5C%2FP1115%29%5Cn%2A%20%5BP1739%5D%28%5C%2Fproblem%5C%2FP1739%29%5Cn%2A%20%5BP1160%5D%28%5C%2Fproblem%5C%2FP1160%29%5Cn%2A%20%5BP1449%5D%28%5C%2Fproblem%5C%2FP1449%29%5Cn%5Cn%23%23%20%5Cu6811%5Cu5f62%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cn%5Cn%5Cu7531%5Cu4e00%5Cu4e2a%5Cu6839%5Cu8282%5Cu70b9%5Cu5206%5Cu53c9%5Cuff0c%5Cu8d8a%5Cu5206%5Cu8d8a%5Cu591a%5Cuff0c%5Cu5c31%5Cu6210%5Cu4e86%5Cu6811%5Cu3002%5Cu6811%5Cu53ef%5Cu4ee5%5Cu8868%5Cu793a%5Cu6570%5Cu636e%5Cu4e4b%5Cu95f4%5Cu7684%5Cu4ece%5Cu5c5e%5Cu5173%5Cu7cfb%5Cn%5Cn%2A%20%5BP1087%5D%28%5C%2Fproblem%5C%2FP1087%29%5Cn%2A%20%5BP1030%5D%28%5C%2Fproblem%5C%2FP1030%29%5Cn%2A%20%5BP1305%5D%28%5C%2Fproblem%5C%2FP1305%29%5Cn%2A%20%5BP5018%5D%28%5C%2Fproblem%5C%2FP5018%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu7684%5Cu80cc%5Cu5305%5Cu95ee%5Cu9898%5Cn%5Cn%5Cu8fd9%5Cu662f%5Cu6700%5Cu57fa%5Cu7840%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu3002%5Cu4e0d%5Cu8fc7%5Cu5982%5Cu679c%5Cu662f%5Cu7b2c%5Cu4e00%5Cu6b21%5Cu63a5%5Cu89e6%5Cu4f1a%5Cu6709%5Cu4e9b%5Cu96be%5Cu4ee5%5Cu7406%5Cu89e3%5Cu3002%5Cu52a0%5Cu6cb9%5Cu95ef%5Cu8fc7%5Cu8fd9%5Cu4e2a%5Cu574e%5Cu3002%5Cn%5Cn%2A%20%5BP1060%5D%28%5C%2Fproblem%5C%2FP1060%29%5Cn%2A%20%5BP1164%5D%28%5C%2Fproblem%5C%2FP1164%29%5Cn%2A%20%5BP1064%5D%28%5C%2Fproblem%5C%2FP1064%29%5Cn%2A%20%5BP1048%5D%28%5C%2Fproblem%5C%2FP1048%29%5Cn%2A%20%5BP1049%5D%28%5C%2Fproblem%5C%2FP1049%29%5Cn%2A%20%5BP1616%5D%28%5C%2Fproblem%5C%2FP1616%29%5Cn%5Cn%23%23%20%5Cu7ebf%5Cu6027%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cn%5Cn%5Cu8fd9%5Cu4e5f%5Cu662f%5Cu57fa%5Cu7840%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu3002%5Cu662f%5Cu5728%5Cu7ebf%5Cu6027%5Cu7ed3%5Cu6784%5Cu4e0a%5Cu9762%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cuff0c%5Cu4e00%5Cu5b9a%5Cu8981%5Cu638c%5Cu63e1%5Cu3002%5Cn%5Cn%2A%20%5BP1020%5D%28%5C%2Fproblem%5C%2FP1020%29%5Cn%2A%20%5BP1091%5D%28%5C%2Fproblem%5C%2FP1091%29%5Cn%2A%20%5BP1280%5D%28%5C%2Fproblem%5C%2FP1280%29%5Cn%2A%20%5BP1880%5D%28%5C%2Fproblem%5C%2FP1880%29%5Cn%2A%20%5BP1140%5D%28%5C%2Fproblem%5C%2FP1140%29%5Cn%2A%20%5BP1282%5D%28%5C%2Fproblem%5C%2FP1282%29%5Cn%5Cn%23%23%20%5Cu591a%5Cu7ef4%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu5c31%5Cu4e0d%5Cu6b62%5Cu4e00%5Cu7ef4%5Cu4e86%5Cu3002%5Cu4e0d%5Cu4ec5%5Cu8981%5Cu5c0f%5Cu5fc3%5Cu65f6%5Cu95f4%5Cu590d%5Cu6742%5Cu5ea6%5Cuff0c%5Cu4e5f%5Cu8981%5Cu6ce8%5Cu610f%5Cu7a7a%5Cu95f4%5Cu590d%5Cu6742%5Cu5ea6%5Cu3002%5Cn%5Cn%2A%20%5BP1508%5D%28%5C%2Fproblem%5C%2FP1508%29%5Cn%2A%20%5BP1006%5D%28%5C%2Fproblem%5C%2FP1006%29%5Cn%2A%20%5BP1387%5D%28%5C%2Fproblem%5C%2FP1387%29%5Cn%2A%20%5BP1417%5D%28%5C%2Fproblem%5C%2FP1417%29%5Cn%2A%20%5BP1855%5D%28%5C%2Fproblem%5C%2FP1855%29%5Cn%2A%20%5BP1736%5D%28%5C%2Fproblem%5C%2FP1736%29%5Cn%5Cn%23%23%20%5Cu66f4%5Cu8981%5Cu6280%5Cu5de7%5Cu7684%5Cu52a8%5Cu89c4%5Cu4e0e%5Cu8bb0%5Cu5fc6%5Cu5316%5Cn%5Cn%5Cu8fd9%5Cu8fb9%5Cu7684%5Cu9898%5Cu76ee%5Cu6709%5Cu5404%5Cu79cd%5Cu641e%5Cu6cd5%5Cu3002%5Cu5f53%5Cu7136%5Cu6709%5Cu7684%5Cu9898%5Cu76ee%5Cu4e5f%5Cu53ef%5Cu4ee5%5Cu4f7f%5Cu7528%5Cu8bb0%5Cu5fc6%5Cu5316%5Cu641c%5Cu7d22%5Cu6765%5Cu964d%5Cu4f4e%5Cu601d%5Cu7ef4%5Cu96be%5Cu5ea6%5Cu3002%5Cn%5Cn%2A%20%5BP1064%5D%28%5C%2Fproblem%5C%2FP1064%29%5Cn%2A%20%5BP1541%5D%28%5C%2Fproblem%5C%2FP1541%29%5Cn%2A%20%5BP1026%5D%28%5C%2Fproblem%5C%2FP1026%29%5Cn%2A%20%5BP1063%5D%28%5C%2Fproblem%5C%2FP1063%29%5Cn%2A%20%5BP1156%5D%28%5C%2Fproblem%5C%2FP1156%29%5Cn%2A%20%5BP1052%5D%28%5C%2Fproblem%5C%2FP1052%29%5Cn%5Cn%23%23%20%5Cu9ad8%5Cu7cbe%5Cu5ea6%5Cu7b97%5Cu6cd5%5Cn%5Cn%5Cu5c31%5Cu7b97%5Cu662flong%20long%5Cuff08%5Cu6216int64%5Cuff09%5Cu8fd8%5Cu4e0d%5Cu591f%5Cu600e%5Cu4e48%5Cu529e%5Cuff1f%5Cu7528%5Cu9ad8%5Cu7cbe%5Cu5ea6%5Cu7b97%5Cu6cd5%5Cu3002%5Cu81ea%5Cu5df1%5Cu52a8%5Cu624b%5Cu4e30%5Cu8863%5Cu8db3%5Cu98df%5Cu3002%5Cn%5Cn%2A%20%5BP1601%5D%28%5C%2Fproblem%5C%2FP1601%29%5Cn%2A%20%5BP2142%5D%28%5C%2Fproblem%5C%2FP2142%29%5Cn%2A%20%5BP1303%5D%28%5C%2Fproblem%5C%2FP1303%29%5Cn%2A%20%5BP1255%5D%28%5C%2Fproblem%5C%2FP1255%29%5Cn%2A%20%5BP1604%5D%28%5C%2Fproblem%5C%2FP1604%29%5Cn%5Cn%23%23%20%5Cu8d2a%5Cu5fc3EX%5Cn%5Cn%5Cu867d%5Cu7136%5Cu662f%5Cu8d2a%5Cu5fc3%5Cu9898%5Cuff0c%5Cu53ef%5Cu80fd%5Cu4e0d%5Cu662f%5Cu4f60%5Cu5f53%5Cu65f6%5Cu4f60%5Cu8650%5Cu7740%5Cu73a9%5Cu7684%5Cu8d2a%5Cu5fc3%5Cu60f9qwq%5Cn%5Cn%2A%20%5BP1080%5D%28%5C%2Fproblem%5C%2FP1080%29%5Cn%2A%20%5BP1031%5D%28%5C%2Fproblem%5C%2FP1031%29%5Cn%2A%20%5BP1233%5D%28%5C%2Fproblem%5C%2FP1233%29%5Cn%2A%20%5BP2123%5D%28%5C%2Fproblem%5C%2FP2123%29%5Cn%5Cn%23%23%20%5Cu7b80%5Cu5355%5Cu6570%5Cu5b66%5Cn%5Cn%5Cu6570%5Cu5b66%5Cu548coi%5Cu662f%5Cu5bc6%5Cu5207%5Cu76f8%5Cu5173%5Cu7684%5Cuff0c%5Cu6570%5Cu5b66%5Cu4e0d%5Cu4ec5%5Cu662foi%5Cu7684%5Cu57fa%5Cu7840%5Cuff0c%5Cu800c%5Cu4e14%5Cu662f%5Cu7b97%5Cu6cd5%5Cu7684%5Cu6838%5Cu5fc3%5Cu3002%5Cn%5Cn%2A%20%5BP1865%5D%28%5C%2Fproblem%5C%2FP1865%29%5Cn%2A%20%5BP1372%5D%28%5C%2Fproblem%5C%2FP1372%29%5Cn%2A%20%5BP1338%5D%28%5C%2Fproblem%5C%2FP1338%29%5Cn%2A%20%5BP2158%5D%28%5C%2Fproblem%5C%2FP2158%29%5Cn%2A%20%5BP1582%5D%28%5C%2Fproblem%5C%2FP1582%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu666e%5Cu53ca%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e601%5Cn%5Cn%5Cu597d%5Cu4e0d%5Cu5bb9%5Cu6613%5Cu95ef%5Cu5230%5Cu8fd9%5Cu4e00%5Cu5173%5Cuff0c%5Cu4f60%5Cu90a3%5Cu8fd8%5Cu7b49%5Cu4ec0%5Cu4e48%5Cu5462%5Cuff1f%5Cu6284%5Cu8d77%5Cu5bb6%5Cu4f19%5Cu8d76%5Cu5feb%5Cu4e0a%5Cu554a%5Cuff01%5Cn%5Cn%2A%20%5BP1478%5D%28%5C%2Fproblem%5C%2FP1478%29%5Cn%2A%20%5BP1203%5D%28%5C%2Fproblem%5C%2FP1203%29%5Cn%2A%20%5BP1363%5D%28%5C%2Fproblem%5C%2FP1363%29%5Cn%2A%20%5BP1736%5D%28%5C%2Fproblem%5C%2FP1736%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu666e%5Cu53ca%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e602%5Cn%5Cn%5Cu6765%5Cu641e%5Cu5b9a%5Cu7b2c%5Cu4e8c%5Cu4e2aBOSS%5Cu3002%5Cu867d%5Cu7136%5Cu6218%5Cu6597%5Cu8270%5Cu96be%5Cuff0c%5Cu4f46%5Cu4f60%5Cu4e00%5Cu5b9a%5Cu6ca1%5Cu6709%5Cu95ee%5Cu9898%5Cu3002%5Cn%5Cn%2A%20%5BP1201%5D%28%5C%2Fproblem%5C%2FP1201%29%5Cn%2A%20%5BP1095%5D%28%5C%2Fproblem%5C%2FP1095%29%5Cn%2A%20%5BP1058%5D%28%5C%2Fproblem%5C%2FP1058%29%5Cn%2A%20%5BP2258%5D%28%5C%2Fproblem%5C%2FP2258%29%5Cn%2A%20%5BP1108%5D%28%5C%2Fproblem%5C%2FP1108%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu666e%5Cu53ca%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e603%5Cn%5Cn%5Cu666e%5Cu53ca%5Cu7ec3%5Cu4e60%5Cu573a%5Cu7684%5Cu5927BOSS%5Cuff1a%5Cu201c%5Cu4e00%5Cu5b9a%5Cu8ba9%5Cu4f60%5Cu6709%5Cu53bb%5Cu65e0%5Cu56de%5Cu201d%5Cu3002%5Cu600e%5Cu4e48%5Cu529e%5Cu5462%5Cuff1f%5Cu53ea%5Cu80fd%5Cu6253%5Cu5012%5Cu4ed6%5Cu5f00%5Cu542f%5Cu4e0b%5Cu4e00%5Cu4e2a%5Cu7ea7%5Cu522b%5Cuff01%5Cn%5Cn%2A%20%5BP1328%5D%28%5C%2Fproblem%5C%2FP1328%29%5Cn%2A%20%5BP1062%5D%28%5C%2Fproblem%5C%2FP1062%29%5Cn%2A%20%5BP1969%5D%28%5C%2Fproblem%5C%2FP1969%29%5Cn%2A%20%5BP1037%5D%28%5C%2Fproblem%5C%2FP1037%29%5Cn%5Cn%23%23%20%5Cu666e%5Cu53ca%5Cu5e38%5Cu89c1%5Cu6a21%5Cu677f%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu96c6%5Cu4e2d%5Cu4e86%5Cu6bd4%5Cu8f83%5Cu57fa%5Cu7840%5Cu7684%5Cu7b97%5Cu6cd5%5Cu7684%5Cu6a21%5Cu677f%5Cu3002%5Cu63d0%5Cu9ad8%5Cu548c%5Cu7701%5Cu9009%5Cu4e5f%5Cu6709%5Cu6a21%5Cu677f%5Cu9898%5Cu54e6%5Cuff01%5Cn%5Cn%2A%20%5BP1177%5D%28%5C%2Fproblem%5C%2FP1177%29%5Cn%2A%20%5BP3366%5D%28%5C%2Fproblem%5C%2FP3366%29%5Cn%2A%20%5BP3367%5D%28%5C%2Fproblem%5C%2FP3367%29%5Cn%2A%20%5BP3371%5D%28%5C%2Fproblem%5C%2FP3371%29%5Cn%2A%20%5BP3383%5D%28%5C%2Fproblem%5C%2FP3383%29%5Cn%5Cn%23%20%5Cu63d0%5Cu9ad8%5Cu5386%5Cu7ec3%5Cu5730%5Cn%5Cn%5Cu5df2%5Cu7ecf%5Cu53bb%5Cu9664%5Cu4e86%5Cu666e%5Cu53ca%5Cu7ec4%5Cu96be%5Cu5ea6%5Cu7684%5Cuff0c%5Cu8bf7%5Cu7ec4%5Cu7ec7%5Cu653e%5Cu5fc3%5Cu3002%5Cu6210%5Cu957f%5Cu5927%5Cu725b%5Cu4e4b%5Cu5fc5%5Cu5199%5Cu9898%5Cuff01%5Cuff01%5Cuff01%5Cn%5Cn%23%23%20%5Cu641c%5Cu7d22Ex%5Cn%5Cn%5Cu5f00%5Cu59cb%5Cu63d0%5Cu9ad8%5Cu7ec4%5Cu7684%5Cu8bd5%5Cu70bc%5Cu3002%5Cu8fd9%5Cu91cc%5Cu5df2%5Cu7ecf%5Cu53bb%5Cu9664%5Cu4e86%5Cu6240%5Cu6709%5Cu666e%5Cu53ca%5Cu7ec4%5Cu96be%5Cu5ea6%5Cu7684%5Cu9898%5Cu76ee%5Cu3002%5Cu54fc%5Cu54fc%5Cuff0c%5Cu6015%5Cu4e86%5Cu5427%5Cu3002%5Cu3002%5Cn%5Cn%2A%20%5BP1120%5D%28%5C%2Fproblem%5C%2FP1120%29%5Cn%2A%20%5BP1378%5D%28%5C%2Fproblem%5C%2FP1378%29%5Cn%2A%20%5BP1514%5D%28%5C%2Fproblem%5C%2FP1514%29%5Cn%2A%20%5BP1312%5D%28%5C%2Fproblem%5C%2FP1312%29%5Cn%2A%20%5BP1441%5D%28%5C%2Fproblem%5C%2FP1441%29%5Cn%2A%20%5BP1242%5D%28%5C%2Fproblem%5C%2FP1242%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212TG.lv%281%29%5Cn%5Cn%5Cu8fd9%5Cu662f%5Cu63d0%5Cu9ad8%5Cu7ec4%5Cu96be%5Cu5ea6%5Cu4e2d%5Cu6bd4%5Cu8f83%5Cu57fa%5Cu7840%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cuff0c%5Cu4e5f%5Cu8bb8%5Cu4e00%5Cu4e24%5Cu4e2a%5Cu8f6c%5Cu79fb%5Cu65b9%5Cu7a0b%5Cu5c31%5Cu53ef%5Cu4ee5%5Cu5199%5Cu51fa%5Cu3002%5Cn%5Cn%2A%20%5BP1005%5D%28%5C%2Fproblem%5C%2FP1005%29%5Cn%2A%20%5BP1373%5D%28%5C%2Fproblem%5C%2FP1373%29%5Cn%2A%20%5BP2279%5D%28%5C%2Fproblem%5C%2FP2279%29%5Cn%2A%20%5BP1220%5D%28%5C%2Fproblem%5C%2FP1220%29%5Cn%2A%20%5BP1156%5D%28%5C%2Fproblem%5C%2FP1156%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212TG.lv%282%29%5Cn%5Cn%5Cu8fd9%5Cu91cc%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu7a0d%5Cu7a0d%5Cu6709%5Cu6240%5Cu52a0%5Cu5927%5Cu96be%5Cu5ea6%5Cuff0c%5Cu601d%5Cu8003%5Cu8f6c%5Cu79fb%5Cu65b9%5Cu7a0b%5Cu7684%5Cu65f6%5Cu95f4%5Cu53ef%5Cu80fd%5Cu4f1a%5Cu4e0e%5Cu7f16%5Cu5199%5Cu7a0b%5Cu5e8f%5Cu7684%5Cu65f6%5Cu95f4%5Cu6301%5Cu5e73%5Cu3002%5Cn%5Cn%2A%20%5BP1273%5D%28%5C%2Fproblem%5C%2FP1273%29%5Cn%2A%20%5BP1169%5D%28%5C%2Fproblem%5C%2FP1169%29%5Cn%2A%20%5BP2577%5D%28%5C%2Fproblem%5C%2FP2577%29%5Cn%2A%20%5BP1070%5D%28%5C%2Fproblem%5C%2FP1070%29%5Cn%2A%20%5BP2051%5D%28%5C%2Fproblem%5C%2FP2051%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212TG.lv%283%29%5Cn%5Cn%5Cu6bd4%5Cu8f83%5Cu9700%5Cu8981%5Cu6280%5Cu5de7%5Cu7684%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cu3002%5Cu6709%5Cu7684%5Cu4e0d%5Cu4ec5%5Cu4ec5%5Cu9700%5Cu8981%5Cu72b6%5Cu6001%5Cu8f6c%5Cu79fb%5Cu65b9%5Cu7a0b%5Cuff0c%5Cu53ef%5Cu80fd%5Cu8fd8%5Cu4f1a%5Cu4e0e%5Cu522b%5Cu7684%5Cu7b97%5Cu6cd5%5Cu7efc%5Cu5408%5Cu3002%5Cn%5Cn%2A%20%5BP1415%5D%28%5C%2Fproblem%5C%2FP1415%29%5Cn%2A%20%5BP2157%5D%28%5C%2Fproblem%5C%2FP2157%29%5Cn%2A%20%5BP2216%5D%28%5C%2Fproblem%5C%2FP2216%29%5Cn%2A%20%5BP2331%5D%28%5C%2Fproblem%5C%2FP2331%29%5Cn%2A%20%5BP2467%5D%28%5C%2Fproblem%5C%2FP2467%29%5Cn%2A%20%5BP3084%5D%28%5C%2Fproblem%5C%2FP3084%29%5Cn%5Cn%23%23%20%5Cu6570%5Cu8bba%5Cn%5Cn%5Cu6570%5Cu8bba%5Cu5c31%5Cu662f%5Cu7814%5Cu7a76%5Cu6574%5Cu6570%5Cu7684%5Cu7406%5Cu8bba%5Cu3002%5Cu5305%5Cu62ec%5Cu516c%5Cu7ea6%5Cu516c%5Cu500d%5Cu6570%5Cu3001%5Cu8d28%5Cu6570%5Cu3001%5Cu6b27%5Cu62c9%5Cu5b9a%5Cu7406%5Cu548c%5Cu540c%5Cu4f59%5Cu65b9%5Cu7a0b%5Cu7b49%5Cu3002%5Cn%5Cn%2A%20%5BP2152%5D%28%5C%2Fproblem%5C%2FP2152%29%5Cn%2A%20%5BP1414%5D%28%5C%2Fproblem%5C%2FP1414%29%5Cn%2A%20%5BP1134%5D%28%5C%2Fproblem%5C%2FP1134%29%5Cn%2A%20%5BP1313%5D%28%5C%2Fproblem%5C%2FP1313%29%5Cn%2A%20%5BP1306%5D%28%5C%2Fproblem%5C%2FP1306%29%5Cn%5Cn%23%23%20%5Cu535a%5Cu5f08%5Cu8bba%5Cn%5Cn%5Cu535a%5Cu5f08%5Cu8bba%5Cu8003%5Cu8651%5Cu6e38%5Cu620f%5Cu4e2d%5Cu7684%5Cu4e2a%5Cu4f53%5Cu7684%5Cu9884%5Cu6d4b%5Cu884c%5Cu4e3a%5Cu548c%5Cu5b9e%5Cu9645%5Cu884c%5Cu4e3a%5Cuff0c%5Cu5e76%5Cu7814%5Cu7a76%5Cu5b83%5Cu4eec%5Cu7684%5Cu4f18%5Cu5316%5Cu7b56%5Cu7565%5Cu3002%5Cn%5Cn%2A%20%5BP1199%5D%28%5C%2Fproblem%5C%2FP1199%29%5Cn%2A%20%5BP1288%5D%28%5C%2Fproblem%5C%2FP1288%29%5Cn%2A%20%5BP1290%5D%28%5C%2Fproblem%5C%2FP1290%29%5Cn%2A%20%5BP2148%5D%28%5C%2Fproblem%5C%2FP2148%29%5Cn%2A%20%5BP1247%5D%28%5C%2Fproblem%5C%2FP1247%29%5Cn%2A%20%5BP2575%5D%28%5C%2Fproblem%5C%2FP2575%29%5Cn%5Cn%23%23%20%5Cu5176%5Cu4ed6%5Cu6570%5Cu5b66%5Cu95ee%5Cu9898%5Cn%5Cn%5Cu542c%5Cu8bf4%5Cu5b66oi%5Cu7684%5Cu540c%5Cu5fd7%5Cu4eec%5Cu6570%5Cu5b66%5Cu90fd%5Cu633a%5Cu597d%5Cu3002%5Cu90a3%5Cu4e48%5Cu3002%5Cu5c31%5Cu8bf7%5Cu5b8c%5Cu6210%5Cu4e0b%5Cu9762%5Cu7684%5Cu9898%5Cu76ee%5Cu8bc1%5Cu660e%5Cu8fd9%5Cu4e00%5Cu70b9%5Cu5427%5Cuff01%5Cn%5Cn%2A%20%5BP1357%5D%28%5C%2Fproblem%5C%2FP1357%29%5Cn%2A%20%5BP1641%5D%28%5C%2Fproblem%5C%2FP1641%29%5Cn%2A%20%5BP2059%5D%28%5C%2Fproblem%5C%2FP2059%29%5Cn%2A%20%5BP2154%5D%28%5C%2Fproblem%5C%2FP2154%29%5Cn%2A%20%5BP2261%5D%28%5C%2Fproblem%5C%2FP2261%29%5Cn%2A%20%5BP2327%5D%28%5C%2Fproblem%5C%2FP2327%29%5Cn%2A%20%5BP1066%5D%28%5C%2Fproblem%5C%2FP1066%29%5Cn%5Cn%23%23%20%5Cu56fe%5Cu7684%5Cu904d%5Cu5386%5Cn%5Cn%5Cu56fe%5Cu662f%5Cu4e00%5Cu79cd%5Cu975e%5Cu5e38%5Cu91cd%5Cu8981%5Cu7684%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cuff0c%5Cu63cf%5Cu8ff0%5Cu5bf9%5Cu8c61%5Cu590d%5Cu6742%5Cu7684%5Cu7ec3%5Cu4e60%5Cu3002%5Cu8fd9%5Cu91cc%5Cu5f00%5Cu59cb%5Cu63a5%5Cu89e6%5Cu56fe%5Cu7684%5Cu57fa%5Cu672c%5Cu6982%5Cu5ff5%5Cu3002%5Cn%5Cn%2A%20%5BP2661%5D%28%5C%2Fproblem%5C%2FP2661%29%5Cn%2A%20%5BP1330%5D%28%5C%2Fproblem%5C%2FP1330%29%5Cn%2A%20%5BP1341%5D%28%5C%2Fproblem%5C%2FP1341%29%5Cn%2A%20%5BP2921%5D%28%5C%2Fproblem%5C%2FP2921%29%5Cn%5Cn%23%23%20%5Cu6700%5Cu77ed%5Cu8def%5Cu95ee%5Cu9898%5Cn%5Cn%5Cu6700%5Cu77ed%5Cu8def%5Cu662f%5Cu56fe%5Cu8bba%5Cu4e2d%5Cu6700%5Cu91cd%5Cu8981%5Cu7684%5Cu90e8%5Cu5206%5Cuff0c%5Cu591a%5Cu79cd%5Cu7b97%5Cu6cd5%5Cu53ef%5Cu4ee5%5Cu5e94%5Cu7528%5Cu3002%5Cu5f88%5Cu591a%5Cu9898%5Cu76ee%5Cu90fd%5Cu53ef%5Cu4ee5%5Cu62bd%5Cu8c61%5Cu6210%5Cu8fd9%5Cu79cd%5Cu6a21%5Cu578b%5Cu3002%5Cn%5Cn%2A%20%5BP1339%5D%28%5C%2Fproblem%5C%2FP1339%29%5Cn%2A%20%5BP1462%5D%28%5C%2Fproblem%5C%2FP1462%29%5Cn%2A%20%5BP1346%5D%28%5C%2Fproblem%5C%2FP1346%29%5Cn%2A%20%5BP1119%5D%28%5C%2Fproblem%5C%2FP1119%29%5Cn%2A%20%5BP1144%5D%28%5C%2Fproblem%5C%2FP1144%29%5Cn%2A%20%5BP1522%5D%28%5C%2Fproblem%5C%2FP1522%29%5Cn%5Cn%23%23%20%5Cu6700%5Cu5c0f%5Cu751f%5Cu6210%5Cu6811%5Cn%5Cn%5Cu6700%5Cu5c0f%5Cu751f%5Cu6210%5Cu6811%5Cu53ef%5Cu4ee5%5Cu7528kruskal%5Cuff08%5Cu514b%5Cu9c81%5Cu65af%5Cu5361%5Cu5c14%5Cuff09%5Cu7b97%5Cu6cd5%5Cu6216prim%5Cuff08%5Cu666e%5Cu91cc%5Cu59c6%5Cuff09%5Cu7b97%5Cu6cd5%5Cu6c42%5Cu51fa%5Cu3002%5Cn%5Cn%2A%20%5BP1546%5D%28%5C%2Fproblem%5C%2FP1546%29%5Cn%2A%20%5BP2330%5D%28%5C%2Fproblem%5C%2FP2330%29%5Cn%2A%20%5BP1991%5D%28%5C%2Fproblem%5C%2FP1991%29%5Cn%2A%20%5BP1265%5D%28%5C%2Fproblem%5C%2FP1265%29%5Cn%5Cn%23%23%20%5Cu8f83%5Cu590d%5Cu6742%5Cu56fe%5Cu8bbaI%5Cn%5Cn%5Cu522b%5Cu7684%5Cu4e9b%5Cu56fe%5Cu8bba%5Cu95ee%5Cu9898%5Cuff0c%5Cu5305%5Cu62ec%5Cu6811%5Cu3001%5Cu62d3%5Cu6251%5Cu6392%5Cu5e8f%5Cu7b49%5Cu3002%5Cu8981%5Cu8fc7%5Cu8fd9%5Cu4e00%5Cu5173%5Cuff0c%5Cu9700%5Cu8981%5Cu5b66%5Cu4e60%5Cu4e0d%5Cu5c11%5Cu65b0%5Cu7684%5Cu7b97%5Cu6cd5%5Cu3002%5Cn%5Cn%2A%20%5BP1113%5D%28%5C%2Fproblem%5C%2FP1113%29%5Cn%2A%20%5BP1268%5D%28%5C%2Fproblem%5C%2FP1268%29%5Cn%2A%20%5BP1525%5D%28%5C%2Fproblem%5C%2FP1525%29%5Cn%2A%20%5BP1983%5D%28%5C%2Fproblem%5C%2FP1983%29%5Cn%5Cn%23%23%20%5Cu8f83%5Cu590d%5Cu6742%5Cu56fe%5Cu8bbaII%5Cn%5Cn%5Cu66f4%5Cu9ad8%5Cu7ea7%5Cu7684%5Cu56fe%5Cu8bba%5Cu7b97%5Cu6cd5%5Cu3002%5Cu5305%5Cu62ec%5Cu5dee%5Cu5206%5Cu7ea6%5Cu675f%5Cu3001%5Cu5f3a%5Cu8fde%5Cu901a%5Cu3001%5Cu4e8c%5Cu5206%5Cu56fe%5Cu7b49%5Cu3002%5Cu4f1a%5Cu66f4%5Cu96be%5Cu4e00%5Cu4e9b%5Cu3002%5Cn%5Cn%2A%20%5BP1993%5D%28%5C%2Fproblem%5C%2FP1993%29%5Cn%2A%20%5BP1726%5D%28%5C%2Fproblem%5C%2FP1726%29%5Cn%2A%20%5BP2055%5D%28%5C%2Fproblem%5C%2FP2055%29%5Cn%2A%20%5BP2149%5D%28%5C%2Fproblem%5C%2FP2149%29%5Cn%2A%20%5BP1345%5D%28%5C%2Fproblem%5C%2FP1345%29%5Cn%5Cn%23%23%20%5Cu5e76%5Cu67e5%5Cu96c6%5Cn%5Cn%5Cu7528%5Cu4e8e%5Cu5904%5Cu7406%5Cu4e00%5Cu4e9b%5Cu4e0d%5Cu76f8%5Cu4ea4%5Cu96c6%5Cu5408%5Cu7684%5Cu5408%5Cu5e76%5Cu53ca%5Cu67e5%5Cu8be2%5Cu95ee%5Cu9898%5Cu3002%5Cu5e38%5Cu5e38%5Cu5728%5Cu4f7f%5Cu7528%5Cu4e2d%5Cu4ee5%5Cu68ee%5Cu6797%5Cu6765%5Cu8868%5Cu793a%5Cu3002%5Cn%5Cn%2A%20%5BP1111%5D%28%5C%2Fproblem%5C%2FP1111%29%5Cn%2A%20%5BP2024%5D%28%5C%2Fproblem%5C%2FP2024%29%5Cn%2A%20%5BP1197%5D%28%5C%2Fproblem%5C%2FP1197%29%5Cn%2A%20%5BP1196%5D%28%5C%2Fproblem%5C%2FP1196%29%5Cn%5Cn%23%23%20%5Cu5806%5Cn%5Cn%5Cu5806%5Cu603b%5Cu662f%5Cu4e00%5Cu68f5%5Cu5b8c%5Cu5168%5Cu6811%5Cuff1b%5Cu5806%5Cu4e2d%5Cu67d0%5Cu4e2a%5Cu8282%5Cu70b9%5Cu7684%5Cu503c%5Cu603b%5Cu662f%5Cu4e0d%5Cu5927%5Cu4e8e%5Cu6216%5Cu4e0d%5Cu5c0f%5Cu4e8e%5Cu5176%5Cu7236%5Cu8282%5Cu70b9%5Cu7684%5Cu503c%5Cu3002%5Cn%5Cn%2A%20%5BP1801%5D%28%5C%2Fproblem%5C%2FP1801%29%5Cn%2A%20%5BP2278%5D%28%5C%2Fproblem%5C%2FP2278%29%5Cn%2A%20%5BP1631%5D%28%5C%2Fproblem%5C%2FP1631%29%5Cn%2A%20%5BP2085%5D%28%5C%2Fproblem%5C%2FP2085%29%5Cn%2A%20%5BP1484%5D%28%5C%2Fproblem%5C%2FP1484%29%5Cn%5Cn%23%23%20%5Cu7ebf%5Cu6bb5%5Cu6811%5Cu6811%5Cu72b6%5Cu6570%5Cu7ec4%5Cu57fa%5Cu7840%5Cn%5Cn%5Cu8fd9%5Cu90fd%5Cu662f%5Cu6bd4%5Cu8f83%5Cu9ad8%5Cu7ea7%5Cu7684%5Cu7ebf%5Cu6027%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cu3002%5Cu5728%5Cu5904%5Cu7406%5Cu4e00%5Cu4e9b%5Cu8be2%5Cu95ee%5Cu4e0e%5Cu4fee%5Cu6539%5Cu7ebf%5Cu6027%5Cu95ee%5Cu9898%5Cu65f6%5Cuff0c%5Cu662f%5Cu5f88%5Cu597d%5Cu7528%5Cu7684%5Cu3002%5Cn%5Cn%2A%20%5BP1972%5D%28%5C%2Fproblem%5C%2FP1972%29%5Cn%2A%20%5BP1198%5D%28%5C%2Fproblem%5C%2FP1198%29%5Cn%2A%20%5BP2023%5D%28%5C%2Fproblem%5C%2FP2023%29%5Cn%2A%20%5BP2161%5D%28%5C%2Fproblem%5C%2FP2161%29%5Cn%5Cn%23%23%20%5Cu795e%5Cu5947%5Cu7684%5Cu89e3%5Cu6cd5%5Cn%5Cn%5Cu6709%5Cu4e9b%5Cu95ee%5Cu9898%5Cu521a%5Cu5f00%5Cu59cb%5Cu89c9%5Cu5f97%5Cu65e0%5Cu4ece%5Cu4e0b%5Cu624b%5Cu3002%5Cu597d%5Cu597d%5Cu60f3%5Cu4e00%5Cu60f3%5Cuff0c%5Cu5c3d%5Cu91cf%5Cu522b%5Cu770b%5Cu9898%5Cu89e3%5Cuff0c%5Cu5426%5Cu5219%5Cu4f60%5Cu4f1a%5Cu5927%5Cu547c%5Cu201c%5Cu7b80%5Cu5355%5Cu201d%5Cu3002%5Cn%5Cn%2A%20%5BP1007%5D%28%5C%2Fproblem%5C%2FP1007%29%5Cn%2A%20%5BP1984%5D%28%5C%2Fproblem%5C%2FP1984%29%5Cn%2A%20%5BP2022%5D%28%5C%2Fproblem%5C%2FP2022%29%5Cn%2A%20%5BP2320%5D%28%5C%2Fproblem%5C%2FP2320%29%5Cn%5Cn%23%23%20%5Cu500d%5Cu589e%5Cn%5Cn%5Cu4e00%5Cu79cd%5Cu7279%5Cu6b8a%5Cu7684%5Cu679a%5Cu4e3e%5Cu7b97%5Cu6cd5%5Cuff0c%5Cu4f46%5Cu53ef%5Cu5927%5Cu5927%5Cu52a0%5Cu5feb%5Cu6548%5Cu7387%5Cu3002%5Cu8fd1%5Cu5e74noip%5Cu6709%5Cu8003%5Cu5230%5Cu3002%5Cu96be%5Cu5ea6%5Cu8f83%5Cu5927%5Cu3002%5Cn%5Cn%2A%20%5BP1967%5D%28%5C%2Fproblem%5C%2FP1967%29%5Cn%2A%20%5BP1081%5D%28%5C%2Fproblem%5C%2FP1081%29%5Cn%2A%20%5BP1613%5D%28%5C%2Fproblem%5C%2FP1613%29%5Cn%5Cn%23%23%20%5Cu5f3a%5Cu8fde%5Cu901a%5Cu5206%5Cu91cf%5Cn%5Cn%5Cu5f3a%5Cu8fde%5Cu901a%5Cu5206%5Cu91cf%5Cn%5Cn%2A%20%5BP2341%5D%28%5C%2Fproblem%5C%2FP2341%29%5Cn%2A%20%5BP3469%5D%28%5C%2Fproblem%5C%2FP3469%29%5Cn%2A%20%5BP2746%5D%28%5C%2Fproblem%5C%2FP2746%29%5Cn%2A%20%5BP3119%5D%28%5C%2Fproblem%5C%2FP3119%29%5Cn%2A%20%5BP3225%5D%28%5C%2Fproblem%5C%2FP3225%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu63d0%5Cu9ad8%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e601%5Cn%5Cn%5Cu5e74%5Cu8f7b%5Cu4eba%5Cuff0c%5Cu53c8%5Cu662f%5Cu4e2a%5Cu9001%5Cu4e0a%5Cu95e8%5Cu7684%5Cuff0c%5Cu8ba9%5Cu6211%5Cu6765%5Cu770b%5Cu770b%5Cu4f60%5Cu771f%5Cu5b9e%5Cu7684%5Cu672c%5Cu9886%5Cu3002%5Cu554a%5Cu54c8%5Cu54c8%5Cu54c8%5Cu54c8%5Cu54c8%5Cuff01%5Cn%5Cn%2A%20%5BP2264%5D%28%5C%2Fproblem%5C%2FP2264%29%5Cn%2A%20%5BP1772%5D%28%5C%2Fproblem%5C%2FP1772%29%5Cn%2A%20%5BP1083%5D%28%5C%2Fproblem%5C%2FP1083%29%5Cn%2A%20%5BP1979%5D%28%5C%2Fproblem%5C%2FP1979%29%5Cn%2A%20%5BP2939%5D%28%5C%2Fproblem%5C%2FP2939%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu63d0%5Cu9ad8%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e602%5Cn%5Cn%5Cu518d%5Cu6765%5Cuff01%5Cu8fd9%5Cu91cc%5Cu6709%5Cu7684%5Cu9898%5Cu76ee%5Cu5e76%5Cu975e%5Cu5355%5Cu7eaf%5Cu7684%5Cu8003%5Cu5bdf%5Cu67d0%5Cu4e2a%5Cu7b97%5Cu6cd5%5Cuff0c%5Cu800c%5Cu662f%5Cu8003%5Cu5bdf%5Cu4e00%5Cu79cd%5Cu7efc%5Cu5408%5Cu6027%5Cu7684%5Cu601d%5Cu7ef4%5Cu3002%5Cn%5Cn%2A%20%5BP1901%5D%28%5C%2Fproblem%5C%2FP1901%29%5Cn%2A%20%5BP1314%5D%28%5C%2Fproblem%5C%2FP1314%29%5Cn%2A%20%5BP2144%5D%28%5C%2Fproblem%5C%2FP2144%29%5Cn%2A%20%5BP1073%5D%28%5C%2Fproblem%5C%2FP1073%29%5Cn%2A%20%5BP2324%5D%28%5C%2Fproblem%5C%2FP2324%29%5Cn%5Cn%23%23%20BOSS%5Cu6218-%5Cu63d0%5Cu9ad8%5Cu7efc%5Cu5408%5Cu7ec3%5Cu4e603%5Cn%5Cn%5Cu65e2%5Cu7136%5Cu5df2%5Cu7ecf%5Cu6253%5Cu5012%5Cu4e86%5Cu524d%5Cu97622%5Cu4e2aboss%5Cuff0c%5Cu90a3%5Cu4e48%5Cu7b2c3%5Cu4e2a%5Cu4e5f%5Cu662f%5Cu6ca1%5Cu6709%5Cu95ee%5Cu9898%5Cu7684%5Cu3002%5Cu5c11%5Cu5e74%5Cuff0c%5Cu6765%5Cu5427%5Cuff01%5Cn%5Cn%2A%20%5BP1965%5D%28%5C%2Fproblem%5C%2FP1965%29%5Cn%2A%20%5BP1311%5D%28%5C%2Fproblem%5C%2FP1311%29%5Cn%2A%20%5BP2296%5D%28%5C%2Fproblem%5C%2FP2296%29%5Cn%2A%20%5BP1084%5D%28%5C%2Fproblem%5C%2FP1084%29%5Cn%5Cn%23%23%20%5Cu63d0%5Cu9ad8%5Cu6a21%5Cu677f-nlogn%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cn%5Cn%5Cu867d%5Cu7136%5Cu8fd9%5Cu4e9b%5Cu7b97%5Cu6cd5%5Cu4e0d%5Cu662fnoip%5Cu5fc5%5Cu987b%5Cu7684%5Cuff0c%5Cu4f46%5Cu662f%5Cu4e0d%5Cu7b97%5Cu56f0%5Cu96be%5Cuff0c%5Cu5f88%5Cu591a%5Cu9898%5Cu76ee%5Cu53ef%5Cu4ee5%5Cu4f7f%5Cu7528%5Cu8fd9%5Cu4e9b%5Cu65b9%5Cu6cd5%5Cu3002%5Cn%5Cn%2A%20%5BP3374%5D%28%5C%2Fproblem%5C%2FP3374%29%5Cn%2A%20%5BP3368%5D%28%5C%2Fproblem%5C%2FP3368%29%5Cn%2A%20%5BP3372%5D%28%5C%2Fproblem%5C%2FP3372%29%5Cn%2A%20%5BP3373%5D%28%5C%2Fproblem%5C%2FP3373%29%5Cn%2A%20%5BP1439%5D%28%5C%2Fproblem%5C%2FP1439%29%5Cn%2A%20%5BP3378%5D%28%5C%2Fproblem%5C%2FP3378%29%5Cn%5Cn%5Cn%5Cn%23%20%5Cu7701%5Cu9009%5Cu6597%5Cu517d%5Cu573a%5C%2FNOI%5Cu795e%5Cu6bbf%5Cn%5Cn%5Cu4e3a%5Cu7701%5Cu9009%5Cu53ca%5Cu4ee5%5Cu4e0a%5Cu9009%5Cu624b%5Cu5236%5Cu4f5c%5Cu7684%5Cu8bad%5Cu7ec3%5Cu573a%5Cu3002%5Cu5176%5Cu5b9e%5Cuff0c%5Cu7701%5Cu9009%5Cu6c34%5Cu5e73%5Cu7684oier%5Cu4e0d%5Cu9700%5Cu8981%5Cu4e00%5Cu4e9b%5Cu5916%5Cu52a0%5Cu7684%5Cu5237%5Cu9898%5Cu5217%5Cu8868%5Cuff0c%5Cu672c%5Cu680f%5Cu4ec5%5Cu4f9b%5Cu53c2%5Cu8003%5Cuff0c%5Cu4e5f%5Cu6b22%5Cu8fce%5Cu5404%5Cu4f4d%5Cu6307%5Cu51fa%5Cu4e0d%5Cu8db3%5Cu3002%5Cn%5Cn%23%23%20%5Cu7701%5Cu9009%5Cu57fa%5Cu7840-%5Cu8bfb%5Cu5165%5C%2F%5Cu8f93%5Cu51fa%5Cu4f18%5Cu5316%5Cn%5Cn%5Cu8bfb%5Cu5165%5C%2F%5Cu8f93%5Cu51fa%5Cu4f18%5Cu5316%5Cu662f%5Cu7701%5Cu9009%5Cu5237%5Cu9898%5Cu65f6%5Cu5fc5%5Cu8981%5Cu7684%5Cu4e00%5Cu4e2a%5Cu4e1c%5Cu897f%5Cuff0c%5Cu8fd9%5Cu91cc%5Cu7ed9%5Cu51fa%5Cu4e86%5Cu51e0%5Cu9898%5Cuff0c%5Cu9700%5Cu8981%5Cu81ea%5Cu5df1%5Cu624b%5Cu5199%5Cu76f8%5Cu5e94%5Cu7684%5Cu8bfb%5Cu5165%5Cu8f93%5Cu51fa%5Cu5904%5Cu7406%5Cu3002%5Cu4f5c%5Cu4e3a%5Cu7b2c%5Cu4e00%5Cu5173%5Cuff0c%5Cu8fd9%5Cu4e00%5Cu5173%5Cu76f8%5Cu5bf9%5Cu7b80%5Cu5355%5Cu3002%5Cn%5Cn%2A%20%5BP1580%5D%28%5C%2Fproblem%5C%2FP1580%29%5Cn%2A%20%5BP2393%5D%28%5C%2Fproblem%5C%2FP2393%29%5Cn%2A%20%5BP2394%5D%28%5C%2Fproblem%5C%2FP2394%29%5Cn%5Cn%23%23%20%5Cu7701%5Cu9009%5Cu57fa%5Cu7840-%5Cu4f4d%5Cu8fd0%5Cu7b97%5Cn%5Cn%5Cu4f4d%5Cu8fd0%5Cu7b97%5Cu5f80%5Cu5f80%5Cu5728%5Cu5fc5%5Cu8981%5Cu7684%5Cu65f6%5Cu5019%2C%5Cu80fd%5Cu5e26%5Cu4f60%5Cu4f18%5Cu5316%5Cu4e00%5Cu4e0b%5Cu5e38%5Cu6570%2C%5Cu4e5f%5Cu8bb8%5Cu662f%5Cu7a7a%5Cu95f4%3B%5Cu4e5f%5Cu8bb8%5Cu662f%5Cu65f6%5Cu95f4%3B%5Cu6709%5Cu7684%5Cu65f6%5Cu5019%5Cu8fd9%5Cu6837%5Cu53ef%5Cu4ee5%5Cu591a%5Cu8fc7%5Cu5f88%5Cu591a%5Cu5206%5Cn%5Cn%2A%20%5BP2114%5D%28%5C%2Fproblem%5C%2FP2114%29%5Cn%2A%20%5BP2396%5D%28%5C%2Fproblem%5C%2FP2396%29%5Cn%2A%20%5BP2397%5D%28%5C%2Fproblem%5C%2FP2397%29%5Cn%5Cn%23%23%20%5Cu7701%5Cu9009%5Cu57fa%5Cu7840-%5Cu6253%5Cu8868%5Cn%5Cn%5Cu6253%5Cu8868%5Cu867d%5Cu7136%5Cu5f88%5Cu8d56%5Cu76ae%2C%5Cu800c%5Cu4e14%5Cu57fa%5Cu672c%5Cu90fd%5Cu662f%5Cu975e%5Cu6b63%5Cu89e3%2C%5Cu4f46%5Cu662f%5Cu8fd9%5Cu79cd%5Cu529e%5Cu6cd5%5Cu80fd%5Cu8ba9%5Cu6211%5Cu4eec%5Cu5728%5Cu7701%5Cu9009%5Cu4e2d%5Cu62ff%5Cu5230%5Cu4e00%5Cu4e9b%5Cu4f1a%5Cu8d85%5Cu65f6%5Cu6216%5Cu8005%5Cu4f1a%5Cu8d85%5Cu7a7a%5Cu95f4%5Cu7684%5Cu4e00%5Cu4e9b%5Cu6570%5Cu636e%5Cu70b9%5Cn%5Cn%2A%20%5BP1149%5D%28%5C%2Fproblem%5C%2FP1149%29%5Cn%2A%20%5BP1463%5D%28%5C%2Fproblem%5C%2FP1463%29%5Cn%2A%20%5BP1896%5D%28%5C%2Fproblem%5C%2FP1896%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu52121%5Cn%5Cn%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cn%5Cn%2A%20%5BP2051%5D%28%5C%2Fproblem%5C%2FP2051%29%5Cn%2A%20%5BP1879%5D%28%5C%2Fproblem%5C%2FP1879%29%5Cn%2A%20%5BP1850%5D%28%5C%2Fproblem%5C%2FP1850%29%5Cn%2A%20%5BP2831%5D%28%5C%2Fproblem%5C%2FP2831%29%5Cn%2A%20%5BP1131%5D%28%5C%2Fproblem%5C%2FP1131%29%5Cn%2A%20%5BP1169%5D%28%5C%2Fproblem%5C%2FP1169%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu89c4%5Cu52122%5Cn%5Cn%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cn%5Cn%2A%20%5BP1273%5D%28%5C%2Fproblem%5C%2FP1273%29%5Cn%2A%20%5BP3648%5D%28%5C%2Fproblem%5C%2FP3648%29%5Cn%2A%20%5BP2519%5D%28%5C%2Fproblem%5C%2FP2519%29%5Cn%2A%20%5BP2515%5D%28%5C%2Fproblem%5C%2FP2515%29%5Cn%2A%20%5BP3233%5D%28%5C%2Fproblem%5C%2FP3233%29%5Cn%2A%20%5BP2501%5D%28%5C%2Fproblem%5C%2FP2501%29%5Cn%5Cn%23%23%20%5Cu7f51%5Cu7edc%5Cu6d41%5Cu2014%5Cu2014%5Cu6700%5Cu5927%5Cu6d41%5Cn%5Cn%5Cu6700%5Cu5927%5Cu6d41%5Cn%5Cn%2A%20%5BP2765%5D%28%5C%2Fproblem%5C%2FP2765%29%5Cn%2A%20%5BP2764%5D%28%5C%2Fproblem%5C%2FP2764%29%5Cn%2A%20%5BP2763%5D%28%5C%2Fproblem%5C%2FP2763%29%5Cn%2A%20%5BP2766%5D%28%5C%2Fproblem%5C%2FP2766%29%5Cn%2A%20%5BP2774%5D%28%5C%2Fproblem%5C%2FP2774%29%5Cn%2A%20%5BP2805%5D%28%5C%2Fproblem%5C%2FP2805%29%5Cn%5Cn%23%23%20%5Cu7f51%5Cu7edc%5Cu6d41%5Cu2014%5Cu2014%5Cu8d39%5Cu7528%5Cu6d41%5Cn%5Cn%5Cu8d39%5Cu7528%5Cu6d41%5Cn%5Cn%2A%20%5BP2153%5D%28%5C%2Fproblem%5C%2FP2153%29%5Cn%2A%20%5BP2053%5D%28%5C%2Fproblem%5C%2FP2053%29%5Cn%2A%20%5BP3159%5D%28%5C%2Fproblem%5C%2FP3159%29%5Cn%2A%20%5BP2604%5D%28%5C%2Fproblem%5C%2FP2604%29%5Cn%2A%20%5BP2050%5D%28%5C%2Fproblem%5C%2FP2050%29%5Cn%2A%20%5BP3980%5D%28%5C%2Fproblem%5C%2FP3980%29%5Cn%5Cn%23%23%20%5Cu5355%5Cu8c03%5Cu961f%5Cu5217%5Cn%5Cn%5Cu5355%5Cu8c03%5Cu961f%5Cu5217%5Cn%5Cn%2A%20%5BP2698%5D%28%5C%2Fproblem%5C%2FP2698%29%5Cn%2A%20%5BP2216%5D%28%5C%2Fproblem%5C%2FP2216%29%5Cn%2A%20%5BP2219%5D%28%5C%2Fproblem%5C%2FP2219%29%5Cn%2A%20%5BP2564%5D%28%5C%2Fproblem%5C%2FP2564%29%5Cn%2A%20%5BP2569%5D%28%5C%2Fproblem%5C%2FP2569%29%5Cn%5Cn%23%23%20%5Cu6982%5Cu7387%5Cu671f%5Cu671b%5Cn%5Cn%5Cu6982%5Cu7387%5Cu671f%5Cu671b%5Cn%5Cn%2A%20%5BP2473%5D%28%5C%2Fproblem%5C%2FP2473%29%5Cn%2A%20%5BP2221%5D%28%5C%2Fproblem%5C%2FP2221%29%5Cn%2A%20%5BP3317%5D%28%5C%2Fproblem%5C%2FP3317%29%5Cn%2A%20%5BP3343%5D%28%5C%2Fproblem%5C%2FP3343%29%5Cn%2A%20%5BP3600%5D%28%5C%2Fproblem%5C%2FP3600%29%5Cn%2A%20%5BP3830%5D%28%5C%2Fproblem%5C%2FP3830%29%5Cn%5Cn%23%23%20%5Cu4e8c%5Cu5206%5Cu56fe%5Cn%5Cn%5Cu4e8c%5Cu5206%5Cu56fe%5Cn%5Cn%2A%20%5BP3386%5D%28%5C%2Fproblem%5C%2FP3386%29%5Cn%2A%20%5BP1640%5D%28%5C%2Fproblem%5C%2FP1640%29%5Cn%2A%20%5BP1129%5D%28%5C%2Fproblem%5C%2FP1129%29%5Cn%2A%20%5BP1963%5D%28%5C%2Fproblem%5C%2FP1963%29%5Cn%2A%20%5BP3231%5D%28%5C%2Fproblem%5C%2FP3231%29%5Cn%2A%20%5BP2526%5D%28%5C%2Fproblem%5C%2FP2526%29%5Cn%5Cn%23%23%20%5Cu70b9%5Cu5206%5Cu6cbb%5Cn%5Cn%5Cu70b9%5Cu5206%5Cu6cbb%5Cn%5Cn%2A%20%5BP2634%5D%28%5C%2Fproblem%5C%2FP2634%29%5Cn%2A%20%5BP2664%5D%28%5C%2Fproblem%5C%2FP2664%29%5Cn%2A%20%5BP3806%5D%28%5C%2Fproblem%5C%2FP3806%29%5Cn%2A%20%5BP3676%5D%28%5C%2Fproblem%5C%2FP3676%29%5Cn%5Cn%23%23%20%5Cu540e%5Cu7f00%5Cu6570%5Cu7ec4%5Cn%5Cn%5Cu540e%5Cu7f00%5Cu6570%5Cu7ec4%5Cn%5Cn%2A%20%5BP3809%5D%28%5C%2Fproblem%5C%2FP3809%29%5Cn%2A%20%5BP1117%5D%28%5C%2Fproblem%5C%2FP1117%29%5Cn%2A%20%5BP2178%5D%28%5C%2Fproblem%5C%2FP2178%29%5Cn%2A%20%5BP2463%5D%28%5C%2Fproblem%5C%2FP2463%29%5Cn%2A%20%5BP2336%5D%28%5C%2Fproblem%5C%2FP2336%29%5Cn%5Cn%23%23%20%5Cu4e3b%5Cu5e2d%5Cu6811%5Cn%5Cn%5Cu4e3b%5Cu5e2d%5Cu6811%5Cn%5Cn%2A%20%5BP2468%5D%28%5C%2Fproblem%5C%2FP2468%29%5Cn%2A%20%5BP3157%5D%28%5C%2Fproblem%5C%2FP3157%29%5Cn%2A%20%5BP3302%5D%28%5C%2Fproblem%5C%2FP3302%29%5Cn%2A%20%5BP3168%5D%28%5C%2Fproblem%5C%2FP3168%29%5Cn%2A%20%5BP3313%5D%28%5C%2Fproblem%5C%2FP3313%29%5Cn%5Cn%23%23%20%5Cu6570%5Cu4f4dDP%5Cn%5Cn%5Cu6570%5Cu4f4dDP%5Cn%5Cn%2A%20%5BP2602%5D%28%5C%2Fproblem%5C%2FP2602%29%5Cn%2A%20%5BP3281%5D%28%5C%2Fproblem%5C%2FP3281%29%5Cn%2A%20%5BP2518%5D%28%5C%2Fproblem%5C%2FP2518%29%5Cn%2A%20%5BP2606%5D%28%5C%2Fproblem%5C%2FP2606%29%5Cn%5Cn%23%23%20AC%5Cu81ea%5Cu52a8%5Cu673a%5Cn%5CnAC%5Cu81ea%5Cu52a8%5Cu673a%5Cn%5Cn%2A%20%5BP3808%5D%28%5C%2Fproblem%5C%2FP3808%29%5Cn%2A%20%5BP3796%5D%28%5C%2Fproblem%5C%2FP3796%29%5Cn%2A%20%5BP2444%5D%28%5C%2Fproblem%5C%2FP2444%29%5Cn%2A%20%5BP2414%5D%28%5C%2Fproblem%5C%2FP2414%29%5Cn%5Cn%23%23%20%5Cu5e73%5Cu8861%5Cu6811%5Cn%5Cn%5Cu5e73%5Cu8861%5Cu6811%5Cn%5Cn%2A%20%5BP2042%5D%28%5C%2Fproblem%5C%2FP2042%29%5Cn%2A%20%5BP2596%5D%28%5C%2Fproblem%5C%2FP2596%29%5Cn%2A%20%5BP1110%5D%28%5C%2Fproblem%5C%2FP1110%29%5Cn%2A%20%5BP3285%5D%28%5C%2Fproblem%5C%2FP3285%29%5Cn%2A%20%5BP3644%5D%28%5C%2Fproblem%5C%2FP3644%29%5Cn%2A%20%5BP3765%5D%28%5C%2Fproblem%5C%2FP3765%29%5Cn%2A%20%5BP3369%5D%28%5C%2Fproblem%5C%2FP3369%29%5Cn%5Cn%23%23%20%5Cu6811%5Cu94fe%5Cu5256%5Cu5206%5Cn%5Cn%5Cu6811%5Cu94fe%5Cu5256%5Cu5206%5Cn%5Cn%2A%20%5BP2590%5D%28%5C%2Fproblem%5C%2FP2590%29%5Cn%2A%20%5BP2486%5D%28%5C%2Fproblem%5C%2FP2486%29%5Cn%2A%20%5BP2146%5D%28%5C%2Fproblem%5C%2FP2146%29%5Cn%2A%20%5BP3258%5D%28%5C%2Fproblem%5C%2FP3258%29%5Cn%2A%20%5BP3178%5D%28%5C%2Fproblem%5C%2FP3178%29%5Cn%5Cn%23%23%20%5Cu52a8%5Cu6001%5Cu6811%5Cn%5Cn%5Cu52a8%5Cu6001%5Cu6811%5Cn%5Cn%2A%20%5BP3690%5D%28%5C%2Fproblem%5C%2FP3690%29%5Cn%2A%20%5BP2387%5D%28%5C%2Fproblem%5C%2FP2387%29%5Cn%2A%20%5BP3203%5D%28%5C%2Fproblem%5C%2FP3203%29%5Cn%2A%20%5BP3348%5D%28%5C%2Fproblem%5C%2FP3348%29%5Cn%5Cn%23%23%20%5Cu6811%5Cu5957%5Cu6811%5Cn%5Cn%5Cu6811%5Cu5957%5Cu6811%5Cn%5Cn%2A%20%5BP1903%5D%28%5C%2Fproblem%5C%2FP1903%29%5Cn%2A%20%5BP3157%5D%28%5C%2Fproblem%5C%2FP3157%29%5Cn%2A%20%5BP3332%5D%28%5C%2Fproblem%5C%2FP3332%29%5Cn%2A%20%5BP2166%5D%28%5C%2Fproblem%5C%2FP2166%29%5Cn%2A%20%5BP3380%5D%28%5C%2Fproblem%5C%2FP3380%29%5Cn%2A%20%5BP2137%5D%28%5C%2Fproblem%5C%2FP2137%29%5Cn%2A%20%5BP3759%5D%28%5C%2Fproblem%5C%2FP3759%29%5Cn%5Cn%23%23%20%5Cu53ef%5Cu6301%5Cu4e45%5Cu5316Trie%5Cu6811%5Cn%5Cn%5Cu53ef%5Cu6301%5Cu4e45%5Cu5316Trie%5Cu6811%5Cn%5Cn%2A%20%5BP2048%5D%28%5C%2Fproblem%5C%2FP2048%29%5Cn%2A%20%5BP3527%5D%28%5C%2Fproblem%5C%2FP3527%29%5Cn%2A%20%5BP3302%5D%28%5C%2Fproblem%5C%2FP3302%29%5Cn%2A%20%5BP3168%5D%28%5C%2Fproblem%5C%2FP3168%29%5Cn%2A%20%5BP3242%5D%28%5C%2Fproblem%5C%2FP3242%29%5Cn%2A%20%5BP3241%5D%28%5C%2Fproblem%5C%2FP3241%29%5Cn%2A%20%5BP3293%5D%28%5C%2Fproblem%5C%2FP3293%29%5Cn%5Cn%23%23%20%5Cu83ab%5Cu961f%5Cu7b97%5Cu6cd5%5Cn%5Cn%5Cu83ab%5Cu961f%5Cu7b97%5Cu6cd5%5Cn%5Cn%2A%20%5BP1972%5D%28%5C%2Fproblem%5C%2FP1972%29%5Cn%2A%20%5BP2336%5D%28%5C%2Fproblem%5C%2FP2336%29%5Cn%2A%20%5BP3709%5D%28%5C%2Fproblem%5C%2FP3709%29%5Cn%2A%20%5BP2709%5D%28%5C%2Fproblem%5C%2FP2709%29%5Cn%2A%20%5BP3674%5D%28%5C%2Fproblem%5C%2FP3674%29%5Cn%5Cn%23%23%20%5Cu5206%5Cu5757%5Cn%5Cn%5Cu5206%5Cu5757%5Cn%5Cn%2A%20%5BP1972%5D%28%5C%2Fproblem%5C%2FP1972%29%5Cn%2A%20%5BP3396%5D%28%5C%2Fproblem%5C%2FP3396%29%5Cn%2A%20%5BP1822%5D%28%5C%2Fproblem%5C%2FP1822%29%5Cn%2A%20%5BP2801%5D%28%5C%2Fproblem%5C%2FP2801%29%5Cn%2A%20%5BP3203%5D%28%5C%2Fproblem%5C%2FP3203%29%5Cn%5Cn%23%23%20%5Cu83ab%5Cu6bd4%5Cu4e4c%5Cu65af%5Cu53cd%5Cu6f14%5Cn%5Cn%5Cu83ab%5Cu6bd4%5Cu4e4c%5Cu65af%5Cu53cd%5Cu6f14%5Cn%5Cn%2A%20%5BP3768%5D%28%5C%2Fproblem%5C%2FP3768%29%5Cn%2A%20%5BP3172%5D%28%5C%2Fproblem%5C%2FP3172%29%5Cn%2A%20%5BP3455%5D%28%5C%2Fproblem%5C%2FP3455%29%5Cn%2A%20%5BP2522%5D%28%5C%2Fproblem%5C%2FP2522%29%5Cn%2A%20%5BP3327%5D%28%5C%2Fproblem%5C%2FP3327%29%5Cn%5Cn%23%23%20%5Cu5176%5Cu4ed6%5Cn%5Cn%5Cu5176%5Cu4ed6%5Cn%5Cn%2A%20%5BP3377%5D%28%5C%2Fproblem%5C%2FP3377%29%5Cn%2A%20%5BP3261%5D%28%5C%2Fproblem%5C%2FP3261%29%5Cn%2A%20%5BP3382%5D%28%5C%2Fproblem%5C%2FP3382%29%5Cn%2A%20%5BP2571%5D%28%5C%2Fproblem%5C%2FP2571%29%5Cn%2A%20%5BP3222%5D%28%5C%2Fproblem%5C%2FP3222%29%5Cn%2A%20%5BP3187%5D%28%5C%2Fproblem%5C%2FP3187%29%5Cn%2A%20%5BP3199%5D%28%5C%2Fproblem%5C%2FP3199%29%5Cn%2A%20%5BP3292%5D%28%5C%2Fproblem%5C%2FP3292%29%5Cn%2A%20%5BP2824%5D%28%5C%2Fproblem%5C%2FP2824%29%5Cn%2A%20%5BP3285%5D%28%5C%2Fproblem%5C%2FP3285%29%5Cn%2A%20%5BP1552%5D%28%5C%2Fproblem%5C%2FP1552%29%5Cn%5Cn%23%20USACO%5Cn%5Cn%5Cu7f8e%5Cu56fd%5Cu7ecf%5Cu5178%5Cu7684%5Cu7b97%5Cu6cd5%5Cu7ec3%5Cu4e60%5Cu9898%5Cu5e93%5Cuff0c%5Cu503c%5Cu5f97%5Cu4e00%5Cu5237%5Cn%5Cn%23%23%20USACO%20Section%201.1%5Cn%5Cn%2A%20%5BP1200%5D%28%5C%2Fproblem%5C%2FP1200%29%5Cn%2A%20%5BP1201%5D%28%5C%2Fproblem%5C%2FP1201%29%5Cn%2A%20%5BP1202%5D%28%5C%2Fproblem%5C%2FP1202%29%5Cn%2A%20%5BP1203%5D%28%5C%2Fproblem%5C%2FP1203%29%5Cn%5Cn%23%23%20USACO%20Section%201.2%5Cn%5Cn%5Cu5b8c%5Cu5168%5Cu679a%5Cu4e3e%5Cn%5Cn%2A%20%5BP3864%5D%28%5C%2Fproblem%5C%2FP3864%29%5Cn%2A%20%5BP1204%5D%28%5C%2Fproblem%5C%2FP1204%29%5Cn%2A%20%5BP1205%5D%28%5C%2Fproblem%5C%2FP1205%29%5Cn%2A%20%5BP1206%5D%28%5C%2Fproblem%5C%2FP1206%29%5Cn%2A%20%5BP1207%5D%28%5C%2Fproblem%5C%2FP1207%29%5Cn%5Cn%23%23%20USACO%20Section%201.3%5Cn%5Cn%5Cu8d2a%5Cu5fc3%5Cn%5Cn%2A%20%5BP1208%5D%28%5C%2Fproblem%5C%2FP1208%29%5Cn%2A%20%5BP1209%5D%28%5C%2Fproblem%5C%2FP1209%29%5Cn%2A%20%5BP1211%5D%28%5C%2Fproblem%5C%2FP1211%29%5Cn%2A%20%5BP1444%5D%28%5C%2Fproblem%5C%2FP1444%29%5Cn%2A%20%5BP3650%5D%28%5C%2Fproblem%5C%2FP3650%29%5Cn%2A%20%5BP2693%5D%28%5C%2Fproblem%5C%2FP2693%29%5Cn%5Cn%23%23%20USACO%20Section%201.4%5Cn%5Cn%5Cu6709%5Cu6280%5Cu5de7%5Cu7684%5Cu679a%5Cu4e3e%5Cn%5Cn%2A%20%5BP1214%5D%28%5C%2Fproblem%5C%2FP1214%29%5Cn%2A%20%5BP1215%5D%28%5C%2Fproblem%5C%2FP1215%29%5Cn%5Cn%23%23%20USACO%20Section%201.5%5Cn%5Cn%5Cu4e8c%5Cu8fdb%5Cu5236%5Cu6570%5Cn%5Cn%2A%20%5BP1216%5D%28%5C%2Fproblem%5C%2FP1216%29%5Cn%2A%20%5BP1217%5D%28%5C%2Fproblem%5C%2FP1217%29%5Cn%2A%20%5BP1218%5D%28%5C%2Fproblem%5C%2FP1218%29%5Cn%5Cn%23%23%20USACO%20Section%202.1%5Cn%5Cn%5Cu56fe%5Cu8bba%5Cu548c%5Cu6d2a%5Cu6c34%5Cu586b%5Cu5145%5Cn%5Cn%2A%20%5BP1457%5D%28%5C%2Fproblem%5C%2FP1457%29%5Cn%2A%20%5BP1458%5D%28%5C%2Fproblem%5C%2FP1458%29%5Cn%2A%20%5BP1459%5D%28%5C%2Fproblem%5C%2FP1459%29%5Cn%2A%20%5BP1460%5D%28%5C%2Fproblem%5C%2FP1460%29%5Cn%2A%20%5BP1461%5D%28%5C%2Fproblem%5C%2FP1461%29%5Cn%5Cn%23%23%20USACO%20Section%202.2%5Cn%5Cn%5Cu6570%5Cu636e%5Cu7ed3%5Cu6784%5Cu4e0e%5Cu52a8%5Cu6001%5Cu89c4%5Cu5212%5Cn%5Cn%2A%20%5BP1465%5D%28%5C%2Fproblem%5C%2FP1465%29%5Cn%2A%20%5BP1466%5D%28%5C%2Fproblem%5C%2FP1466%29%5Cn%2A%20%5BP1467%5D%28%5C%2Fproblem%5C%2FP1467%29%5Cn%2A%20%5BP1468%5D%28%5C%2Fproblem%5C%2FP1468%29%5Cn%5Cn%23%23%20USACO%20Section%202.3%5Cn%5Cn%2A%20%5BP1470%5D%28%5C%2Fproblem%5C%2FP1470%29%5Cn%2A%20%5BP1472%5D%28%5C%2Fproblem%5C%2FP1472%29%5Cn%2A%20%5BP1473%5D%28%5C%2Fproblem%5C%2FP1473%29%5Cn%2A%20%5BP1474%5D%28%5C%2Fproblem%5C%2FP1474%29%5Cn%2A%20%5BP1475%5D%28%5C%2Fproblem%5C%2FP1475%29%5Cn%5Cn%23%23%20USACO%20Section%202.4%5Cn%5Cn%5Cu6700%5Cu77ed%5Cu8def%5Cu5f84%5Cn%5Cn%2A%20%5BP1518%5D%28%5C%2Fproblem%5C%2FP1518%29%5Cn%2A%20%5BP1519%5D%28%5C%2Fproblem%5C%2FP1519%29%5Cn%2A%20%5BP1522%5D%28%5C%2Fproblem%5C%2FP1522%29%5Cn%2A%20%5BP1529%5D%28%5C%2Fproblem%5C%2FP1529%29%5Cn%2A%20%5BP1530%5D%28%5C%2Fproblem%5C%2FP1530%29%5Cn%5Cn%23%23%20USACO%20Section%203.1%5Cn%5Cn%5Cu6700%5Cu5c0f%5Cu751f%5Cu6210%5Cu6811%5Cn%5Cn%2A%20%5BP1546%5D%28%5C%2Fproblem%5C%2FP1546%29%5Cn%2A%20%5BP2722%5D%28%5C%2Fproblem%5C%2FP2722%29%5Cn%2A%20%5BP2723%5D%28%5C%2Fproblem%5C%2FP2723%29%5Cn%2A%20%5BP2724%5D%28%5C%2Fproblem%5C%2FP2724%29%5Cn%2A%20%5BP2725%5D%28%5C%2Fproblem%5C%2FP2725%29%5Cn%5Cn%23%23%20USACO%20Section%203.2%5Cn%5Cn%5Cu80cc%5Cu5305%5Cu95ee%5Cu9898%5Cn%5Cn%2A%20%5BP1134%5D%28%5C%2Fproblem%5C%2FP1134%29%5Cn%2A%20%5BP2727%5D%28%5C%2Fproblem%5C%2FP2727%29%5Cn%2A%20%5BP2728%5D%28%5C%2Fproblem%5C%2FP2728%29%5Cn%2A%20%5BP2729%5D%28%5C%2Fproblem%5C%2FP2729%29%5Cn%2A%20%5BP2730%5D%28%5C%2Fproblem%5C%2FP2730%29%5Cn%2A%20%5BP1828%5D%28%5C%2Fproblem%5C%2FP1828%29%5Cn%5Cn%23%23%20USACO%20Section%203.3%5Cn%5Cn%5Cu6b27%5Cu62c9%5Cu56de%5Cu8def%5Cn%5Cn%2A%20%5BP2731%5D%28%5C%2Fproblem%5C%2FP2731%29%5Cn%2A%20%5BP2732%5D%28%5C%2Fproblem%5C%2FP2732%29%5Cn%2A%20%5BP1930%5D%28%5C%2Fproblem%5C%2FP1930%29%5Cn%2A%20%5BP2733%5D%28%5C%2Fproblem%5C%2FP2733%29%5Cn%2A%20%5BP2734%5D%28%5C%2Fproblem%5C%2FP2734%29%5Cn%5Cn%23%23%20USACO%20Section%203.4%5Cn%5Cn%5Cu8ba1%5Cu7b97%5Cu51e0%5Cu4f55%5Cn%5Cn%2A%20%5BP1827%5D%28%5C%2Fproblem%5C%2FP1827%29%5Cn%2A%20%5BP2735%5D%28%5C%2Fproblem%5C%2FP2735%29%5Cn%2A%20%5BP2736%5D%28%5C%2Fproblem%5C%2FP2736%29%5Cn%5Cn%23%23%20USACO%20Section%204.1%5Cn%5Cn%5Cu6700%5Cu4f18%5Cu5316%5Cn%5Cn%2A%20%5BP2737%5D%28%5C%2Fproblem%5C%2FP2737%29%5Cn%2A%20%5BP2738%5D%28%5C%2Fproblem%5C%2FP2738%29%5Cn%5Cn%23%23%20USACO%20Section%204.2%5Cn%5Cn%5Cu7f51%5Cu7edc%5Cu6d41%5Cn%5Cn%2A%20%5BP2740%5D%28%5C%2Fproblem%5C%2FP2740%29%5Cn%2A%20%5BP1894%5D%28%5C%2Fproblem%5C%2FP1894%29%5Cn%2A%20%5BP2751%5D%28%5C%2Fproblem%5C%2FP2751%29%5Cn%5Cn%23%23%20USACO%20Section%204.3%5Cn%5Cn%5Cu9ad8%5Cu7cbe%5Cu5ea6%5Cn%5Cn%2A%20%5BP2687%5D%28%5C%2Fproblem%5C%2FP2687%29%5Cn%2A%20%5BP2752%5D%28%5C%2Fproblem%5C%2FP2752%29%5Cn%2A%20%5BP2753%5D%28%5C%2Fproblem%5C%2FP2753%29%5Cn%5Cn%23%23%20USACO%20Section%204.4%5Cn%5Cn%2A%20%5BP1344%5D%28%5C%2Fproblem%5C%2FP1344%29%5Cn%2A%20%5BP2739%5D%28%5C%2Fproblem%5C%2FP2739%29%5Cn%2A%20%5BP2741%5D%28%5C%2Fproblem%5C%2FP2741%29%5Cn%5Cn%23%23%20USACO%20Section%205.1%5Cn%5Cn%5Cu4e8c%5Cu7ef4%5Cu51f8%5Cu5305%5Cn%5Cn%2A%20%5BP2742%5D%28%5C%2Fproblem%5C%2FP2742%29%5Cn%2A%20%5BP2743%5D%28%5C%2Fproblem%5C%2FP2743%29%5Cn%2A%20%5BP2749%5D%28%5C%2Fproblem%5C%2FP2749%29%5Cn%5Cn%23%23%20USACO%20Section%205.2%5Cn%5Cn%2A%20%5BP1560%5D%28%5C%2Fproblem%5C%2FP1560%29%5Cn%5Cn%23%23%20USACO%20Section%205.3%5Cn%5Cn%5Cu542f%5Cu53d1%5Cu5f0f%5Cu641c%5Cu7d22%5Cn%5Cn%2A%20%5BP2701%5D%28%5C%2Fproblem%5C%2FP2701%29%5Cn%2A%20%5BP2744%5D%28%5C%2Fproblem%5C%2FP2744%29%5Cn%2A%20%5BP2745%5D%28%5C%2Fproblem%5C%2FP2745%29%5Cn%2A%20%5BP2746%5D%28%5C%2Fproblem%5C%2FP2746%29%5Cn%5Cn%23%23%20USACO%20Section%205.4%5Cn%5Cn%2A%20%5BP1345%5D%28%5C%2Fproblem%5C%2FP1345%29%5Cn%2A%20%5BP2747%5D%28%5C%2Fproblem%5C%2FP2747%29%5Cn%2A%20%5BP2748%5D%28%5C%2Fproblem%5C%2FP2748%29%5Cn%5Cn%23%23%20USACO%20Section%205.5%5Cn%5Cn%2A%20%5BP1709%5D%28%5C%2Fproblem%5C%2FP1709%29%5Cn%2A%20%5BP1856%5D%28%5C%2Fproblem%5C%2FP1856%29%5Cn%2A%20%5BP2750%5D%28%5C%2Fproblem%5C%2FP2750%29%5Cn%5Cn%22%2C%22id%22%3A%22pko6hokc%22%2C%22user%22%3A%7B%22uid%22%3A280679%2C%22name%22%3A%22miaohongxuan%22%2C%22slogan%22%3A%22%5Cu7956%5Cu56fd%5Cu5728%5Cu6211%5Cu5fc3%22%2C%22badge%22%3Anull%2C%22isAdmin%22%3Afalse%2C%22isBanned%22%3Afalse%2C%22color%22%3A%22Green%22%2C%22ccfLevel%22%3A0%7D%2C%22time%22%3A1589593907%2C%22public%22%3Atrue%7D%7D%2C%22currentTitle%22%3A%22%5Cu4e91%5Cu526a%5Cu8d34%5Cu677f%22%2C%22currentTheme%22%3Anull%7D"));window._feConfigVersion=1594536790;</script>
+    <script src="https://cdn.luogu.com.cn/fe/loader.js?ver=20200706" charset="utf-8" defer=""></script>
+<style></style><script charset="utf-8" src="https://cdn.luogu.com.cn/fe/module.228.71cbbcd3a8bb3d1e92db.js"></script><script charset="utf-8" src="https://cdn.luogu.com.cn/fe/module.3.e8acc04a768e33056baf.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.luogu.com.cn/fe/module.182.f073579f0d866e387d2c.css"><script charset="utf-8" src="https://cdn.luogu.com.cn/fe/module.182.f073579f0d866e387d2c.js"></script><style type="text/css">.top-progress[data-v-774e75a0]{position:fixed;right:0;left:0;height:4px;overflow:hidden;z-index:99}.bar[data-v-774e75a0]{height:100%;border-top-right-radius:2px;border-bottom-right-radius:2px;transition:width .2s ease;opacity:1;animation:loading-progress-data-v-774e75a0 10s cubic-bezier(.22,.86,0,.8);animation-fill-mode:forwards}.done[data-v-774e75a0]{animation:none;opacity:0;width:100%;transition:opacity .2s ease .2s}@keyframes loading-progress-data-v-774e75a0{from{width:5%}to{width:99%}}</style><style type="text/css">nav[data-v-27b2cd59]{position:fixed;width:3.7em;height:100%;display:flex;flex-direction:column;text-align:center;line-height:1.2;z-index:5}.logo-wrap[data-v-27b2cd59]{display:block;box-sizing:border-box;padding:1em;width:3.7em;text-align:center;height:4em;overflow:hidden;outline:0}.logo-wrap>img[data-v-27b2cd59]{max-width:100%;max-height:100%}.user-nav[data-v-27b2cd59]{display:none;height:3.4em;align-items:center;background:rgba(255,255,255,.5);border-radius:1em;margin:.3em;padding:0 .8em}</style><style type="text/css">a[data-v-cd9b963e]{display:block;padding:.5em .5em;text-decoration:none}.icon[data-v-cd9b963e]{text-align:center;margin:0 .3em;font-size:1.1em;display:inline-block;width:1.5em;vertical-align:middle}.text[data-v-cd9b963e]{font-size:.8em;vertical-align:middle}</style><style type="text/css">a[data-v-303bbf52]{text-decoration:none}a.color-none[data-v-303bbf52]:hover{text-decoration:none}.color-header[data-v-303bbf52]{color:#bbb}.color-header[data-v-303bbf52]:hover{color:#fff}.color-default[data-v-303bbf52],.color-default-noline[data-v-303bbf52]{color:#3498db}.color-default-noline[data-v-303bbf52]:hover,.color-default[data-v-303bbf52]:hover{color:#0056b3}a.color-default-noline[data-v-303bbf52]:hover{text-decoration:none}.color-title[data-v-303bbf52]{color:#666}.color-title[data-v-303bbf52]:hover{color:#5bc0de}</style><link rel="stylesheet" type="text/css" href="https://cdn.luogu.com.cn/fe/module.222.5c4e3f4f0c83dd49cce8.css"><script charset="utf-8" src="https://cdn.luogu.com.cn/fe/module.222.5c4e3f4f0c83dd49cce8.js"></script><style type="text/css">.header[data-v-52820d90]{color:#fff}h1[data-v-52820d90]{margin-top:.5em;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.bread-crumb[data-v-52820d90]{padding-top:1.5em;font-size:.8em;color:#aaa}.user-nav[data-v-52820d90]{position:absolute;right:4em;top:0;padding:.5em 1em;color:#333;background-color:rgba(255,255,255,.5);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.functional[data-v-52820d90]{padding-top:.8em}.operation[data-v-52820d90]{display:flex;align-items:baseline;color:#fff}.stat[data-v-52820d90]{float:right}@media (max-width:576px){.user-nav[data-v-52820d90]{display:none}.bread-crumb[data-v-52820d90]{font-size:.875em}.stat[data-v-52820d90]{float:left}.functional[data-v-52820d90]{display:flex;flex-direction:column;padding-top:0}.operation[data-v-52820d90]{margin-top:1em;margin-bottom:1em;display:flex;flex-direction:column}.operation>*[data-v-52820d90]{width:100%;margin-bottom:.5em}}</style><style type="text/css">nav[data-v-019a82aa]::after{content:" ";white-space:pre}.link[data-v-019a82aa],.text[data-v-019a82aa]{color:rgba(255,255,255,.75)}.link[data-v-019a82aa]:hover{color:rgba(255,255,255,1)}</style><style type="text/css">.card[data-v-796309f8]{display:block;margin-bottom:1.3em;background-color:#fff;box-shadow:0 1px 3px rgba(26,26,26,.1);box-sizing:border-box}.padding-none[data-v-796309f8]{padding:0}.padding-default[data-v-796309f8]{padding:1.3em}</style><style type="text/css">span[data-v-20b7d558]{display:inline-block;padding:0 8px;box-sizing:border-box;font-weight:400;line-height:1.5;border-radius:2px}</style><style type="text/css">.marked[data-v-5a58a989] h1{font-size:2em}.marked[data-v-5a58a989] h2{font-size:1.5em}.marked[data-v-5a58a989] h3{font-size:1.17em}.marked[data-v-5a58a989] h5{font-size:.83em}.marked[data-v-5a58a989] h6{font-size:.67em}.marked[data-v-5a58a989] img{max-width:100%}.marked[data-v-5a58a989] p{margin:1rem 0}.marked[data-v-5a58a989] h1,.marked[data-v-5a58a989] h2,.marked[data-v-5a58a989] h3,.marked[data-v-5a58a989] h4,.marked[data-v-5a58a989] h5,.marked[data-v-5a58a989] h6{margin:.5rem 0}.marked[data-v-5a58a989] h1,.marked[data-v-5a58a989] h2{padding-bottom:.2em;border-bottom:solid 1px #eee}.marked[data-v-5a58a989] ol,.marked[data-v-5a58a989] ul{padding-left:1.5em}.marked[data-v-5a58a989] ul{list-style:outside disc}.marked[data-v-5a58a989] ol{list-style:outside decimal}.marked[data-v-5a58a989] hr{margin:1em 0;height:0;border:none;border-bottom:solid 1px #eee}.marked[data-v-5a58a989] code,.marked[data-v-5a58a989] pre{font-family:monospace;font-size:.875em;background-color:#fafafa;border:1px solid #e8e8e8;border-radius:2px}.marked[data-v-5a58a989] code{margin:0 .2em;padding:.1em .2em;white-space:nowrap;tab-size:4;-moz-tab-size:4}.marked[data-v-5a58a989] pre{margin:0;padding:1em;overflow-y:auto}.marked[data-v-5a58a989] pre>code{font-size:unset;margin:0;padding:0;white-space:pre;border:none}.marked[data-v-5a58a989] li code.hljs,.marked[data-v-5a58a989] p code.hljs{display:inline}</style><style type="text/css">div.inline[data-v-651c5d46]{display:inline-block}input[data-v-651c5d46]{display:none}.fa-input[data-v-651c5d46]{margin-right:.5em;color:#ccc}input:disabled+label .fa-input[data-v-651c5d46]{opacity:.4}input:checked+label .fa-input[data-v-651c5d46],input:enabled+label .fa-input[data-v-651c5d46]:hover{color:var(--lfe-color--primary,#3498db)}</style><style type="text/css">button[data-v-370e72e2]{display:inline-block;flex:none;outline:0;cursor:pointer;color:#fff;font-weight:inherit;line-height:1.5;text-align:center;vertical-align:middle;background:0 0;border-radius:3px;border:1px solid}button[data-v-370e72e2]:disabled{opacity:.65;cursor:not-allowed}</style></head>
+<body>
+<div data-v-27cf0bac="" id="app" class="lfe-vars"><div data-v-774e75a0="" data-v-27cf0bac="" class="top-progress"><div data-v-774e75a0="" class="bar done" style="background: rgb(52, 152, 219);"></div></div> <nav data-v-27b2cd59="" data-v-77e9f74d="" data-v-27cf0bac="" class="lfe-body" style="background-color: rgb(52, 73, 94); color: rgb(221, 221, 221);"><div data-v-27b2cd59="" style="background-color: rgb(52, 152, 219);"><a data-v-27b2cd59="" href="/" class="logo-wrap"><img data-v-27b2cd59="" src="https://cdn.luogu.com.cn/fe/logo-single.png?98632e1daed253842bc0846d56f869e3" alt="Luogu"></a></div>  <div data-v-77e9f74d="" data-v-27b2cd59="" class="popup-button">
+      应用 <svg data-v-77e9f74d="" data-v-27b2cd59="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-angle-double-right fa-w-14"><path data-v-77e9f74d="" data-v-27b2cd59="" fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z" class=""></path></svg> <!----></div> <a data-v-303bbf52="" data-v-cd9b963e="" data-v-77e9f74d="" href="/problem/list" class="color-none" style="color: inherit;"><span data-v-cd9b963e="" class="icon"><svg data-v-cd9b963e="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-book fa-w-14"><path data-v-cd9b963e="" fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z" class=""></path></svg></span> <span data-v-cd9b963e="" class="text">
+      题库
+    </span></a> <a data-v-303bbf52="" data-v-cd9b963e="" data-v-77e9f74d="" href="/training/list" class="color-none" style="color: inherit;"><span data-v-cd9b963e="" class="icon"><svg data-v-cd9b963e="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clipboard-list-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-clipboard-list-check fa-w-12"><path data-v-cd9b963e="" fill="currentColor" d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zM65.6 209.4l12.7-12.6c2.1-2.1 5.5-2.1 7.6 0l20.6 20.8 47.6-47.2c2.1-2.1 5.5-2.1 7.6 0l12.6 12.7c2.1 2.1 2.1 5.5 0 7.6l-64.2 63.6c-2.1 2.1-5.5 2.1-7.6 0L65.6 217c-2.1-2.1-2.1-5.5 0-7.6zM96 392c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24zm224-16c0 4.4-3.6 8-8 8H168c-4.4 0-8-3.6-8-8v-16c0-4.4 3.6-8 8-8h144c4.4 0 8 3.6 8 8v16zm0-128c0 4.4-4.3 8-9.6 8H154.1l32.3-32h124c5.3 0 9.6 3.6 9.6 8v16z" class=""></path></svg></span> <span data-v-cd9b963e="" class="text">
+      题单
+    </span></a> <a data-v-303bbf52="" data-v-cd9b963e="" data-v-77e9f74d="" href="/contest/list" class="color-none" style="color: inherit;"><span data-v-cd9b963e="" class="icon"><svg data-v-cd9b963e="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="signal" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-signal fa-w-20"><path data-v-cd9b963e="" fill="currentColor" d="M216 288h-48c-8.84 0-16 7.16-16 16v192c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V304c0-8.84-7.16-16-16-16zM88 384H40c-8.84 0-16 7.16-16 16v96c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16v-96c0-8.84-7.16-16-16-16zm256-192h-48c-8.84 0-16 7.16-16 16v288c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V208c0-8.84-7.16-16-16-16zm128-96h-48c-8.84 0-16 7.16-16 16v384c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V112c0-8.84-7.16-16-16-16zM600 0h-48c-8.84 0-16 7.16-16 16v480c0 8.84 7.16 16 16 16h48c8.84 0 16-7.16 16-16V16c0-8.84-7.16-16-16-16z" class=""></path></svg></span> <span data-v-cd9b963e="" class="text">
+      比赛
+    </span></a> <!----> <a data-v-303bbf52="" data-v-cd9b963e="" data-v-77e9f74d="" href="/discuss/lists" colorscheme="none" class="color-none" data-v-27b2cd59="" style="color: inherit;"><span data-v-cd9b963e="" data-v-303bbf52="" class="icon"><svg data-v-cd9b963e="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-comments fa-w-18"><path data-v-cd9b963e="" data-v-303bbf52="" fill="currentColor" d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" class=""></path></svg></span> <span data-v-cd9b963e="" data-v-303bbf52="" class="text">
+      讨论
+    </span></a></nav> <div data-v-27cf0bac="" class="main-container"><div data-v-7958fe72="" data-v-27cf0bac="" class="wrapper wrapped lfe-body header-layout narrow"><div data-v-7958fe72="" class="background" style="background: linear-gradient(90deg, rgb(35, 37, 38), rgb(65, 67, 69)); filter: blur(0px) brightness(100%);"></div> <div data-v-52820d90="" data-v-27cf0bac="" class="header" currentdata="[object Object]" data-v-7958fe72=""><div data-v-52820d90="" class="user-nav"><nav data-v-1bdb8ce2="" data-v-52820d90=""><div data-v-034eb354="" data-v-1bdb8ce2=""><div data-v-034eb354="" class="search-wrap"><input data-v-034eb354="" type="text"></div> <a data-v-303bbf52="" data-v-034eb354="" href="javascript:void 0" colorscheme="none" class="icon color-none"><svg data-v-034eb354="" data-v-303bbf52="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path data-v-034eb354="" data-v-303bbf52="" fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" class=""></path></svg></a></div> <a data-v-303bbf52="" data-v-1bdb8ce2="" href="/auth/login" class="login color-none"><span data-v-1bdb8ce2="">登录</span></a> <a data-v-303bbf52="" data-v-1bdb8ce2="" href="/auth/register" class="login color-none"><span data-v-1bdb8ce2="">注册</span></a> <img data-v-1bdb8ce2="" src="https://cdn.luogu.com.cn/upload/usericon/1.png" class="avatar"></nav></div> <nav data-v-019a82aa="" data-v-52820d90="" class="lfe-caption bread-crumb"><span data-v-019a82aa=""><a data-v-303bbf52="" data-v-019a82aa="" href="/" colorscheme="default" class="link color-default">洛谷</a> <span data-v-019a82aa="" class="text"> / </span></span><span data-v-019a82aa=""><span data-v-019a82aa="" class="text">试炼场备份</span> <!----></span></nav> <h1 data-v-52820d90="" class="lfe-h1">试炼场备份</h1> <div data-v-52820d90="" class="functional"><div data-v-52820d90="" class="stat"></div> <div data-v-52820d90="" class="operation"></div></div></div></div> <main data-v-27cf0bac="" class="wrapped lfe-body" style="background-color: rgb(239, 239, 239);"><div data-v-6febb0e8="" data-v-27cf0bac="" class="full-container" currenttemplate="PasteShow" style="margin-top: 2em;"><div data-v-6287b807="" data-v-6febb0e8=""><div data-v-796309f8="" data-v-6287b807="" class="card padding-default"><div data-v-6287b807="" data-v-796309f8="" class="content-card-top"><div data-v-6287b807="" data-v-796309f8="" class="author"><div data-v-6287b807="" data-v-796309f8="" class="lfe-caption author-margin"><span data-v-6287b807="" data-v-796309f8="">作者: <span data-v-360481bd="" data-v-6287b807="" class="wrapper" data-v-796309f8=""><a data-v-303bbf52="" data-v-360481bd="" href="https://www.luogu.com.cn/user/280679" target="_blank" colorscheme="none" class="color-none"><span data-v-360481bd="" data-v-303bbf52="" style="font-weight: bold; color: rgb(82, 196, 26);">
+  miaohongxuan
+</span></a> <!----> <!----></span></span> <span data-v-20b7d558="" data-v-6287b807="" class="lfe-caption" data-v-796309f8="" style="color: rgb(255, 255, 255); background: rgb(231, 76, 60);">公开</span></div> <div data-v-6287b807="" data-v-796309f8="" class="lfe-caption"><span data-v-6287b807="" data-v-796309f8="">发表时间: <time data-v-6287b807="" data-v-796309f8="">2020-05-16 09:51</time></span></div></div> <!----></div> <hr data-v-6287b807="" data-v-796309f8="" class="horizon"> <div data-v-5a58a989="" data-v-6287b807="" class="marked" data-v-796309f8=""><h1>新手村</h1>
+<p>任何一个伟大的目标，都有一个微不足道的开始。</p>
+<h2>洛谷的第一个任务</h2>
+<p>勇敢的迈出第一步，了解下语言和洛谷。跟着书本和老师走，不会难的。</p>
+<ul>
+<li><a href="/problem/P1000">P1000</a></li>
+<li><a href="/problem/P1001">P1001</a></li>
+<li><a href="/problem/P1421">P1421</a></li>
+<li><a href="/problem/P1425">P1425</a></li>
+</ul>
+<h2>顺序与分支</h2>
+<p>计算机的智能性开始得以体现，因为计算机能够根据不同的条件选择了。</p>
+<ul>
+<li><a href="/problem/P1422">P1422</a></li>
+<li><a href="/problem/P1085">P1085</a></li>
+<li><a href="/problem/P1089">P1089</a></li>
+<li><a href="/problem/P1909">P1909</a></li>
+</ul>
+<h2>循环！循环！循环！</h2>
+<p>计算机最不怕的就是重复。你让它做10000次同样的事它也不怕啦，但是让他做1亿亿次的话……</p>
+<ul>
+<li><a href="/problem/P1008">P1008</a></li>
+<li><a href="/problem/P1035">P1035</a></li>
+<li><a href="/problem/P1423">P1423</a></li>
+<li><a href="/problem/P1424">P1424</a></li>
+<li><a href="/problem/P1980">P1980</a></li>
+</ul>
+<h2>数组</h2>
+<p>跟数组有关的题目基本上都要用到循环，所以请先完成1-3。</p>
+<ul>
+<li><a href="/problem/P1046">P1046</a></li>
+<li><a href="/problem/P1047">P1047</a></li>
+<li><a href="/problem/P1427">P1427</a></li>
+<li><a href="/problem/P1428">P1428</a></li>
+<li><a href="/problem/P2141">P2141</a></li>
+<li><a href="/problem/P1567">P1567</a></li>
+</ul>
+<h2>简单字符串</h2>
+<p>计算机不仅可以处理数字，还能处理文字！就是其实跟数字也没什么差。</p>
+<ul>
+<li><a href="/problem/P1055">P1055</a></li>
+<li><a href="/problem/P1200">P1200</a></li>
+<li><a href="/problem/P1308">P1308</a></li>
+<li><a href="/problem/P1553">P1553</a></li>
+<li><a href="/problem/P1598">P1598</a></li>
+<li><a href="/problem/P1914">P1914</a></li>
+</ul>
+<h2>过程函数与递归</h2>
+<p>将代码串进行打包，就是过程与函数。过程与函数调用自己则为递归。有一点小难但不要怕哦。</p>
+<ul>
+<li><a href="/problem/P1028">P1028</a></li>
+<li><a href="/problem/P1036">P1036</a></li>
+<li><a href="/problem/P1149">P1149</a></li>
+<li><a href="/problem/P1217">P1217</a></li>
+</ul>
+<h2>BOSS战-入门综合练习1</h2>
+<p>这里将前面的内容综合起来了，会有点难，不过你可以问老师同学，也能上网查资料。</p>
+<ul>
+<li><a href="/problem/P1478">P1478</a></li>
+<li><a href="/problem/P1618">P1618</a></li>
+<li><a href="/problem/P1579">P1579</a></li>
+<li><a href="/problem/P2089">P2089</a></li>
+</ul>
+<h2>BOSS战-入门综合练习2</h2>
+<p>勇士，竟然来到了BOSS的老巢！来一场恶斗，证明自己的实力，解锁下一个级别！</p>
+<ul>
+<li><a href="/problem/P1426">P1426</a></li>
+<li><a href="/problem/P1464">P1464</a></li>
+<li><a href="/problem/P1014">P1014</a></li>
+<li><a href="/problem/P1022">P1022</a></li>
+<li><a href="/problem/P1307">P1307</a></li>
+</ul>
+<h1>普及练习场</h1>
+<p>普及组选手可冲刺训练，提高组选手亦可在此巩固基础。</p>
+<h2>简单的模拟</h2>
+<p>开始普及组的训练！所谓模拟，就是直接根据题意编写，思维难度简单。</p>
+<ul>
+<li><a href="/problem/P1003">P1003</a></li>
+<li><a href="/problem/P1067">P1067</a></li>
+<li><a href="/problem/P1540">P1540</a></li>
+<li><a href="/problem/P1056">P1056</a></li>
+<li><a href="/problem/P1328">P1328</a></li>
+<li><a href="/problem/P1563">P1563</a></li>
+</ul>
+<h2>交叉模拟</h2>
+<p>这里也是模拟，但是会混有些别的部分。思维难度不大，但是编写起来会有些难度。</p>
+<ul>
+<li><a href="/problem/P1023">P1023</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1042">P1042</a></li>
+<li><a href="/problem/P1086">P1086</a></li>
+<li><a href="/problem/P1098">P1098</a></li>
+<li><a href="/problem/P3952">P3952</a></li>
+</ul>
+<h2>排序</h2>
+<p>将杂乱无章的数据变得有规律。有各种各样的排序算法，看情况使用。</p>
+<ul>
+<li><a href="/problem/P1177">P1177</a></li>
+<li><a href="/problem/P1059">P1059</a></li>
+<li><a href="/problem/P1068">P1068</a></li>
+<li><a href="/problem/P1781">P1781</a></li>
+</ul>
+<h2>排序Ex</h2>
+<p>这里的排序就更上一层了。不仅融合了别的算法与技巧，排序本身也有各种花招。</p>
+<ul>
+<li><a href="/problem/P1583">P1583</a></li>
+<li><a href="/problem/P1051">P1051</a></li>
+<li><a href="/problem/P1093">P1093</a></li>
+<li><a href="/problem/P1309">P1309</a></li>
+</ul>
+<h2>字符串处理</h2>
+<p>这里的字符串处理还会变得更加的有意思，难度也更大。需要好好地思考一下。</p>
+<ul>
+<li><a href="/problem/P1603">P1603</a></li>
+<li><a href="/problem/P1071">P1071</a></li>
+<li><a href="/problem/P1012">P1012</a></li>
+<li><a href="/problem/P1538">P1538</a></li>
+</ul>
+<h2>贪心</h2>
+<p>贪心就是只考虑眼前的利益。对于我们人生来说太贪是不好的，不过oi中，有时是对的。</p>
+<ul>
+<li><a href="/problem/P1090">P1090</a></li>
+<li><a href="/problem/P1181">P1181</a></li>
+<li><a href="/problem/P1208">P1208</a></li>
+<li><a href="/problem/P1223">P1223</a></li>
+<li><a href="/problem/P1094">P1094</a></li>
+<li><a href="/problem/P1803">P1803</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1080">P1080</a></li>
+</ul>
+<h2>深度优先搜索</h2>
+<p>搜索可以穷举各种情况。很多题目都可以用搜索完成。就算不能，搜索也是骗分神器。</p>
+<ul>
+<li><a href="/problem/P1219">P1219</a></li>
+<li><a href="/problem/P1019">P1019</a></li>
+<li><a href="/problem/P1101">P1101</a></li>
+<li><a href="/problem/P1605">P1605</a></li>
+<li><a href="/problem/P1040">P1040</a></li>
+<li><a href="/problem/P1092">P1092</a></li>
+</ul>
+<h2>广度优先搜索</h2>
+<p>广度优先搜索可以用来找有关“最短步数”的问题。恩，也可以用来“地毯式搜索”。</p>
+<ul>
+<li><a href="/problem/P1162">P1162</a></li>
+<li><a href="/problem/P1032">P1032</a></li>
+<li><a href="/problem/P1141">P1141</a></li>
+<li><a href="/problem/P1126">P1126</a></li>
+<li><a href="/problem/P1443">P1443</a></li>
+</ul>
+<h2>带有技巧的搜索</h2>
+<p>这里的搜索不仅包含了dfs和bfs，还包括剪枝、记录等技巧以加快速度。</p>
+<ul>
+<li><a href="/problem/P1118">P1118</a></li>
+<li><a href="/problem/P1434">P1434</a></li>
+<li><a href="/problem/P1433">P1433</a></li>
+<li><a href="/problem/P1074">P1074</a></li>
+</ul>
+<h2>分治算法</h2>
+<p>将大问题拆分为小问题，分而治之，各个击破，然后在合并回来。</p>
+<ul>
+<li><a href="/problem/P1226">P1226</a></li>
+<li><a href="/problem/P1010">P1010</a></li>
+<li><a href="/problem/P1908">P1908</a></li>
+<li><a href="/problem/P1498">P1498</a></li>
+</ul>
+<h2>简单数学问题</h2>
+<p>用计算机解决某些麻烦数学问题，再合适不过了。这真是绝妙的搭配啊！</p>
+<ul>
+<li><a href="/problem/P1088">P1088</a></li>
+<li><a href="/problem/P1045">P1045</a></li>
+<li><a href="/problem/P1403">P1403</a></li>
+<li><a href="/problem/P1017">P1017</a></li>
+<li><a href="/problem/P1147">P1147</a></li>
+<li><a href="/problem/P1029">P1029</a></li>
+</ul>
+<h2>递推与递归二分</h2>
+<p>递推，层层递进，由基础推向顶层。二分不仅可以用来查找数据，还可以确定最合适的值。</p>
+<ul>
+<li><a href="/problem/P1192">P1192</a></li>
+<li><a href="/problem/P1025">P1025</a></li>
+<li><a href="/problem/P1057">P1057</a></li>
+<li><a href="/problem/P1135">P1135</a></li>
+<li><a href="/problem/P1216">P1216</a></li>
+<li><a href="/problem/P1182">P1182</a></li>
+<li><a href="/problem/P1316">P1316</a></li>
+</ul>
+<h2>线性数据结构</h2>
+<p>数组，链表，队列，栈，都是线性结构。巧用这些结构可以做出不少方便的事情。</p>
+<ul>
+<li><a href="/problem/P1996">P1996</a></li>
+<li><a href="/problem/P1115">P1115</a></li>
+<li><a href="/problem/P1739">P1739</a></li>
+<li><a href="/problem/P1160">P1160</a></li>
+<li><a href="/problem/P1449">P1449</a></li>
+</ul>
+<h2>树形数据结构</h2>
+<p>由一个根节点分叉，越分越多，就成了树。树可以表示数据之间的从属关系</p>
+<ul>
+<li><a href="/problem/P1087">P1087</a></li>
+<li><a href="/problem/P1030">P1030</a></li>
+<li><a href="/problem/P1305">P1305</a></li>
+<li><a href="/problem/P5018">P5018</a></li>
+</ul>
+<h2>动态规划的背包问题</h2>
+<p>这是最基础的动态规划。不过如果是第一次接触会有些难以理解。加油闯过这个坎。</p>
+<ul>
+<li><a href="/problem/P1060">P1060</a></li>
+<li><a href="/problem/P1164">P1164</a></li>
+<li><a href="/problem/P1064">P1064</a></li>
+<li><a href="/problem/P1048">P1048</a></li>
+<li><a href="/problem/P1049">P1049</a></li>
+<li><a href="/problem/P1616">P1616</a></li>
+</ul>
+<h2>线性动态规划</h2>
+<p>这也是基础的动态规划。是在线性结构上面的动态规划，一定要掌握。</p>
+<ul>
+<li><a href="/problem/P1020">P1020</a></li>
+<li><a href="/problem/P1091">P1091</a></li>
+<li><a href="/problem/P1280">P1280</a></li>
+<li><a href="/problem/P1880">P1880</a></li>
+<li><a href="/problem/P1140">P1140</a></li>
+<li><a href="/problem/P1282">P1282</a></li>
+</ul>
+<h2>多维动态规划</h2>
+<p>这里的动态规划就不止一维了。不仅要小心时间复杂度，也要注意空间复杂度。</p>
+<ul>
+<li><a href="/problem/P1508">P1508</a></li>
+<li><a href="/problem/P1006">P1006</a></li>
+<li><a href="/problem/P1387">P1387</a></li>
+<li><a href="/problem/P1417">P1417</a></li>
+<li><a href="/problem/P1855">P1855</a></li>
+<li><a href="/problem/P1736">P1736</a></li>
+</ul>
+<h2>更要技巧的动规与记忆化</h2>
+<p>这边的题目有各种搞法。当然有的题目也可以使用记忆化搜索来降低思维难度。</p>
+<ul>
+<li><a href="/problem/P1064">P1064</a></li>
+<li><a href="/problem/P1541">P1541</a></li>
+<li><a href="/problem/P1026">P1026</a></li>
+<li><a href="/problem/P1063">P1063</a></li>
+<li><a href="/problem/P1156">P1156</a></li>
+<li><a href="/problem/P1052">P1052</a></li>
+</ul>
+<h2>高精度算法</h2>
+<p>就算是long long（或int64）还不够怎么办？用高精度算法。自己动手丰衣足食。</p>
+<ul>
+<li><a href="/problem/P1601">P1601</a></li>
+<li><a href="/problem/P2142">P2142</a></li>
+<li><a href="/problem/P1303">P1303</a></li>
+<li><a href="/problem/P1255">P1255</a></li>
+<li><a href="/problem/P1604">P1604</a></li>
+</ul>
+<h2>贪心EX</h2>
+<p>虽然是贪心题，可能不是你当时你虐着玩的贪心惹qwq</p>
+<ul>
+<li><a href="/problem/P1080">P1080</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1233">P1233</a></li>
+<li><a href="/problem/P2123">P2123</a></li>
+</ul>
+<h2>简单数学</h2>
+<p>数学和oi是密切相关的，数学不仅是oi的基础，而且是算法的核心。</p>
+<ul>
+<li><a href="/problem/P1865">P1865</a></li>
+<li><a href="/problem/P1372">P1372</a></li>
+<li><a href="/problem/P1338">P1338</a></li>
+<li><a href="/problem/P2158">P2158</a></li>
+<li><a href="/problem/P1582">P1582</a></li>
+</ul>
+<h2>BOSS战-普及综合练习1</h2>
+<p>好不容易闯到这一关，你那还等什么呢？抄起家伙赶快上啊！</p>
+<ul>
+<li><a href="/problem/P1478">P1478</a></li>
+<li><a href="/problem/P1203">P1203</a></li>
+<li><a href="/problem/P1363">P1363</a></li>
+<li><a href="/problem/P1736">P1736</a></li>
+</ul>
+<h2>BOSS战-普及综合练习2</h2>
+<p>来搞定第二个BOSS。虽然战斗艰难，但你一定没有问题。</p>
+<ul>
+<li><a href="/problem/P1201">P1201</a></li>
+<li><a href="/problem/P1095">P1095</a></li>
+<li><a href="/problem/P1058">P1058</a></li>
+<li><a href="/problem/P2258">P2258</a></li>
+<li><a href="/problem/P1108">P1108</a></li>
+</ul>
+<h2>BOSS战-普及综合练习3</h2>
+<p>普及练习场的大BOSS：“一定让你有去无回”。怎么办呢？只能打倒他开启下一个级别！</p>
+<ul>
+<li><a href="/problem/P1328">P1328</a></li>
+<li><a href="/problem/P1062">P1062</a></li>
+<li><a href="/problem/P1969">P1969</a></li>
+<li><a href="/problem/P1037">P1037</a></li>
+</ul>
+<h2>普及常见模板</h2>
+<p>这里集中了比较基础的算法的模板。提高和省选也有模板题哦！</p>
+<ul>
+<li><a href="/problem/P1177">P1177</a></li>
+<li><a href="/problem/P3366">P3366</a></li>
+<li><a href="/problem/P3367">P3367</a></li>
+<li><a href="/problem/P3371">P3371</a></li>
+<li><a href="/problem/P3383">P3383</a></li>
+</ul>
+<h1>提高历练地</h1>
+<p>已经去除了普及组难度的，请组织放心。成长大牛之必写题！！！</p>
+<h2>搜索Ex</h2>
+<p>开始提高组的试炼。这里已经去除了所有普及组难度的题目。哼哼，怕了吧。。</p>
+<ul>
+<li><a href="/problem/P1120">P1120</a></li>
+<li><a href="/problem/P1378">P1378</a></li>
+<li><a href="/problem/P1514">P1514</a></li>
+<li><a href="/problem/P1312">P1312</a></li>
+<li><a href="/problem/P1441">P1441</a></li>
+<li><a href="/problem/P1242">P1242</a></li>
+</ul>
+<h2>动态规划TG.lv(1)</h2>
+<p>这是提高组难度中比较基础的动态规划，也许一两个转移方程就可以写出。</p>
+<ul>
+<li><a href="/problem/P1005">P1005</a></li>
+<li><a href="/problem/P1373">P1373</a></li>
+<li><a href="/problem/P2279">P2279</a></li>
+<li><a href="/problem/P1220">P1220</a></li>
+<li><a href="/problem/P1156">P1156</a></li>
+</ul>
+<h2>动态规划TG.lv(2)</h2>
+<p>这里的动态规划稍稍有所加大难度，思考转移方程的时间可能会与编写程序的时间持平。</p>
+<ul>
+<li><a href="/problem/P1273">P1273</a></li>
+<li><a href="/problem/P1169">P1169</a></li>
+<li><a href="/problem/P2577">P2577</a></li>
+<li><a href="/problem/P1070">P1070</a></li>
+<li><a href="/problem/P2051">P2051</a></li>
+</ul>
+<h2>动态规划TG.lv(3)</h2>
+<p>比较需要技巧的动态规划。有的不仅仅需要状态转移方程，可能还会与别的算法综合。</p>
+<ul>
+<li><a href="/problem/P1415">P1415</a></li>
+<li><a href="/problem/P2157">P2157</a></li>
+<li><a href="/problem/P2216">P2216</a></li>
+<li><a href="/problem/P2331">P2331</a></li>
+<li><a href="/problem/P2467">P2467</a></li>
+<li><a href="/problem/P3084">P3084</a></li>
+</ul>
+<h2>数论</h2>
+<p>数论就是研究整数的理论。包括公约公倍数、质数、欧拉定理和同余方程等。</p>
+<ul>
+<li><a href="/problem/P2152">P2152</a></li>
+<li><a href="/problem/P1414">P1414</a></li>
+<li><a href="/problem/P1134">P1134</a></li>
+<li><a href="/problem/P1313">P1313</a></li>
+<li><a href="/problem/P1306">P1306</a></li>
+</ul>
+<h2>博弈论</h2>
+<p>博弈论考虑游戏中的个体的预测行为和实际行为，并研究它们的优化策略。</p>
+<ul>
+<li><a href="/problem/P1199">P1199</a></li>
+<li><a href="/problem/P1288">P1288</a></li>
+<li><a href="/problem/P1290">P1290</a></li>
+<li><a href="/problem/P2148">P2148</a></li>
+<li><a href="/problem/P1247">P1247</a></li>
+<li><a href="/problem/P2575">P2575</a></li>
+</ul>
+<h2>其他数学问题</h2>
+<p>听说学oi的同志们数学都挺好。那么。就请完成下面的题目证明这一点吧！</p>
+<ul>
+<li><a href="/problem/P1357">P1357</a></li>
+<li><a href="/problem/P1641">P1641</a></li>
+<li><a href="/problem/P2059">P2059</a></li>
+<li><a href="/problem/P2154">P2154</a></li>
+<li><a href="/problem/P2261">P2261</a></li>
+<li><a href="/problem/P2327">P2327</a></li>
+<li><a href="/problem/P1066">P1066</a></li>
+</ul>
+<h2>图的遍历</h2>
+<p>图是一种非常重要的数据结构，描述对象复杂的练习。这里开始接触图的基本概念。</p>
+<ul>
+<li><a href="/problem/P2661">P2661</a></li>
+<li><a href="/problem/P1330">P1330</a></li>
+<li><a href="/problem/P1341">P1341</a></li>
+<li><a href="/problem/P2921">P2921</a></li>
+</ul>
+<h2>最短路问题</h2>
+<p>最短路是图论中最重要的部分，多种算法可以应用。很多题目都可以抽象成这种模型。</p>
+<ul>
+<li><a href="/problem/P1339">P1339</a></li>
+<li><a href="/problem/P1462">P1462</a></li>
+<li><a href="/problem/P1346">P1346</a></li>
+<li><a href="/problem/P1119">P1119</a></li>
+<li><a href="/problem/P1144">P1144</a></li>
+<li><a href="/problem/P1522">P1522</a></li>
+</ul>
+<h2>最小生成树</h2>
+<p>最小生成树可以用kruskal（克鲁斯卡尔）算法或prim（普里姆）算法求出。</p>
+<ul>
+<li><a href="/problem/P1546">P1546</a></li>
+<li><a href="/problem/P2330">P2330</a></li>
+<li><a href="/problem/P1991">P1991</a></li>
+<li><a href="/problem/P1265">P1265</a></li>
+</ul>
+<h2>较复杂图论I</h2>
+<p>别的些图论问题，包括树、拓扑排序等。要过这一关，需要学习不少新的算法。</p>
+<ul>
+<li><a href="/problem/P1113">P1113</a></li>
+<li><a href="/problem/P1268">P1268</a></li>
+<li><a href="/problem/P1525">P1525</a></li>
+<li><a href="/problem/P1983">P1983</a></li>
+</ul>
+<h2>较复杂图论II</h2>
+<p>更高级的图论算法。包括差分约束、强连通、二分图等。会更难一些。</p>
+<ul>
+<li><a href="/problem/P1993">P1993</a></li>
+<li><a href="/problem/P1726">P1726</a></li>
+<li><a href="/problem/P2055">P2055</a></li>
+<li><a href="/problem/P2149">P2149</a></li>
+<li><a href="/problem/P1345">P1345</a></li>
+</ul>
+<h2>并查集</h2>
+<p>用于处理一些不相交集合的合并及查询问题。常常在使用中以森林来表示。</p>
+<ul>
+<li><a href="/problem/P1111">P1111</a></li>
+<li><a href="/problem/P2024">P2024</a></li>
+<li><a href="/problem/P1197">P1197</a></li>
+<li><a href="/problem/P1196">P1196</a></li>
+</ul>
+<h2>堆</h2>
+<p>堆总是一棵完全树；堆中某个节点的值总是不大于或不小于其父节点的值。</p>
+<ul>
+<li><a href="/problem/P1801">P1801</a></li>
+<li><a href="/problem/P2278">P2278</a></li>
+<li><a href="/problem/P1631">P1631</a></li>
+<li><a href="/problem/P2085">P2085</a></li>
+<li><a href="/problem/P1484">P1484</a></li>
+</ul>
+<h2>线段树树状数组基础</h2>
+<p>这都是比较高级的线性数据结构。在处理一些询问与修改线性问题时，是很好用的。</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P1198">P1198</a></li>
+<li><a href="/problem/P2023">P2023</a></li>
+<li><a href="/problem/P2161">P2161</a></li>
+</ul>
+<h2>神奇的解法</h2>
+<p>有些问题刚开始觉得无从下手。好好想一想，尽量别看题解，否则你会大呼“简单”。</p>
+<ul>
+<li><a href="/problem/P1007">P1007</a></li>
+<li><a href="/problem/P1984">P1984</a></li>
+<li><a href="/problem/P2022">P2022</a></li>
+<li><a href="/problem/P2320">P2320</a></li>
+</ul>
+<h2>倍增</h2>
+<p>一种特殊的枚举算法，但可大大加快效率。近年noip有考到。难度较大。</p>
+<ul>
+<li><a href="/problem/P1967">P1967</a></li>
+<li><a href="/problem/P1081">P1081</a></li>
+<li><a href="/problem/P1613">P1613</a></li>
+</ul>
+<h2>强连通分量</h2>
+<p>强连通分量</p>
+<ul>
+<li><a href="/problem/P2341">P2341</a></li>
+<li><a href="/problem/P3469">P3469</a></li>
+<li><a href="/problem/P2746">P2746</a></li>
+<li><a href="/problem/P3119">P3119</a></li>
+<li><a href="/problem/P3225">P3225</a></li>
+</ul>
+<h2>BOSS战-提高综合练习1</h2>
+<p>年轻人，又是个送上门的，让我来看看你真实的本领。啊哈哈哈哈哈！</p>
+<ul>
+<li><a href="/problem/P2264">P2264</a></li>
+<li><a href="/problem/P1772">P1772</a></li>
+<li><a href="/problem/P1083">P1083</a></li>
+<li><a href="/problem/P1979">P1979</a></li>
+<li><a href="/problem/P2939">P2939</a></li>
+</ul>
+<h2>BOSS战-提高综合练习2</h2>
+<p>再来！这里有的题目并非单纯的考察某个算法，而是考察一种综合性的思维。</p>
+<ul>
+<li><a href="/problem/P1901">P1901</a></li>
+<li><a href="/problem/P1314">P1314</a></li>
+<li><a href="/problem/P2144">P2144</a></li>
+<li><a href="/problem/P1073">P1073</a></li>
+<li><a href="/problem/P2324">P2324</a></li>
+</ul>
+<h2>BOSS战-提高综合练习3</h2>
+<p>既然已经打倒了前面2个boss，那么第3个也是没有问题的。少年，来吧！</p>
+<ul>
+<li><a href="/problem/P1965">P1965</a></li>
+<li><a href="/problem/P1311">P1311</a></li>
+<li><a href="/problem/P2296">P2296</a></li>
+<li><a href="/problem/P1084">P1084</a></li>
+</ul>
+<h2>提高模板-nlogn数据结构</h2>
+<p>虽然这些算法不是noip必须的，但是不算困难，很多题目可以使用这些方法。</p>
+<ul>
+<li><a href="/problem/P3374">P3374</a></li>
+<li><a href="/problem/P3368">P3368</a></li>
+<li><a href="/problem/P3372">P3372</a></li>
+<li><a href="/problem/P3373">P3373</a></li>
+<li><a href="/problem/P1439">P1439</a></li>
+<li><a href="/problem/P3378">P3378</a></li>
+</ul>
+<h1>省选斗兽场/NOI神殿</h1>
+<p>为省选及以上选手制作的训练场。其实，省选水平的oier不需要一些外加的刷题列表，本栏仅供参考，也欢迎各位指出不足。</p>
+<h2>省选基础-读入/输出优化</h2>
+<p>读入/输出优化是省选刷题时必要的一个东西，这里给出了几题，需要自己手写相应的读入输出处理。作为第一关，这一关相对简单。</p>
+<ul>
+<li><a href="/problem/P1580">P1580</a></li>
+<li><a href="/problem/P2393">P2393</a></li>
+<li><a href="/problem/P2394">P2394</a></li>
+</ul>
+<h2>省选基础-位运算</h2>
+<p>位运算往往在必要的时候,能带你优化一下常数,也许是空间;也许是时间;有的时候这样可以多过很多分</p>
+<ul>
+<li><a href="/problem/P2114">P2114</a></li>
+<li><a href="/problem/P2396">P2396</a></li>
+<li><a href="/problem/P2397">P2397</a></li>
+</ul>
+<h2>省选基础-打表</h2>
+<p>打表虽然很赖皮,而且基本都是非正解,但是这种办法能让我们在省选中拿到一些会超时或者会超空间的一些数据点</p>
+<ul>
+<li><a href="/problem/P1149">P1149</a></li>
+<li><a href="/problem/P1463">P1463</a></li>
+<li><a href="/problem/P1896">P1896</a></li>
+</ul>
+<h2>动态规划1</h2>
+<p>动态规划</p>
+<ul>
+<li><a href="/problem/P2051">P2051</a></li>
+<li><a href="/problem/P1879">P1879</a></li>
+<li><a href="/problem/P1850">P1850</a></li>
+<li><a href="/problem/P2831">P2831</a></li>
+<li><a href="/problem/P1131">P1131</a></li>
+<li><a href="/problem/P1169">P1169</a></li>
+</ul>
+<h2>动态规划2</h2>
+<p>动态规划</p>
+<ul>
+<li><a href="/problem/P1273">P1273</a></li>
+<li><a href="/problem/P3648">P3648</a></li>
+<li><a href="/problem/P2519">P2519</a></li>
+<li><a href="/problem/P2515">P2515</a></li>
+<li><a href="/problem/P3233">P3233</a></li>
+<li><a href="/problem/P2501">P2501</a></li>
+</ul>
+<h2>网络流——最大流</h2>
+<p>最大流</p>
+<ul>
+<li><a href="/problem/P2765">P2765</a></li>
+<li><a href="/problem/P2764">P2764</a></li>
+<li><a href="/problem/P2763">P2763</a></li>
+<li><a href="/problem/P2766">P2766</a></li>
+<li><a href="/problem/P2774">P2774</a></li>
+<li><a href="/problem/P2805">P2805</a></li>
+</ul>
+<h2>网络流——费用流</h2>
+<p>费用流</p>
+<ul>
+<li><a href="/problem/P2153">P2153</a></li>
+<li><a href="/problem/P2053">P2053</a></li>
+<li><a href="/problem/P3159">P3159</a></li>
+<li><a href="/problem/P2604">P2604</a></li>
+<li><a href="/problem/P2050">P2050</a></li>
+<li><a href="/problem/P3980">P3980</a></li>
+</ul>
+<h2>单调队列</h2>
+<p>单调队列</p>
+<ul>
+<li><a href="/problem/P2698">P2698</a></li>
+<li><a href="/problem/P2216">P2216</a></li>
+<li><a href="/problem/P2219">P2219</a></li>
+<li><a href="/problem/P2564">P2564</a></li>
+<li><a href="/problem/P2569">P2569</a></li>
+</ul>
+<h2>概率期望</h2>
+<p>概率期望</p>
+<ul>
+<li><a href="/problem/P2473">P2473</a></li>
+<li><a href="/problem/P2221">P2221</a></li>
+<li><a href="/problem/P3317">P3317</a></li>
+<li><a href="/problem/P3343">P3343</a></li>
+<li><a href="/problem/P3600">P3600</a></li>
+<li><a href="/problem/P3830">P3830</a></li>
+</ul>
+<h2>二分图</h2>
+<p>二分图</p>
+<ul>
+<li><a href="/problem/P3386">P3386</a></li>
+<li><a href="/problem/P1640">P1640</a></li>
+<li><a href="/problem/P1129">P1129</a></li>
+<li><a href="/problem/P1963">P1963</a></li>
+<li><a href="/problem/P3231">P3231</a></li>
+<li><a href="/problem/P2526">P2526</a></li>
+</ul>
+<h2>点分治</h2>
+<p>点分治</p>
+<ul>
+<li><a href="/problem/P2634">P2634</a></li>
+<li><a href="/problem/P2664">P2664</a></li>
+<li><a href="/problem/P3806">P3806</a></li>
+<li><a href="/problem/P3676">P3676</a></li>
+</ul>
+<h2>后缀数组</h2>
+<p>后缀数组</p>
+<ul>
+<li><a href="/problem/P3809">P3809</a></li>
+<li><a href="/problem/P1117">P1117</a></li>
+<li><a href="/problem/P2178">P2178</a></li>
+<li><a href="/problem/P2463">P2463</a></li>
+<li><a href="/problem/P2336">P2336</a></li>
+</ul>
+<h2>主席树</h2>
+<p>主席树</p>
+<ul>
+<li><a href="/problem/P2468">P2468</a></li>
+<li><a href="/problem/P3157">P3157</a></li>
+<li><a href="/problem/P3302">P3302</a></li>
+<li><a href="/problem/P3168">P3168</a></li>
+<li><a href="/problem/P3313">P3313</a></li>
+</ul>
+<h2>数位DP</h2>
+<p>数位DP</p>
+<ul>
+<li><a href="/problem/P2602">P2602</a></li>
+<li><a href="/problem/P3281">P3281</a></li>
+<li><a href="/problem/P2518">P2518</a></li>
+<li><a href="/problem/P2606">P2606</a></li>
+</ul>
+<h2>AC自动机</h2>
+<p>AC自动机</p>
+<ul>
+<li><a href="/problem/P3808">P3808</a></li>
+<li><a href="/problem/P3796">P3796</a></li>
+<li><a href="/problem/P2444">P2444</a></li>
+<li><a href="/problem/P2414">P2414</a></li>
+</ul>
+<h2>平衡树</h2>
+<p>平衡树</p>
+<ul>
+<li><a href="/problem/P2042">P2042</a></li>
+<li><a href="/problem/P2596">P2596</a></li>
+<li><a href="/problem/P1110">P1110</a></li>
+<li><a href="/problem/P3285">P3285</a></li>
+<li><a href="/problem/P3644">P3644</a></li>
+<li><a href="/problem/P3765">P3765</a></li>
+<li><a href="/problem/P3369">P3369</a></li>
+</ul>
+<h2>树链剖分</h2>
+<p>树链剖分</p>
+<ul>
+<li><a href="/problem/P2590">P2590</a></li>
+<li><a href="/problem/P2486">P2486</a></li>
+<li><a href="/problem/P2146">P2146</a></li>
+<li><a href="/problem/P3258">P3258</a></li>
+<li><a href="/problem/P3178">P3178</a></li>
+</ul>
+<h2>动态树</h2>
+<p>动态树</p>
+<ul>
+<li><a href="/problem/P3690">P3690</a></li>
+<li><a href="/problem/P2387">P2387</a></li>
+<li><a href="/problem/P3203">P3203</a></li>
+<li><a href="/problem/P3348">P3348</a></li>
+</ul>
+<h2>树套树</h2>
+<p>树套树</p>
+<ul>
+<li><a href="/problem/P1903">P1903</a></li>
+<li><a href="/problem/P3157">P3157</a></li>
+<li><a href="/problem/P3332">P3332</a></li>
+<li><a href="/problem/P2166">P2166</a></li>
+<li><a href="/problem/P3380">P3380</a></li>
+<li><a href="/problem/P2137">P2137</a></li>
+<li><a href="/problem/P3759">P3759</a></li>
+</ul>
+<h2>可持久化Trie树</h2>
+<p>可持久化Trie树</p>
+<ul>
+<li><a href="/problem/P2048">P2048</a></li>
+<li><a href="/problem/P3527">P3527</a></li>
+<li><a href="/problem/P3302">P3302</a></li>
+<li><a href="/problem/P3168">P3168</a></li>
+<li><a href="/problem/P3242">P3242</a></li>
+<li><a href="/problem/P3241">P3241</a></li>
+<li><a href="/problem/P3293">P3293</a></li>
+</ul>
+<h2>莫队算法</h2>
+<p>莫队算法</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P2336">P2336</a></li>
+<li><a href="/problem/P3709">P3709</a></li>
+<li><a href="/problem/P2709">P2709</a></li>
+<li><a href="/problem/P3674">P3674</a></li>
+</ul>
+<h2>分块</h2>
+<p>分块</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P3396">P3396</a></li>
+<li><a href="/problem/P1822">P1822</a></li>
+<li><a href="/problem/P2801">P2801</a></li>
+<li><a href="/problem/P3203">P3203</a></li>
+</ul>
+<h2>莫比乌斯反演</h2>
+<p>莫比乌斯反演</p>
+<ul>
+<li><a href="/problem/P3768">P3768</a></li>
+<li><a href="/problem/P3172">P3172</a></li>
+<li><a href="/problem/P3455">P3455</a></li>
+<li><a href="/problem/P2522">P2522</a></li>
+<li><a href="/problem/P3327">P3327</a></li>
+</ul>
+<h2>其他</h2>
+<p>其他</p>
+<ul>
+<li><a href="/problem/P3377">P3377</a></li>
+<li><a href="/problem/P3261">P3261</a></li>
+<li><a href="/problem/P3382">P3382</a></li>
+<li><a href="/problem/P2571">P2571</a></li>
+<li><a href="/problem/P3222">P3222</a></li>
+<li><a href="/problem/P3187">P3187</a></li>
+<li><a href="/problem/P3199">P3199</a></li>
+<li><a href="/problem/P3292">P3292</a></li>
+<li><a href="/problem/P2824">P2824</a></li>
+<li><a href="/problem/P3285">P3285</a></li>
+<li><a href="/problem/P1552">P1552</a></li>
+</ul>
+<h1>USACO</h1>
+<p>美国经典的算法练习题库，值得一刷</p>
+<h2>USACO Section 1.1</h2>
+<ul>
+<li><a href="/problem/P1200">P1200</a></li>
+<li><a href="/problem/P1201">P1201</a></li>
+<li><a href="/problem/P1202">P1202</a></li>
+<li><a href="/problem/P1203">P1203</a></li>
+</ul>
+<h2>USACO Section 1.2</h2>
+<p>完全枚举</p>
+<ul>
+<li><a href="/problem/P3864">P3864</a></li>
+<li><a href="/problem/P1204">P1204</a></li>
+<li><a href="/problem/P1205">P1205</a></li>
+<li><a href="/problem/P1206">P1206</a></li>
+<li><a href="/problem/P1207">P1207</a></li>
+</ul>
+<h2>USACO Section 1.3</h2>
+<p>贪心</p>
+<ul>
+<li><a href="/problem/P1208">P1208</a></li>
+<li><a href="/problem/P1209">P1209</a></li>
+<li><a href="/problem/P1211">P1211</a></li>
+<li><a href="/problem/P1444">P1444</a></li>
+<li><a href="/problem/P3650">P3650</a></li>
+<li><a href="/problem/P2693">P2693</a></li>
+</ul>
+<h2>USACO Section 1.4</h2>
+<p>有技巧的枚举</p>
+<ul>
+<li><a href="/problem/P1214">P1214</a></li>
+<li><a href="/problem/P1215">P1215</a></li>
+</ul>
+<h2>USACO Section 1.5</h2>
+<p>二进制数</p>
+<ul>
+<li><a href="/problem/P1216">P1216</a></li>
+<li><a href="/problem/P1217">P1217</a></li>
+<li><a href="/problem/P1218">P1218</a></li>
+</ul>
+<h2>USACO Section 2.1</h2>
+<p>图论和洪水填充</p>
+<ul>
+<li><a href="/problem/P1457">P1457</a></li>
+<li><a href="/problem/P1458">P1458</a></li>
+<li><a href="/problem/P1459">P1459</a></li>
+<li><a href="/problem/P1460">P1460</a></li>
+<li><a href="/problem/P1461">P1461</a></li>
+</ul>
+<h2>USACO Section 2.2</h2>
+<p>数据结构与动态规划</p>
+<ul>
+<li><a href="/problem/P1465">P1465</a></li>
+<li><a href="/problem/P1466">P1466</a></li>
+<li><a href="/problem/P1467">P1467</a></li>
+<li><a href="/problem/P1468">P1468</a></li>
+</ul>
+<h2>USACO Section 2.3</h2>
+<ul>
+<li><a href="/problem/P1470">P1470</a></li>
+<li><a href="/problem/P1472">P1472</a></li>
+<li><a href="/problem/P1473">P1473</a></li>
+<li><a href="/problem/P1474">P1474</a></li>
+<li><a href="/problem/P1475">P1475</a></li>
+</ul>
+<h2>USACO Section 2.4</h2>
+<p>最短路径</p>
+<ul>
+<li><a href="/problem/P1518">P1518</a></li>
+<li><a href="/problem/P1519">P1519</a></li>
+<li><a href="/problem/P1522">P1522</a></li>
+<li><a href="/problem/P1529">P1529</a></li>
+<li><a href="/problem/P1530">P1530</a></li>
+</ul>
+<h2>USACO Section 3.1</h2>
+<p>最小生成树</p>
+<ul>
+<li><a href="/problem/P1546">P1546</a></li>
+<li><a href="/problem/P2722">P2722</a></li>
+<li><a href="/problem/P2723">P2723</a></li>
+<li><a href="/problem/P2724">P2724</a></li>
+<li><a href="/problem/P2725">P2725</a></li>
+</ul>
+<h2>USACO Section 3.2</h2>
+<p>背包问题</p>
+<ul>
+<li><a href="/problem/P1134">P1134</a></li>
+<li><a href="/problem/P2727">P2727</a></li>
+<li><a href="/problem/P2728">P2728</a></li>
+<li><a href="/problem/P2729">P2729</a></li>
+<li><a href="/problem/P2730">P2730</a></li>
+<li><a href="/problem/P1828">P1828</a></li>
+</ul>
+<h2>USACO Section 3.3</h2>
+<p>欧拉回路</p>
+<ul>
+<li><a href="/problem/P2731">P2731</a></li>
+<li><a href="/problem/P2732">P2732</a></li>
+<li><a href="/problem/P1930">P1930</a></li>
+<li><a href="/problem/P2733">P2733</a></li>
+<li><a href="/problem/P2734">P2734</a></li>
+</ul>
+<h2>USACO Section 3.4</h2>
+<p>计算几何</p>
+<ul>
+<li><a href="/problem/P1827">P1827</a></li>
+<li><a href="/problem/P2735">P2735</a></li>
+<li><a href="/problem/P2736">P2736</a></li>
+</ul>
+<h2>USACO Section 4.1</h2>
+<p>最优化</p>
+<ul>
+<li><a href="/problem/P2737">P2737</a></li>
+<li><a href="/problem/P2738">P2738</a></li>
+</ul>
+<h2>USACO Section 4.2</h2>
+<p>网络流</p>
+<ul>
+<li><a href="/problem/P2740">P2740</a></li>
+<li><a href="/problem/P1894">P1894</a></li>
+<li><a href="/problem/P2751">P2751</a></li>
+</ul>
+<h2>USACO Section 4.3</h2>
+<p>高精度</p>
+<ul>
+<li><a href="/problem/P2687">P2687</a></li>
+<li><a href="/problem/P2752">P2752</a></li>
+<li><a href="/problem/P2753">P2753</a></li>
+</ul>
+<h2>USACO Section 4.4</h2>
+<ul>
+<li><a href="/problem/P1344">P1344</a></li>
+<li><a href="/problem/P2739">P2739</a></li>
+<li><a href="/problem/P2741">P2741</a></li>
+</ul>
+<h2>USACO Section 5.1</h2>
+<p>二维凸包</p>
+<ul>
+<li><a href="/problem/P2742">P2742</a></li>
+<li><a href="/problem/P2743">P2743</a></li>
+<li><a href="/problem/P2749">P2749</a></li>
+</ul>
+<h2>USACO Section 5.2</h2>
+<ul>
+<li><a href="/problem/P1560">P1560</a></li>
+</ul>
+<h2>USACO Section 5.3</h2>
+<p>启发式搜索</p>
+<ul>
+<li><a href="/problem/P2701">P2701</a></li>
+<li><a href="/problem/P2744">P2744</a></li>
+<li><a href="/problem/P2745">P2745</a></li>
+<li><a href="/problem/P2746">P2746</a></li>
+</ul>
+<h2>USACO Section 5.4</h2>
+<ul>
+<li><a href="/problem/P1345">P1345</a></li>
+<li><a href="/problem/P2747">P2747</a></li>
+<li><a href="/problem/P2748">P2748</a></li>
+</ul>
+<h2>USACO Section 5.5</h2>
+<ul>
+<li><a href="/problem/P1709">P1709</a></li>
+<li><a href="/problem/P1856">P1856</a></li>
+<li><a href="/problem/P2750">P2750</a></li>
+</ul>
+</div></div> <div data-v-796309f8="" data-v-6287b807="" class="card padding-default"><!----> <div data-v-e4b7c2ca="" data-v-6287b807="" class="expand-tip lfe-caption" data-v-796309f8=""><span data-v-e4b7c2ca=""><svg data-v-e4b7c2ca="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-chevron-down fa-w-14"><path data-v-e4b7c2ca="" fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z" class=""></path></svg> 展开源码</span></div></div> <div data-v-796309f8="" data-v-50ad8e4e="" data-v-6287b807="" class="card markdown-card padding-default" style="display: none;"><!----> <h3 data-v-50ad8e4e="" data-v-796309f8="" class="lfe-h3">编辑</h3> <div data-v-a97ae32a="" data-v-50ad8e4e="" class="mp-editor-container" data-v-796309f8="" style="height: 500px;"><div data-v-a97ae32a="" class="mp-editor-toolbar"><ul data-v-a97ae32a="" class="mp-editor-menu"><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="粗体" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bold" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bold fa-w-12"><path data-v-a97ae32a="" fill="currentColor" d="M304.793 243.891c33.639-18.537 53.657-54.16 53.657-95.693 0-48.236-26.25-87.626-68.626-104.179C265.138 34.01 240.849 32 209.661 32H24c-8.837 0-16 7.163-16 16v33.049c0 8.837 7.163 16 16 16h33.113v318.53H24c-8.837 0-16 7.163-16 16V464c0 8.837 7.163 16 16 16h195.69c24.203 0 44.834-1.289 66.866-7.584C337.52 457.193 376 410.647 376 350.014c0-52.168-26.573-91.684-71.207-106.123zM142.217 100.809h67.444c16.294 0 27.536 2.019 37.525 6.717 15.828 8.479 24.906 26.502 24.906 49.446 0 35.029-20.32 56.79-53.029 56.79h-76.846V100.809zm112.642 305.475c-10.14 4.056-22.677 4.907-31.409 4.907h-81.233V281.943h84.367c39.645 0 63.057 25.38 63.057 63.057.001 28.425-13.66 52.483-34.782 61.284z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="删除线" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="strikethrough" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-strikethrough fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M496 288H16c-8.837 0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h480c8.837 0 16 7.163 16 16v32c0 8.837-7.163 16-16 16zm-214.666 16c27.258 12.937 46.524 28.683 46.524 56.243 0 33.108-28.977 53.676-75.621 53.676-32.325 0-76.874-12.08-76.874-44.271V368c0-8.837-7.164-16-16-16H113.75c-8.836 0-16 7.163-16 16v19.204c0 66.845 77.717 101.82 154.487 101.82 88.578 0 162.013-45.438 162.013-134.424 0-19.815-3.618-36.417-10.143-50.6H281.334zm-30.952-96c-32.422-13.505-56.836-28.946-56.836-59.683 0-33.92 30.901-47.406 64.962-47.406 42.647 0 64.962 16.593 64.962 32.985V136c0 8.837 7.164 16 16 16h45.613c8.836 0 16-7.163 16-16v-30.318c0-52.438-71.725-79.875-142.575-79.875-85.203 0-150.726 40.972-150.726 125.646 0 22.71 4.665 41.176 12.777 56.547h129.823z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="斜体" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="italic" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-italic fa-w-10"><path data-v-a97ae32a="" fill="currentColor" d="M204.758 416h-33.849l62.092-320h40.725a16 16 0 0 0 15.704-12.937l6.242-32C297.599 41.184 290.034 32 279.968 32H120.235a16 16 0 0 0-15.704 12.937l-6.242 32C96.362 86.816 103.927 96 113.993 96h33.846l-62.09 320H46.278a16 16 0 0 0-15.704 12.935l-6.245 32C22.402 470.815 29.967 480 40.034 480h158.479a16 16 0 0 0 15.704-12.935l6.245-32c1.927-9.88-5.638-19.065-15.704-19.065z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="分割线" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-minus fa-w-14"><path data-v-a97ae32a="" fill="currentColor" d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z" class=""></path></svg></a></li><li data-v-a97ae32a="" class="mp-divider"><span data-v-a97ae32a="">|</span></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="一级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H1</i></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="二级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H2</i></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="三级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H3</i></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="四级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H4</i></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="五级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H5</i></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="六级标题" unselectable="on"><i data-v-a97ae32a="" unselectable="on" class="mp-icon-header">H6</i></a></li><li data-v-a97ae32a="" class="mp-divider"><span data-v-a97ae32a="">|</span></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="无序列表" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ul" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-list-ul fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="有序列表" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-list-ol fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M3.263 139.527c0-7.477 3.917-11.572 11.573-11.572h15.131V88.078c0-5.163.534-10.503.534-10.503h-.356s-1.779 2.67-2.848 3.738c-4.451 4.273-10.504 4.451-15.666-1.068l-5.518-6.231c-5.342-5.341-4.984-11.216.534-16.379l21.72-19.938C32.815 33.602 36.732 32 42.785 32H54.89c7.656 0 11.749 3.916 11.749 11.572v84.384h15.488c7.655 0 11.572 4.094 11.572 11.572v8.901c0 7.477-3.917 11.572-11.572 11.572H14.836c-7.656 0-11.573-4.095-11.573-11.572v-8.902zM2.211 304.591c0-47.278 50.955-56.383 50.955-69.165 0-7.18-5.954-8.755-9.28-8.755-3.153 0-6.479 1.051-9.455 3.852-5.079 4.903-10.507 7.004-16.111 2.451l-8.579-6.829c-5.779-4.553-7.18-9.805-2.803-15.409C13.592 201.981 26.025 192 47.387 192c19.437 0 44.476 10.506 44.476 39.573 0 38.347-46.753 46.402-48.679 56.909h39.049c7.529 0 11.557 4.027 11.557 11.382v8.755c0 7.354-4.028 11.382-11.557 11.382h-67.94c-7.005 0-12.083-4.028-12.083-11.382v-4.028zM5.654 454.61l5.603-9.28c3.853-6.654 9.105-7.004 15.584-3.152 4.903 2.101 9.63 3.152 14.359 3.152 10.155 0 14.358-3.502 14.358-8.23 0-6.654-5.604-9.106-15.934-9.106h-4.728c-5.954 0-9.28-2.101-12.258-7.88l-1.05-1.926c-2.451-4.728-1.226-9.806 2.801-14.884l5.604-7.004c6.829-8.405 12.257-13.483 12.257-13.483v-.35s-4.203 1.051-12.608 1.051H16.685c-7.53 0-11.383-4.028-11.383-11.382v-8.755c0-7.53 3.853-11.382 11.383-11.382h58.484c7.529 0 11.382 4.027 11.382 11.382v3.327c0 5.778-1.401 9.806-5.079 14.183l-17.509 20.137c19.611 5.078 28.716 20.487 28.716 34.845 0 21.363-14.358 44.126-48.503 44.126-16.636 0-28.192-4.728-35.896-9.455-5.779-4.202-6.304-9.805-2.626-15.934zM144 132h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></li><li data-v-a97ae32a="" class="mp-divider"><span data-v-a97ae32a="">|</span></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="插入图片" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-image fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="插入链接" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-link fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="插入代码" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-code fa-w-20"><path data-v-a97ae32a="" fill="currentColor" d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="插入表格" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="table" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-table fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64v-96h160v96zm0-160H64v-96h160v96zm224 160H288v-96h160v96zm0-160H288v-96h160v96z" class=""></path></svg></a></li><li data-v-a97ae32a="" class="mp-divider"><span data-v-a97ae32a="">|</span></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="隐藏预览" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="eye" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-eye fa-w-18"><path data-v-a97ae32a="" fill="currentColor" d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="全屏" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="expand-arrows-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-expand-arrows-alt fa-w-14"><path data-v-a97ae32a="" fill="currentColor" d="M448.1 344v112c0 13.3-10.7 24-24 24h-112c-21.4 0-32.1-25.9-17-41l36.2-36.2L224 295.6 116.8 402.9 153 439c15.1 15.1 4.4 41-17 41H24c-13.3 0-24-10.7-24-24V344c0-21.4 25.9-32.1 41-17l36.2 36.2L184.5 256 77.2 148.7 41 185c-15.1 15.1-41 4.4-41-17V56c0-13.3 10.7-24 24-24h112c21.4 0 32.1 25.9 17 41l-36.2 36.2L224 216.4l107.3-107.3L295.1 73c-15.1-15.1-4.4-41 17-41h112c13.3 0 24 10.7 24 24v112c0 21.4-25.9 32.1-41 17l-36.2-36.2L263.6 256l107.3 107.3 36.2-36.2c15.1-15.2 41-4.5 41 16.9z" class=""></path></svg></a></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="停用滚动同步" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lock" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-lock fa-w-14"><path data-v-a97ae32a="" fill="currentColor" d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" class=""></path></svg></a></li><li data-v-a97ae32a="" class="mp-divider"><span data-v-a97ae32a="">|</span></li><li data-v-a97ae32a="" class=""><a data-v-a97ae32a="" title="关于" unselectable="on"><svg data-v-a97ae32a="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-info-circle fa-w-16"><path data-v-a97ae32a="" fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z" class=""></path></svg></a></li></ul></div><div data-v-a97ae32a="" class="mp-editor-ground"><div data-v-a97ae32a="" class="mp-editor-zone mp-input-zone mp-editor-zone"><div data-v-a97ae32a="" class="mp-input-area"><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 3556px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div></div><div data-v-a97ae32a="" class="mp-editor-zone mp-preview-zone mp-editor-zone"><div data-v-a97ae32a="" class="mp-preview-area"><div data-v-a97ae32a="" class="mp-preview-content"><h1 data-line="2">新手村</h1>
+<p data-line="4">任何一个伟大的目标，都有一个微不足道的开始。</p>
+<h2 data-line="6">洛谷的第一个任务</h2>
+<p data-line="8">勇敢的迈出第一步，了解下语言和洛谷。跟着书本和老师走，不会难的。</p>
+<ul>
+<li><a href="/problem/P1000">P1000</a></li>
+<li><a href="/problem/P1001">P1001</a></li>
+<li><a href="/problem/P1421">P1421</a></li>
+<li><a href="/problem/P1425">P1425</a></li>
+</ul>
+<h2 data-line="15">顺序与分支</h2>
+<p data-line="17">计算机的智能性开始得以体现，因为计算机能够根据不同的条件选择了。</p>
+<ul>
+<li><a href="/problem/P1422">P1422</a></li>
+<li><a href="/problem/P1085">P1085</a></li>
+<li><a href="/problem/P1089">P1089</a></li>
+<li><a href="/problem/P1909">P1909</a></li>
+</ul>
+<h2 data-line="24">循环！循环！循环！</h2>
+<p data-line="26">计算机最不怕的就是重复。你让它做10000次同样的事它也不怕啦，但是让他做1亿亿次的话……</p>
+<ul>
+<li><a href="/problem/P1008">P1008</a></li>
+<li><a href="/problem/P1035">P1035</a></li>
+<li><a href="/problem/P1423">P1423</a></li>
+<li><a href="/problem/P1424">P1424</a></li>
+<li><a href="/problem/P1980">P1980</a></li>
+</ul>
+<h2 data-line="34">数组</h2>
+<p data-line="36">跟数组有关的题目基本上都要用到循环，所以请先完成1-3。</p>
+<ul>
+<li><a href="/problem/P1046">P1046</a></li>
+<li><a href="/problem/P1047">P1047</a></li>
+<li><a href="/problem/P1427">P1427</a></li>
+<li><a href="/problem/P1428">P1428</a></li>
+<li><a href="/problem/P2141">P2141</a></li>
+<li><a href="/problem/P1567">P1567</a></li>
+</ul>
+<h2 data-line="45">简单字符串</h2>
+<p data-line="47">计算机不仅可以处理数字，还能处理文字！就是其实跟数字也没什么差。</p>
+<ul>
+<li><a href="/problem/P1055">P1055</a></li>
+<li><a href="/problem/P1200">P1200</a></li>
+<li><a href="/problem/P1308">P1308</a></li>
+<li><a href="/problem/P1553">P1553</a></li>
+<li><a href="/problem/P1598">P1598</a></li>
+<li><a href="/problem/P1914">P1914</a></li>
+</ul>
+<h2 data-line="56">过程函数与递归</h2>
+<p data-line="58">将代码串进行打包，就是过程与函数。过程与函数调用自己则为递归。有一点小难但不要怕哦。</p>
+<ul>
+<li><a href="/problem/P1028">P1028</a></li>
+<li><a href="/problem/P1036">P1036</a></li>
+<li><a href="/problem/P1149">P1149</a></li>
+<li><a href="/problem/P1217">P1217</a></li>
+</ul>
+<h2 data-line="65">BOSS战-入门综合练习1</h2>
+<p data-line="67">这里将前面的内容综合起来了，会有点难，不过你可以问老师同学，也能上网查资料。</p>
+<ul>
+<li><a href="/problem/P1478">P1478</a></li>
+<li><a href="/problem/P1618">P1618</a></li>
+<li><a href="/problem/P1579">P1579</a></li>
+<li><a href="/problem/P2089">P2089</a></li>
+</ul>
+<h2 data-line="74">BOSS战-入门综合练习2</h2>
+<p data-line="76">勇士，竟然来到了BOSS的老巢！来一场恶斗，证明自己的实力，解锁下一个级别！</p>
+<ul>
+<li><a href="/problem/P1426">P1426</a></li>
+<li><a href="/problem/P1464">P1464</a></li>
+<li><a href="/problem/P1014">P1014</a></li>
+<li><a href="/problem/P1022">P1022</a></li>
+<li><a href="/problem/P1307">P1307</a></li>
+</ul>
+<h1 data-line="84">普及练习场</h1>
+<p data-line="86">普及组选手可冲刺训练，提高组选手亦可在此巩固基础。</p>
+<h2 data-line="88">简单的模拟</h2>
+<p data-line="90">开始普及组的训练！所谓模拟，就是直接根据题意编写，思维难度简单。</p>
+<ul>
+<li><a href="/problem/P1003">P1003</a></li>
+<li><a href="/problem/P1067">P1067</a></li>
+<li><a href="/problem/P1540">P1540</a></li>
+<li><a href="/problem/P1056">P1056</a></li>
+<li><a href="/problem/P1328">P1328</a></li>
+<li><a href="/problem/P1563">P1563</a></li>
+</ul>
+<h2 data-line="99">交叉模拟</h2>
+<p data-line="101">这里也是模拟，但是会混有些别的部分。思维难度不大，但是编写起来会有些难度。</p>
+<ul>
+<li><a href="/problem/P1023">P1023</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1042">P1042</a></li>
+<li><a href="/problem/P1086">P1086</a></li>
+<li><a href="/problem/P1098">P1098</a></li>
+<li><a href="/problem/P3952">P3952</a></li>
+</ul>
+<h2 data-line="110">排序</h2>
+<p data-line="112">将杂乱无章的数据变得有规律。有各种各样的排序算法，看情况使用。</p>
+<ul>
+<li><a href="/problem/P1177">P1177</a></li>
+<li><a href="/problem/P1059">P1059</a></li>
+<li><a href="/problem/P1068">P1068</a></li>
+<li><a href="/problem/P1781">P1781</a></li>
+</ul>
+<h2 data-line="119">排序Ex</h2>
+<p data-line="121">这里的排序就更上一层了。不仅融合了别的算法与技巧，排序本身也有各种花招。</p>
+<ul>
+<li><a href="/problem/P1583">P1583</a></li>
+<li><a href="/problem/P1051">P1051</a></li>
+<li><a href="/problem/P1093">P1093</a></li>
+<li><a href="/problem/P1309">P1309</a></li>
+</ul>
+<h2 data-line="128">字符串处理</h2>
+<p data-line="130">这里的字符串处理还会变得更加的有意思，难度也更大。需要好好地思考一下。</p>
+<ul>
+<li><a href="/problem/P1603">P1603</a></li>
+<li><a href="/problem/P1071">P1071</a></li>
+<li><a href="/problem/P1012">P1012</a></li>
+<li><a href="/problem/P1538">P1538</a></li>
+</ul>
+<h2 data-line="137">贪心</h2>
+<p data-line="139">贪心就是只考虑眼前的利益。对于我们人生来说太贪是不好的，不过oi中，有时是对的。</p>
+<ul>
+<li><a href="/problem/P1090">P1090</a></li>
+<li><a href="/problem/P1181">P1181</a></li>
+<li><a href="/problem/P1208">P1208</a></li>
+<li><a href="/problem/P1223">P1223</a></li>
+<li><a href="/problem/P1094">P1094</a></li>
+<li><a href="/problem/P1803">P1803</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1080">P1080</a></li>
+</ul>
+<h2 data-line="150">深度优先搜索</h2>
+<p data-line="152">搜索可以穷举各种情况。很多题目都可以用搜索完成。就算不能，搜索也是骗分神器。</p>
+<ul>
+<li><a href="/problem/P1219">P1219</a></li>
+<li><a href="/problem/P1019">P1019</a></li>
+<li><a href="/problem/P1101">P1101</a></li>
+<li><a href="/problem/P1605">P1605</a></li>
+<li><a href="/problem/P1040">P1040</a></li>
+<li><a href="/problem/P1092">P1092</a></li>
+</ul>
+<h2 data-line="161">广度优先搜索</h2>
+<p data-line="163">广度优先搜索可以用来找有关“最短步数”的问题。恩，也可以用来“地毯式搜索”。</p>
+<ul>
+<li><a href="/problem/P1162">P1162</a></li>
+<li><a href="/problem/P1032">P1032</a></li>
+<li><a href="/problem/P1141">P1141</a></li>
+<li><a href="/problem/P1126">P1126</a></li>
+<li><a href="/problem/P1443">P1443</a></li>
+</ul>
+<h2 data-line="171">带有技巧的搜索</h2>
+<p data-line="173">这里的搜索不仅包含了dfs和bfs，还包括剪枝、记录等技巧以加快速度。</p>
+<ul>
+<li><a href="/problem/P1118">P1118</a></li>
+<li><a href="/problem/P1434">P1434</a></li>
+<li><a href="/problem/P1433">P1433</a></li>
+<li><a href="/problem/P1074">P1074</a></li>
+</ul>
+<h2 data-line="180">分治算法</h2>
+<p data-line="182">将大问题拆分为小问题，分而治之，各个击破，然后在合并回来。</p>
+<ul>
+<li><a href="/problem/P1226">P1226</a></li>
+<li><a href="/problem/P1010">P1010</a></li>
+<li><a href="/problem/P1908">P1908</a></li>
+<li><a href="/problem/P1498">P1498</a></li>
+</ul>
+<h2 data-line="189">简单数学问题</h2>
+<p data-line="191">用计算机解决某些麻烦数学问题，再合适不过了。这真是绝妙的搭配啊！</p>
+<ul>
+<li><a href="/problem/P1088">P1088</a></li>
+<li><a href="/problem/P1045">P1045</a></li>
+<li><a href="/problem/P1403">P1403</a></li>
+<li><a href="/problem/P1017">P1017</a></li>
+<li><a href="/problem/P1147">P1147</a></li>
+<li><a href="/problem/P1029">P1029</a></li>
+</ul>
+<h2 data-line="200">递推与递归二分</h2>
+<p data-line="202">递推，层层递进，由基础推向顶层。二分不仅可以用来查找数据，还可以确定最合适的值。</p>
+<ul>
+<li><a href="/problem/P1192">P1192</a></li>
+<li><a href="/problem/P1025">P1025</a></li>
+<li><a href="/problem/P1057">P1057</a></li>
+<li><a href="/problem/P1135">P1135</a></li>
+<li><a href="/problem/P1216">P1216</a></li>
+<li><a href="/problem/P1182">P1182</a></li>
+<li><a href="/problem/P1316">P1316</a></li>
+</ul>
+<h2 data-line="212">线性数据结构</h2>
+<p data-line="214">数组，链表，队列，栈，都是线性结构。巧用这些结构可以做出不少方便的事情。</p>
+<ul>
+<li><a href="/problem/P1996">P1996</a></li>
+<li><a href="/problem/P1115">P1115</a></li>
+<li><a href="/problem/P1739">P1739</a></li>
+<li><a href="/problem/P1160">P1160</a></li>
+<li><a href="/problem/P1449">P1449</a></li>
+</ul>
+<h2 data-line="222">树形数据结构</h2>
+<p data-line="224">由一个根节点分叉，越分越多，就成了树。树可以表示数据之间的从属关系</p>
+<ul>
+<li><a href="/problem/P1087">P1087</a></li>
+<li><a href="/problem/P1030">P1030</a></li>
+<li><a href="/problem/P1305">P1305</a></li>
+<li><a href="/problem/P5018">P5018</a></li>
+</ul>
+<h2 data-line="231">动态规划的背包问题</h2>
+<p data-line="233">这是最基础的动态规划。不过如果是第一次接触会有些难以理解。加油闯过这个坎。</p>
+<ul>
+<li><a href="/problem/P1060">P1060</a></li>
+<li><a href="/problem/P1164">P1164</a></li>
+<li><a href="/problem/P1064">P1064</a></li>
+<li><a href="/problem/P1048">P1048</a></li>
+<li><a href="/problem/P1049">P1049</a></li>
+<li><a href="/problem/P1616">P1616</a></li>
+</ul>
+<h2 data-line="242">线性动态规划</h2>
+<p data-line="244">这也是基础的动态规划。是在线性结构上面的动态规划，一定要掌握。</p>
+<ul>
+<li><a href="/problem/P1020">P1020</a></li>
+<li><a href="/problem/P1091">P1091</a></li>
+<li><a href="/problem/P1280">P1280</a></li>
+<li><a href="/problem/P1880">P1880</a></li>
+<li><a href="/problem/P1140">P1140</a></li>
+<li><a href="/problem/P1282">P1282</a></li>
+</ul>
+<h2 data-line="253">多维动态规划</h2>
+<p data-line="255">这里的动态规划就不止一维了。不仅要小心时间复杂度，也要注意空间复杂度。</p>
+<ul>
+<li><a href="/problem/P1508">P1508</a></li>
+<li><a href="/problem/P1006">P1006</a></li>
+<li><a href="/problem/P1387">P1387</a></li>
+<li><a href="/problem/P1417">P1417</a></li>
+<li><a href="/problem/P1855">P1855</a></li>
+<li><a href="/problem/P1736">P1736</a></li>
+</ul>
+<h2 data-line="264">更要技巧的动规与记忆化</h2>
+<p data-line="266">这边的题目有各种搞法。当然有的题目也可以使用记忆化搜索来降低思维难度。</p>
+<ul>
+<li><a href="/problem/P1064">P1064</a></li>
+<li><a href="/problem/P1541">P1541</a></li>
+<li><a href="/problem/P1026">P1026</a></li>
+<li><a href="/problem/P1063">P1063</a></li>
+<li><a href="/problem/P1156">P1156</a></li>
+<li><a href="/problem/P1052">P1052</a></li>
+</ul>
+<h2 data-line="275">高精度算法</h2>
+<p data-line="277">就算是long long（或int64）还不够怎么办？用高精度算法。自己动手丰衣足食。</p>
+<ul>
+<li><a href="/problem/P1601">P1601</a></li>
+<li><a href="/problem/P2142">P2142</a></li>
+<li><a href="/problem/P1303">P1303</a></li>
+<li><a href="/problem/P1255">P1255</a></li>
+<li><a href="/problem/P1604">P1604</a></li>
+</ul>
+<h2 data-line="285">贪心EX</h2>
+<p data-line="287">虽然是贪心题，可能不是你当时你虐着玩的贪心惹qwq</p>
+<ul>
+<li><a href="/problem/P1080">P1080</a></li>
+<li><a href="/problem/P1031">P1031</a></li>
+<li><a href="/problem/P1233">P1233</a></li>
+<li><a href="/problem/P2123">P2123</a></li>
+</ul>
+<h2 data-line="294">简单数学</h2>
+<p data-line="296">数学和oi是密切相关的，数学不仅是oi的基础，而且是算法的核心。</p>
+<ul>
+<li><a href="/problem/P1865">P1865</a></li>
+<li><a href="/problem/P1372">P1372</a></li>
+<li><a href="/problem/P1338">P1338</a></li>
+<li><a href="/problem/P2158">P2158</a></li>
+<li><a href="/problem/P1582">P1582</a></li>
+</ul>
+<h2 data-line="304">BOSS战-普及综合练习1</h2>
+<p data-line="306">好不容易闯到这一关，你那还等什么呢？抄起家伙赶快上啊！</p>
+<ul>
+<li><a href="/problem/P1478">P1478</a></li>
+<li><a href="/problem/P1203">P1203</a></li>
+<li><a href="/problem/P1363">P1363</a></li>
+<li><a href="/problem/P1736">P1736</a></li>
+</ul>
+<h2 data-line="313">BOSS战-普及综合练习2</h2>
+<p data-line="315">来搞定第二个BOSS。虽然战斗艰难，但你一定没有问题。</p>
+<ul>
+<li><a href="/problem/P1201">P1201</a></li>
+<li><a href="/problem/P1095">P1095</a></li>
+<li><a href="/problem/P1058">P1058</a></li>
+<li><a href="/problem/P2258">P2258</a></li>
+<li><a href="/problem/P1108">P1108</a></li>
+</ul>
+<h2 data-line="323">BOSS战-普及综合练习3</h2>
+<p data-line="325">普及练习场的大BOSS：“一定让你有去无回”。怎么办呢？只能打倒他开启下一个级别！</p>
+<ul>
+<li><a href="/problem/P1328">P1328</a></li>
+<li><a href="/problem/P1062">P1062</a></li>
+<li><a href="/problem/P1969">P1969</a></li>
+<li><a href="/problem/P1037">P1037</a></li>
+</ul>
+<h2 data-line="332">普及常见模板</h2>
+<p data-line="334">这里集中了比较基础的算法的模板。提高和省选也有模板题哦！</p>
+<ul>
+<li><a href="/problem/P1177">P1177</a></li>
+<li><a href="/problem/P3366">P3366</a></li>
+<li><a href="/problem/P3367">P3367</a></li>
+<li><a href="/problem/P3371">P3371</a></li>
+<li><a href="/problem/P3383">P3383</a></li>
+</ul>
+<h1 data-line="342">提高历练地</h1>
+<p data-line="344">已经去除了普及组难度的，请组织放心。成长大牛之必写题！！！</p>
+<h2 data-line="346">搜索Ex</h2>
+<p data-line="348">开始提高组的试炼。这里已经去除了所有普及组难度的题目。哼哼，怕了吧。。</p>
+<ul>
+<li><a href="/problem/P1120">P1120</a></li>
+<li><a href="/problem/P1378">P1378</a></li>
+<li><a href="/problem/P1514">P1514</a></li>
+<li><a href="/problem/P1312">P1312</a></li>
+<li><a href="/problem/P1441">P1441</a></li>
+<li><a href="/problem/P1242">P1242</a></li>
+</ul>
+<h2 data-line="357">动态规划TG.lv(1)</h2>
+<p data-line="359">这是提高组难度中比较基础的动态规划，也许一两个转移方程就可以写出。</p>
+<ul>
+<li><a href="/problem/P1005">P1005</a></li>
+<li><a href="/problem/P1373">P1373</a></li>
+<li><a href="/problem/P2279">P2279</a></li>
+<li><a href="/problem/P1220">P1220</a></li>
+<li><a href="/problem/P1156">P1156</a></li>
+</ul>
+<h2 data-line="367">动态规划TG.lv(2)</h2>
+<p data-line="369">这里的动态规划稍稍有所加大难度，思考转移方程的时间可能会与编写程序的时间持平。</p>
+<ul>
+<li><a href="/problem/P1273">P1273</a></li>
+<li><a href="/problem/P1169">P1169</a></li>
+<li><a href="/problem/P2577">P2577</a></li>
+<li><a href="/problem/P1070">P1070</a></li>
+<li><a href="/problem/P2051">P2051</a></li>
+</ul>
+<h2 data-line="377">动态规划TG.lv(3)</h2>
+<p data-line="379">比较需要技巧的动态规划。有的不仅仅需要状态转移方程，可能还会与别的算法综合。</p>
+<ul>
+<li><a href="/problem/P1415">P1415</a></li>
+<li><a href="/problem/P2157">P2157</a></li>
+<li><a href="/problem/P2216">P2216</a></li>
+<li><a href="/problem/P2331">P2331</a></li>
+<li><a href="/problem/P2467">P2467</a></li>
+<li><a href="/problem/P3084">P3084</a></li>
+</ul>
+<h2 data-line="388">数论</h2>
+<p data-line="390">数论就是研究整数的理论。包括公约公倍数、质数、欧拉定理和同余方程等。</p>
+<ul>
+<li><a href="/problem/P2152">P2152</a></li>
+<li><a href="/problem/P1414">P1414</a></li>
+<li><a href="/problem/P1134">P1134</a></li>
+<li><a href="/problem/P1313">P1313</a></li>
+<li><a href="/problem/P1306">P1306</a></li>
+</ul>
+<h2 data-line="398">博弈论</h2>
+<p data-line="400">博弈论考虑游戏中的个体的预测行为和实际行为，并研究它们的优化策略。</p>
+<ul>
+<li><a href="/problem/P1199">P1199</a></li>
+<li><a href="/problem/P1288">P1288</a></li>
+<li><a href="/problem/P1290">P1290</a></li>
+<li><a href="/problem/P2148">P2148</a></li>
+<li><a href="/problem/P1247">P1247</a></li>
+<li><a href="/problem/P2575">P2575</a></li>
+</ul>
+<h2 data-line="409">其他数学问题</h2>
+<p data-line="411">听说学oi的同志们数学都挺好。那么。就请完成下面的题目证明这一点吧！</p>
+<ul>
+<li><a href="/problem/P1357">P1357</a></li>
+<li><a href="/problem/P1641">P1641</a></li>
+<li><a href="/problem/P2059">P2059</a></li>
+<li><a href="/problem/P2154">P2154</a></li>
+<li><a href="/problem/P2261">P2261</a></li>
+<li><a href="/problem/P2327">P2327</a></li>
+<li><a href="/problem/P1066">P1066</a></li>
+</ul>
+<h2 data-line="421">图的遍历</h2>
+<p data-line="423">图是一种非常重要的数据结构，描述对象复杂的练习。这里开始接触图的基本概念。</p>
+<ul>
+<li><a href="/problem/P2661">P2661</a></li>
+<li><a href="/problem/P1330">P1330</a></li>
+<li><a href="/problem/P1341">P1341</a></li>
+<li><a href="/problem/P2921">P2921</a></li>
+</ul>
+<h2 data-line="430">最短路问题</h2>
+<p data-line="432">最短路是图论中最重要的部分，多种算法可以应用。很多题目都可以抽象成这种模型。</p>
+<ul>
+<li><a href="/problem/P1339">P1339</a></li>
+<li><a href="/problem/P1462">P1462</a></li>
+<li><a href="/problem/P1346">P1346</a></li>
+<li><a href="/problem/P1119">P1119</a></li>
+<li><a href="/problem/P1144">P1144</a></li>
+<li><a href="/problem/P1522">P1522</a></li>
+</ul>
+<h2 data-line="441">最小生成树</h2>
+<p data-line="443">最小生成树可以用kruskal（克鲁斯卡尔）算法或prim（普里姆）算法求出。</p>
+<ul>
+<li><a href="/problem/P1546">P1546</a></li>
+<li><a href="/problem/P2330">P2330</a></li>
+<li><a href="/problem/P1991">P1991</a></li>
+<li><a href="/problem/P1265">P1265</a></li>
+</ul>
+<h2 data-line="450">较复杂图论I</h2>
+<p data-line="452">别的些图论问题，包括树、拓扑排序等。要过这一关，需要学习不少新的算法。</p>
+<ul>
+<li><a href="/problem/P1113">P1113</a></li>
+<li><a href="/problem/P1268">P1268</a></li>
+<li><a href="/problem/P1525">P1525</a></li>
+<li><a href="/problem/P1983">P1983</a></li>
+</ul>
+<h2 data-line="459">较复杂图论II</h2>
+<p data-line="461">更高级的图论算法。包括差分约束、强连通、二分图等。会更难一些。</p>
+<ul>
+<li><a href="/problem/P1993">P1993</a></li>
+<li><a href="/problem/P1726">P1726</a></li>
+<li><a href="/problem/P2055">P2055</a></li>
+<li><a href="/problem/P2149">P2149</a></li>
+<li><a href="/problem/P1345">P1345</a></li>
+</ul>
+<h2 data-line="469">并查集</h2>
+<p data-line="471">用于处理一些不相交集合的合并及查询问题。常常在使用中以森林来表示。</p>
+<ul>
+<li><a href="/problem/P1111">P1111</a></li>
+<li><a href="/problem/P2024">P2024</a></li>
+<li><a href="/problem/P1197">P1197</a></li>
+<li><a href="/problem/P1196">P1196</a></li>
+</ul>
+<h2 data-line="478">堆</h2>
+<p data-line="480">堆总是一棵完全树；堆中某个节点的值总是不大于或不小于其父节点的值。</p>
+<ul>
+<li><a href="/problem/P1801">P1801</a></li>
+<li><a href="/problem/P2278">P2278</a></li>
+<li><a href="/problem/P1631">P1631</a></li>
+<li><a href="/problem/P2085">P2085</a></li>
+<li><a href="/problem/P1484">P1484</a></li>
+</ul>
+<h2 data-line="488">线段树树状数组基础</h2>
+<p data-line="490">这都是比较高级的线性数据结构。在处理一些询问与修改线性问题时，是很好用的。</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P1198">P1198</a></li>
+<li><a href="/problem/P2023">P2023</a></li>
+<li><a href="/problem/P2161">P2161</a></li>
+</ul>
+<h2 data-line="497">神奇的解法</h2>
+<p data-line="499">有些问题刚开始觉得无从下手。好好想一想，尽量别看题解，否则你会大呼“简单”。</p>
+<ul>
+<li><a href="/problem/P1007">P1007</a></li>
+<li><a href="/problem/P1984">P1984</a></li>
+<li><a href="/problem/P2022">P2022</a></li>
+<li><a href="/problem/P2320">P2320</a></li>
+</ul>
+<h2 data-line="506">倍增</h2>
+<p data-line="508">一种特殊的枚举算法，但可大大加快效率。近年noip有考到。难度较大。</p>
+<ul>
+<li><a href="/problem/P1967">P1967</a></li>
+<li><a href="/problem/P1081">P1081</a></li>
+<li><a href="/problem/P1613">P1613</a></li>
+</ul>
+<h2 data-line="514">强连通分量</h2>
+<p data-line="516">强连通分量</p>
+<ul>
+<li><a href="/problem/P2341">P2341</a></li>
+<li><a href="/problem/P3469">P3469</a></li>
+<li><a href="/problem/P2746">P2746</a></li>
+<li><a href="/problem/P3119">P3119</a></li>
+<li><a href="/problem/P3225">P3225</a></li>
+</ul>
+<h2 data-line="524">BOSS战-提高综合练习1</h2>
+<p data-line="526">年轻人，又是个送上门的，让我来看看你真实的本领。啊哈哈哈哈哈！</p>
+<ul>
+<li><a href="/problem/P2264">P2264</a></li>
+<li><a href="/problem/P1772">P1772</a></li>
+<li><a href="/problem/P1083">P1083</a></li>
+<li><a href="/problem/P1979">P1979</a></li>
+<li><a href="/problem/P2939">P2939</a></li>
+</ul>
+<h2 data-line="534">BOSS战-提高综合练习2</h2>
+<p data-line="536">再来！这里有的题目并非单纯的考察某个算法，而是考察一种综合性的思维。</p>
+<ul>
+<li><a href="/problem/P1901">P1901</a></li>
+<li><a href="/problem/P1314">P1314</a></li>
+<li><a href="/problem/P2144">P2144</a></li>
+<li><a href="/problem/P1073">P1073</a></li>
+<li><a href="/problem/P2324">P2324</a></li>
+</ul>
+<h2 data-line="544">BOSS战-提高综合练习3</h2>
+<p data-line="546">既然已经打倒了前面2个boss，那么第3个也是没有问题的。少年，来吧！</p>
+<ul>
+<li><a href="/problem/P1965">P1965</a></li>
+<li><a href="/problem/P1311">P1311</a></li>
+<li><a href="/problem/P2296">P2296</a></li>
+<li><a href="/problem/P1084">P1084</a></li>
+</ul>
+<h2 data-line="553">提高模板-nlogn数据结构</h2>
+<p data-line="555">虽然这些算法不是noip必须的，但是不算困难，很多题目可以使用这些方法。</p>
+<ul>
+<li><a href="/problem/P3374">P3374</a></li>
+<li><a href="/problem/P3368">P3368</a></li>
+<li><a href="/problem/P3372">P3372</a></li>
+<li><a href="/problem/P3373">P3373</a></li>
+<li><a href="/problem/P1439">P1439</a></li>
+<li><a href="/problem/P3378">P3378</a></li>
+</ul>
+<h1 data-line="566">省选斗兽场/NOI神殿</h1>
+<p data-line="568">为省选及以上选手制作的训练场。其实，省选水平的oier不需要一些外加的刷题列表，本栏仅供参考，也欢迎各位指出不足。</p>
+<h2 data-line="570">省选基础-读入/输出优化</h2>
+<p data-line="572">读入/输出优化是省选刷题时必要的一个东西，这里给出了几题，需要自己手写相应的读入输出处理。作为第一关，这一关相对简单。</p>
+<ul>
+<li><a href="/problem/P1580">P1580</a></li>
+<li><a href="/problem/P2393">P2393</a></li>
+<li><a href="/problem/P2394">P2394</a></li>
+</ul>
+<h2 data-line="578">省选基础-位运算</h2>
+<p data-line="580">位运算往往在必要的时候,能带你优化一下常数,也许是空间;也许是时间;有的时候这样可以多过很多分</p>
+<ul>
+<li><a href="/problem/P2114">P2114</a></li>
+<li><a href="/problem/P2396">P2396</a></li>
+<li><a href="/problem/P2397">P2397</a></li>
+</ul>
+<h2 data-line="586">省选基础-打表</h2>
+<p data-line="588">打表虽然很赖皮,而且基本都是非正解,但是这种办法能让我们在省选中拿到一些会超时或者会超空间的一些数据点</p>
+<ul>
+<li><a href="/problem/P1149">P1149</a></li>
+<li><a href="/problem/P1463">P1463</a></li>
+<li><a href="/problem/P1896">P1896</a></li>
+</ul>
+<h2 data-line="594">动态规划1</h2>
+<p data-line="596">动态规划</p>
+<ul>
+<li><a href="/problem/P2051">P2051</a></li>
+<li><a href="/problem/P1879">P1879</a></li>
+<li><a href="/problem/P1850">P1850</a></li>
+<li><a href="/problem/P2831">P2831</a></li>
+<li><a href="/problem/P1131">P1131</a></li>
+<li><a href="/problem/P1169">P1169</a></li>
+</ul>
+<h2 data-line="605">动态规划2</h2>
+<p data-line="607">动态规划</p>
+<ul>
+<li><a href="/problem/P1273">P1273</a></li>
+<li><a href="/problem/P3648">P3648</a></li>
+<li><a href="/problem/P2519">P2519</a></li>
+<li><a href="/problem/P2515">P2515</a></li>
+<li><a href="/problem/P3233">P3233</a></li>
+<li><a href="/problem/P2501">P2501</a></li>
+</ul>
+<h2 data-line="616">网络流——最大流</h2>
+<p data-line="618">最大流</p>
+<ul>
+<li><a href="/problem/P2765">P2765</a></li>
+<li><a href="/problem/P2764">P2764</a></li>
+<li><a href="/problem/P2763">P2763</a></li>
+<li><a href="/problem/P2766">P2766</a></li>
+<li><a href="/problem/P2774">P2774</a></li>
+<li><a href="/problem/P2805">P2805</a></li>
+</ul>
+<h2 data-line="627">网络流——费用流</h2>
+<p data-line="629">费用流</p>
+<ul>
+<li><a href="/problem/P2153">P2153</a></li>
+<li><a href="/problem/P2053">P2053</a></li>
+<li><a href="/problem/P3159">P3159</a></li>
+<li><a href="/problem/P2604">P2604</a></li>
+<li><a href="/problem/P2050">P2050</a></li>
+<li><a href="/problem/P3980">P3980</a></li>
+</ul>
+<h2 data-line="638">单调队列</h2>
+<p data-line="640">单调队列</p>
+<ul>
+<li><a href="/problem/P2698">P2698</a></li>
+<li><a href="/problem/P2216">P2216</a></li>
+<li><a href="/problem/P2219">P2219</a></li>
+<li><a href="/problem/P2564">P2564</a></li>
+<li><a href="/problem/P2569">P2569</a></li>
+</ul>
+<h2 data-line="648">概率期望</h2>
+<p data-line="650">概率期望</p>
+<ul>
+<li><a href="/problem/P2473">P2473</a></li>
+<li><a href="/problem/P2221">P2221</a></li>
+<li><a href="/problem/P3317">P3317</a></li>
+<li><a href="/problem/P3343">P3343</a></li>
+<li><a href="/problem/P3600">P3600</a></li>
+<li><a href="/problem/P3830">P3830</a></li>
+</ul>
+<h2 data-line="659">二分图</h2>
+<p data-line="661">二分图</p>
+<ul>
+<li><a href="/problem/P3386">P3386</a></li>
+<li><a href="/problem/P1640">P1640</a></li>
+<li><a href="/problem/P1129">P1129</a></li>
+<li><a href="/problem/P1963">P1963</a></li>
+<li><a href="/problem/P3231">P3231</a></li>
+<li><a href="/problem/P2526">P2526</a></li>
+</ul>
+<h2 data-line="670">点分治</h2>
+<p data-line="672">点分治</p>
+<ul>
+<li><a href="/problem/P2634">P2634</a></li>
+<li><a href="/problem/P2664">P2664</a></li>
+<li><a href="/problem/P3806">P3806</a></li>
+<li><a href="/problem/P3676">P3676</a></li>
+</ul>
+<h2 data-line="679">后缀数组</h2>
+<p data-line="681">后缀数组</p>
+<ul>
+<li><a href="/problem/P3809">P3809</a></li>
+<li><a href="/problem/P1117">P1117</a></li>
+<li><a href="/problem/P2178">P2178</a></li>
+<li><a href="/problem/P2463">P2463</a></li>
+<li><a href="/problem/P2336">P2336</a></li>
+</ul>
+<h2 data-line="689">主席树</h2>
+<p data-line="691">主席树</p>
+<ul>
+<li><a href="/problem/P2468">P2468</a></li>
+<li><a href="/problem/P3157">P3157</a></li>
+<li><a href="/problem/P3302">P3302</a></li>
+<li><a href="/problem/P3168">P3168</a></li>
+<li><a href="/problem/P3313">P3313</a></li>
+</ul>
+<h2 data-line="699">数位DP</h2>
+<p data-line="701">数位DP</p>
+<ul>
+<li><a href="/problem/P2602">P2602</a></li>
+<li><a href="/problem/P3281">P3281</a></li>
+<li><a href="/problem/P2518">P2518</a></li>
+<li><a href="/problem/P2606">P2606</a></li>
+</ul>
+<h2 data-line="708">AC自动机</h2>
+<p data-line="710">AC自动机</p>
+<ul>
+<li><a href="/problem/P3808">P3808</a></li>
+<li><a href="/problem/P3796">P3796</a></li>
+<li><a href="/problem/P2444">P2444</a></li>
+<li><a href="/problem/P2414">P2414</a></li>
+</ul>
+<h2 data-line="717">平衡树</h2>
+<p data-line="719">平衡树</p>
+<ul>
+<li><a href="/problem/P2042">P2042</a></li>
+<li><a href="/problem/P2596">P2596</a></li>
+<li><a href="/problem/P1110">P1110</a></li>
+<li><a href="/problem/P3285">P3285</a></li>
+<li><a href="/problem/P3644">P3644</a></li>
+<li><a href="/problem/P3765">P3765</a></li>
+<li><a href="/problem/P3369">P3369</a></li>
+</ul>
+<h2 data-line="729">树链剖分</h2>
+<p data-line="731">树链剖分</p>
+<ul>
+<li><a href="/problem/P2590">P2590</a></li>
+<li><a href="/problem/P2486">P2486</a></li>
+<li><a href="/problem/P2146">P2146</a></li>
+<li><a href="/problem/P3258">P3258</a></li>
+<li><a href="/problem/P3178">P3178</a></li>
+</ul>
+<h2 data-line="739">动态树</h2>
+<p data-line="741">动态树</p>
+<ul>
+<li><a href="/problem/P3690">P3690</a></li>
+<li><a href="/problem/P2387">P2387</a></li>
+<li><a href="/problem/P3203">P3203</a></li>
+<li><a href="/problem/P3348">P3348</a></li>
+</ul>
+<h2 data-line="748">树套树</h2>
+<p data-line="750">树套树</p>
+<ul>
+<li><a href="/problem/P1903">P1903</a></li>
+<li><a href="/problem/P3157">P3157</a></li>
+<li><a href="/problem/P3332">P3332</a></li>
+<li><a href="/problem/P2166">P2166</a></li>
+<li><a href="/problem/P3380">P3380</a></li>
+<li><a href="/problem/P2137">P2137</a></li>
+<li><a href="/problem/P3759">P3759</a></li>
+</ul>
+<h2 data-line="760">可持久化Trie树</h2>
+<p data-line="762">可持久化Trie树</p>
+<ul>
+<li><a href="/problem/P2048">P2048</a></li>
+<li><a href="/problem/P3527">P3527</a></li>
+<li><a href="/problem/P3302">P3302</a></li>
+<li><a href="/problem/P3168">P3168</a></li>
+<li><a href="/problem/P3242">P3242</a></li>
+<li><a href="/problem/P3241">P3241</a></li>
+<li><a href="/problem/P3293">P3293</a></li>
+</ul>
+<h2 data-line="772">莫队算法</h2>
+<p data-line="774">莫队算法</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P2336">P2336</a></li>
+<li><a href="/problem/P3709">P3709</a></li>
+<li><a href="/problem/P2709">P2709</a></li>
+<li><a href="/problem/P3674">P3674</a></li>
+</ul>
+<h2 data-line="782">分块</h2>
+<p data-line="784">分块</p>
+<ul>
+<li><a href="/problem/P1972">P1972</a></li>
+<li><a href="/problem/P3396">P3396</a></li>
+<li><a href="/problem/P1822">P1822</a></li>
+<li><a href="/problem/P2801">P2801</a></li>
+<li><a href="/problem/P3203">P3203</a></li>
+</ul>
+<h2 data-line="792">莫比乌斯反演</h2>
+<p data-line="794">莫比乌斯反演</p>
+<ul>
+<li><a href="/problem/P3768">P3768</a></li>
+<li><a href="/problem/P3172">P3172</a></li>
+<li><a href="/problem/P3455">P3455</a></li>
+<li><a href="/problem/P2522">P2522</a></li>
+<li><a href="/problem/P3327">P3327</a></li>
+</ul>
+<h2 data-line="802">其他</h2>
+<p data-line="804">其他</p>
+<ul>
+<li><a href="/problem/P3377">P3377</a></li>
+<li><a href="/problem/P3261">P3261</a></li>
+<li><a href="/problem/P3382">P3382</a></li>
+<li><a href="/problem/P2571">P2571</a></li>
+<li><a href="/problem/P3222">P3222</a></li>
+<li><a href="/problem/P3187">P3187</a></li>
+<li><a href="/problem/P3199">P3199</a></li>
+<li><a href="/problem/P3292">P3292</a></li>
+<li><a href="/problem/P2824">P2824</a></li>
+<li><a href="/problem/P3285">P3285</a></li>
+<li><a href="/problem/P1552">P1552</a></li>
+</ul>
+<h1 data-line="818">USACO</h1>
+<p data-line="820">美国经典的算法练习题库，值得一刷</p>
+<h2 data-line="822">USACO Section 1.1</h2>
+<ul>
+<li><a href="/problem/P1200">P1200</a></li>
+<li><a href="/problem/P1201">P1201</a></li>
+<li><a href="/problem/P1202">P1202</a></li>
+<li><a href="/problem/P1203">P1203</a></li>
+</ul>
+<h2 data-line="829">USACO Section 1.2</h2>
+<p data-line="831">完全枚举</p>
+<ul>
+<li><a href="/problem/P3864">P3864</a></li>
+<li><a href="/problem/P1204">P1204</a></li>
+<li><a href="/problem/P1205">P1205</a></li>
+<li><a href="/problem/P1206">P1206</a></li>
+<li><a href="/problem/P1207">P1207</a></li>
+</ul>
+<h2 data-line="839">USACO Section 1.3</h2>
+<p data-line="841">贪心</p>
+<ul>
+<li><a href="/problem/P1208">P1208</a></li>
+<li><a href="/problem/P1209">P1209</a></li>
+<li><a href="/problem/P1211">P1211</a></li>
+<li><a href="/problem/P1444">P1444</a></li>
+<li><a href="/problem/P3650">P3650</a></li>
+<li><a href="/problem/P2693">P2693</a></li>
+</ul>
+<h2 data-line="850">USACO Section 1.4</h2>
+<p data-line="852">有技巧的枚举</p>
+<ul>
+<li><a href="/problem/P1214">P1214</a></li>
+<li><a href="/problem/P1215">P1215</a></li>
+</ul>
+<h2 data-line="857">USACO Section 1.5</h2>
+<p data-line="859">二进制数</p>
+<ul>
+<li><a href="/problem/P1216">P1216</a></li>
+<li><a href="/problem/P1217">P1217</a></li>
+<li><a href="/problem/P1218">P1218</a></li>
+</ul>
+<h2 data-line="865">USACO Section 2.1</h2>
+<p data-line="867">图论和洪水填充</p>
+<ul>
+<li><a href="/problem/P1457">P1457</a></li>
+<li><a href="/problem/P1458">P1458</a></li>
+<li><a href="/problem/P1459">P1459</a></li>
+<li><a href="/problem/P1460">P1460</a></li>
+<li><a href="/problem/P1461">P1461</a></li>
+</ul>
+<h2 data-line="875">USACO Section 2.2</h2>
+<p data-line="877">数据结构与动态规划</p>
+<ul>
+<li><a href="/problem/P1465">P1465</a></li>
+<li><a href="/problem/P1466">P1466</a></li>
+<li><a href="/problem/P1467">P1467</a></li>
+<li><a href="/problem/P1468">P1468</a></li>
+</ul>
+<h2 data-line="884">USACO Section 2.3</h2>
+<ul>
+<li><a href="/problem/P1470">P1470</a></li>
+<li><a href="/problem/P1472">P1472</a></li>
+<li><a href="/problem/P1473">P1473</a></li>
+<li><a href="/problem/P1474">P1474</a></li>
+<li><a href="/problem/P1475">P1475</a></li>
+</ul>
+<h2 data-line="892">USACO Section 2.4</h2>
+<p data-line="894">最短路径</p>
+<ul>
+<li><a href="/problem/P1518">P1518</a></li>
+<li><a href="/problem/P1519">P1519</a></li>
+<li><a href="/problem/P1522">P1522</a></li>
+<li><a href="/problem/P1529">P1529</a></li>
+<li><a href="/problem/P1530">P1530</a></li>
+</ul>
+<h2 data-line="902">USACO Section 3.1</h2>
+<p data-line="904">最小生成树</p>
+<ul>
+<li><a href="/problem/P1546">P1546</a></li>
+<li><a href="/problem/P2722">P2722</a></li>
+<li><a href="/problem/P2723">P2723</a></li>
+<li><a href="/problem/P2724">P2724</a></li>
+<li><a href="/problem/P2725">P2725</a></li>
+</ul>
+<h2 data-line="912">USACO Section 3.2</h2>
+<p data-line="914">背包问题</p>
+<ul>
+<li><a href="/problem/P1134">P1134</a></li>
+<li><a href="/problem/P2727">P2727</a></li>
+<li><a href="/problem/P2728">P2728</a></li>
+<li><a href="/problem/P2729">P2729</a></li>
+<li><a href="/problem/P2730">P2730</a></li>
+<li><a href="/problem/P1828">P1828</a></li>
+</ul>
+<h2 data-line="923">USACO Section 3.3</h2>
+<p data-line="925">欧拉回路</p>
+<ul>
+<li><a href="/problem/P2731">P2731</a></li>
+<li><a href="/problem/P2732">P2732</a></li>
+<li><a href="/problem/P1930">P1930</a></li>
+<li><a href="/problem/P2733">P2733</a></li>
+<li><a href="/problem/P2734">P2734</a></li>
+</ul>
+<h2 data-line="933">USACO Section 3.4</h2>
+<p data-line="935">计算几何</p>
+<ul>
+<li><a href="/problem/P1827">P1827</a></li>
+<li><a href="/problem/P2735">P2735</a></li>
+<li><a href="/problem/P2736">P2736</a></li>
+</ul>
+<h2 data-line="941">USACO Section 4.1</h2>
+<p data-line="943">最优化</p>
+<ul>
+<li><a href="/problem/P2737">P2737</a></li>
+<li><a href="/problem/P2738">P2738</a></li>
+</ul>
+<h2 data-line="948">USACO Section 4.2</h2>
+<p data-line="950">网络流</p>
+<ul>
+<li><a href="/problem/P2740">P2740</a></li>
+<li><a href="/problem/P1894">P1894</a></li>
+<li><a href="/problem/P2751">P2751</a></li>
+</ul>
+<h2 data-line="956">USACO Section 4.3</h2>
+<p data-line="958">高精度</p>
+<ul>
+<li><a href="/problem/P2687">P2687</a></li>
+<li><a href="/problem/P2752">P2752</a></li>
+<li><a href="/problem/P2753">P2753</a></li>
+</ul>
+<h2 data-line="964">USACO Section 4.4</h2>
+<ul>
+<li><a href="/problem/P1344">P1344</a></li>
+<li><a href="/problem/P2739">P2739</a></li>
+<li><a href="/problem/P2741">P2741</a></li>
+</ul>
+<h2 data-line="970">USACO Section 5.1</h2>
+<p data-line="972">二维凸包</p>
+<ul>
+<li><a href="/problem/P2742">P2742</a></li>
+<li><a href="/problem/P2743">P2743</a></li>
+<li><a href="/problem/P2749">P2749</a></li>
+</ul>
+<h2 data-line="978">USACO Section 5.2</h2>
+<ul>
+<li><a href="/problem/P1560">P1560</a></li>
+</ul>
+<h2 data-line="982">USACO Section 5.3</h2>
+<p data-line="984">启发式搜索</p>
+<ul>
+<li><a href="/problem/P2701">P2701</a></li>
+<li><a href="/problem/P2744">P2744</a></li>
+<li><a href="/problem/P2745">P2745</a></li>
+<li><a href="/problem/P2746">P2746</a></li>
+</ul>
+<h2 data-line="991">USACO Section 5.4</h2>
+<ul>
+<li><a href="/problem/P1345">P1345</a></li>
+<li><a href="/problem/P2747">P2747</a></li>
+<li><a href="/problem/P2748">P2748</a></li>
+</ul>
+<h2 data-line="997">USACO Section 5.5</h2>
+<ul>
+<li><a href="/problem/P1709">P1709</a></li>
+<li><a href="/problem/P1856">P1856</a></li>
+<li><a href="/problem/P2750">P2750</a></li>
+</ul>
+</div></div></div></div><div data-v-a97ae32a=""><!----></div></div> <br data-v-50ad8e4e="" data-v-796309f8=""> <div data-v-651c5d46="" data-v-50ad8e4e="" class="lfe-caption" data-v-796309f8=""><input data-v-651c5d46="" id="check-1" type="checkbox" value=""> <label data-v-651c5d46="" for="check-1"><svg data-v-651c5d46="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fa-input svg-inline--fa fa-check-square fa-w-14"><path data-v-651c5d46="" fill="currentColor" d="M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z" class=""></path></svg> 
+    公开
+  </label></div> <p data-v-50ad8e4e="" data-v-796309f8="" class="lfe-caption" style="line-height: 1;">
+    希望更丰富的展现？<a data-v-303bbf52="" data-v-50ad8e4e="" href="/blog/luogu/how-to-use-markdown" target="_blank" colorscheme="default" class="color-default" data-v-796309f8="">使用 Markdown</a></p> <!----> <button data-v-370e72e2="" data-v-50ad8e4e="" type="button" class="btn-submit lfe-form-sz-middle" data-v-796309f8="" style="border-color: rgb(52, 152, 219); background-color: rgb(52, 152, 219);">
+    保存
+  </button> <button data-v-370e72e2="" data-v-50ad8e4e="" type="button" class="btn-submit lfe-form-sz-middle" data-v-796309f8="" style="border-color: rgb(231, 76, 60); background-color: rgb(231, 76, 60);">
+    取消
+  </button></div></div></div></main> <div data-v-7958fe72="" data-v-27cf0bac="" class="wrapper wrapped lfe-body"><div data-v-7958fe72="" class="background" style="background: rgb(51, 51, 51); filter: blur(0px) brightness(100%);"></div> <div data-v-9e66f930="" data-v-27cf0bac="" class="footer" data-v-7958fe72=""><img data-v-9e66f930="" src="https://cdn.luogu.com.cn/fe/logo-single.png?98632e1daed253842bc0846d56f869e3" class="logo-img"> <div data-v-9e66f930="" class="slogan">
+    在洛谷，<br data-v-9e66f930="">
+    享受Coding的欢乐
+  </div> <img data-v-9e66f930="" src="https://cdn.luogu.com.cn/fe/wechat_qr.png?7d31ea4ac6fd9b382a80b3ed4a1d69cf" class="qr-img"> <div data-v-9e66f930="" class="info"><p data-v-9e66f930=""><a data-v-303bbf52="" data-v-9e66f930="" href="/blog/luogu/about-luogu" colorscheme="default" class="color-default">
+        关于洛谷
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="/blog/luogu/luogu-help" colorscheme="default" class="color-default">
+        帮助中心
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="/blog/luogu/luogu-EULA" colorscheme="default" class="color-default">
+        用户协议
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="/blog/luogu/contact-us" colorscheme="default" class="color-default">
+        联系我们
+      </a> <br data-v-9e66f930=""> <a data-v-303bbf52="" data-v-9e66f930="" href="/discuss/lists?forumname=miaomiaowu" colorscheme="default" class="color-default">
+        小黑屋
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="/judgement" colorscheme="default" class="color-default">
+        陶片放逐
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="/blog/luogu/social-rules" colorscheme="default" class="color-default">
+        社区规则
+      </a> |
+      <a data-v-303bbf52="" data-v-9e66f930="" href="https://www.lagou.com/gongsi/369082.html" target="_blank" colorscheme="default" class="color-default">
+        招贤纳才
+      </a> <br data-v-9e66f930="">
+
+      2013-2020 , © 洛谷
+      Developed by the
+      <a data-v-303bbf52="" data-v-9e66f930="" href="https://github.com/luogu-dev" target="_blank" colorscheme="default" class="color-default">
+        Luogu Dev Team
+      </a> <br data-v-9e66f930="">
+
+      增值电信业务经营许可证 沪B2-20200477
+      <br data-v-9e66f930=""> <a data-v-303bbf52="" data-v-9e66f930="" href="http://beian.miit.gov.cn" target="_blank" colorscheme="default" class="color-default">
+        沪ICP备18008322号
+      </a>
+      All rights reserved.
+      </p></div></div></div></div></div>
+<!-- <script src="//www.recaptcha.net/recaptcha/api.js?hl=zh-CN&render=explicit&onload=renderCaptcha" async defer></script> -->
+
+
+<script src="https://s23.cnzz.com/z_stat.php?id=5476811&amp;web_id=5476811"></script></body></html>
